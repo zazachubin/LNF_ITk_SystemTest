@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel version="14">
+ <properties>
+  <prop name="Name">
+   <prop name="en_US.utf8"></prop>
+  </prop>
+  <prop name="Size">851 453</prop>
+  <prop name="BackColor">_3DFace</prop>
+  <prop name="RefPoint">30 70</prop>
+  <prop name="InitAndTermRef">True</prop>
+  <prop name="SendClick">False</prop>
+  <prop name="RefFileName"></prop>
+  <prop name="DPI">96</prop>
+  <prop name="PDPI">90.59422903341648</prop>
+  <prop name="layoutType">None</prop>
+ </properties>
+ <events>
+  <script name="ScopeLib" isEscaped="1"><![CDATA[
+const string dp_SetVoltage = &quot;System1:ps1.channel1.settings.v0&quot;;
+const string dp_SetCurrent = &quot;System1:ps1.channel1.settings.i0&quot;;
+const string dp_SetStatus = &quot;System1:ps1.channel1.settings.onOff&quot;;
+
+const string dp_readBackVoltage = &quot;System1:ps1.channel1.readbackSettings.v0&quot;;
+const string dp_readBackCurrent = &quot;System1:ps1.channel1.readbackSettings.i0&quot;;
+const string dp_readback_Status = &quot;System1:ps1.channel1.readbackSettings.onOff&quot;;
+
+const string dp_iMon = &quot;System1:ps1.channel1.actual.iMon&quot;;
+const string dp_vMon = &quot;System1:ps1.channel1.actual.vMon&quot;;
+const string dp_actual_Status = &quot;System1:ps1.channel1.actual.isOn&quot;;
+
+// Initialize OptoBoard Power parameters
+void initialize()
+{
+  dpSet(dp_SetVoltage, 1.00);
+  dpSet(dp_SetCurrent, 1.00);
+}
+
+
+// Display Voltage on LCD
+void displayLCD_Voltage(float newValue){
+  LCD_Mon_Voltage.value(newValue);
+  dpSet(OB_Voltage, newValue);
+}
+
+// Display Current on LCD
+void displayLCD_Current(float newValue){
+  LCD_Mon_Current.value(newValue);
+  dpSet(OB_Current, newValue);
+}
+
+// Display On/Off Button color
+void updatePowerButtColour(bool isOn){
+   if(isOn)
+  {
+    BUT_OnOff.backCol(&quot;STD_auto&quot;);
+  }
+   else
+  {
+    BUT_OnOff.backCol(&quot;STD_used&quot;);
+  }
+}
+
+// Power Button function
+void powerButton()
+{
+  bool isOn;
+  dpGet(dp_actual_Status, isOn);
+
+  if(isOn)
+  {
+    dpSet(dp_SetStatus, 0);
+  }
+  else
+  {
+    dpSet(dp_SetStatus, 1);
+  }
+}]]></script>
+  <script name="Initialize" isEscaped="1"><![CDATA[main()
+{
+  // Initialize OptoBoard Power
+  initialize();
+
+  // DPs Change events
+  dpConnect(&quot;dpEvent_Voltage&quot;, dp_vMon);
+  dpConnect(&quot;dpEvent_Current&quot;, dp_iMon);
+  dpConnect(&quot;dpEvent_PowerButt&quot;, dp_actual_Status);
+}
+
+
+// OptoBoard Voltage dp event
+void dpEvent_Voltage(string dpName, float newValue){
+  displayLCD_Voltage(newValue);
+}
+
+// OptoBoard Current dp event
+void dpEvent_Current(string dpName, float newValue){
+  displayLCD_Current(newValue);
+}
+
+// Callback function
+void dpEvent_PowerButt(string dpName, bool isOn){
+   updatePowerButtColour(isOn);
+}
+
+]]></script>
+ </events>
+ <shapes>
+  <shape Name="LCD_Mon_Voltage" shapeType="LCD" layerId="0">
+   <properties>
+    <prop name="serialId">16</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">437.5 176.75</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_3DFace</prop>
+    <prop name="TabOrder">15</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">437.5 176.75</prop>
+    <prop name="Size">156 42</prop>
+    <extended>
+     <prop type="INT" name="decimals">3</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="LCD_Mon_Current" shapeType="LCD" layerId="0">
+   <properties>
+    <prop name="serialId">17</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">437.75 227.5</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_3DFace</prop>
+    <prop name="TabOrder">16</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">437.75 227.5</prop>
+    <prop name="Size">156 41</prop>
+    <extended>
+     <prop type="INT" name="decimals">3</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="F_MON" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">19</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">50 139</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">18</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">2.222222222222222 0 0 2.295081967213115 318.8888888888889 -170.5163934426229</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">MON</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,15,5,50,1,0,0,0,0,Italic</prop>
+    </prop>
+    <prop name="Location">50 139</prop>
+    <prop name="Size">91 62</prop>
+   </properties>
+  </shape>
+  <shape Name="L_Mon_Voltage" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">21</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">592.5 181.8125</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">20</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">Voltage</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">592.5 181.8125</prop>
+    <prop name="Size">36 31</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">V</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="L_Mon_Current" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">22</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">592.625 232.625</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">21</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">Voltage</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">592.625 232.625</prop>
+    <prop name="Size">36 31</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">A</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="BUT_OnOff" shapeType="PUSH_BUTTON" layerId="0">
+   <properties>
+    <prop name="serialId">24</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">646 186.848220007856</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_ButtonText</prop>
+    <prop name="BackColor">_Button</prop>
+    <prop name="TabOrder">23</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">On/Off</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">646 157.75</prop>
+    <prop name="Size">101 131</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">ON/OFF</prop>
+    </prop>
+    <prop name="Image" SharedPixmap="1">
+     <prop name="BackgroundPixmap">XmUNSPECIFIED_PIXMAP</prop>
+    </prop>
+   </properties>
+   <events>
+    <script name="Clicked" isEscaped="1"><![CDATA[main(mapping event)
+{
+  powerButton();
+}]]></script>
+   </events>
+  </shape>
+  <shape Name="F_SET" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">33</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">20 329</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">30</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">0.7500000000000001 0 0 1.971830985915493 195 -498.732394366197</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Update</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,1,0,0,0,0,Italic</prop>
+    </prop>
+    <prop name="Location">20 329</prop>
+    <prop name="Size">281 72</prop>
+   </properties>
+  </shape>
+  <shape Name="FIELD_VoltageSet" shapeType="TEXT_FIELD" layerId="0">
+   <properties>
+    <prop name="serialId">34</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">228 188.5000000000001</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">_Window</prop>
+    <prop name="TabOrder">31</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">228 179.5000000000001</prop>
+    <prop name="Size">100 42</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Editable">True</prop>
+    <prop name="ClearButtonEnabled">False</prop>
+    <prop name="TextFormat">[2.2f,False,False,AlignHCenter|AlignVCenter,False]</prop>
+    <prop name="ulcClientSideWidget">False</prop>
+   </properties>
+  </shape>
+  <shape Name="L_SetVoltage" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">35</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">327 184.375</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">32</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">Voltage</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">327 184.375</prop>
+    <prop name="Size">21 32</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">V</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="FIELD_CurrentSet" shapeType="TEXT_FIELD" layerId="0">
+   <properties>
+    <prop name="serialId">36</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">228 238.5000000000001</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">_Window</prop>
+    <prop name="TabOrder">33</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">228 229.4999999999999</prop>
+    <prop name="Size">101 43</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Editable">True</prop>
+    <prop name="ClearButtonEnabled">False</prop>
+    <prop name="TextFormat">[3.3f,False,False,AlignHCenter|AlignVCenter,False]</prop>
+    <prop name="ulcClientSideWidget">False</prop>
+   </properties>
+  </shape>
+  <shape Name="L_SetCurrent" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">37</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">328.1250000000001 234.375</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">34</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">Voltage</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">328.1250000000001 234.375</prop>
+    <prop name="Size">21 32</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">A</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="BUT_Set" shapeType="PUSH_BUTTON" layerId="0">
+   <properties>
+    <prop name="serialId">38</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">358 210.2837837837838</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_ButtonText</prop>
+    <prop name="BackColor">WF_Frame</prop>
+    <prop name="TabOrder">35</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">358 164.5000000000001</prop>
+    <prop name="Size">51 116</prop>
+    <prop name="BorderStyle">Styled</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">SET</prop>
+    </prop>
+   </properties>
+   <events>
+    <script name="Clicked" isEscaped="1"><![CDATA[main(mapping event)
+{
+  setSettings();
+}]]></script>
+   </events>
+  </shape>
+  <shape Name="LCD_readBack_Voltage" shapeType="LCD" layerId="0">
+   <properties>
+    <prop name="serialId">39</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">60 177.5</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_3DFace</prop>
+    <prop name="TabOrder">36</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">60 177.5</prop>
+    <prop name="Size">111 41</prop>
+    <extended>
+     <prop type="INT" name="decimals">3</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="LCD_readBack_Current" shapeType="LCD" layerId="0">
+   <properties>
+    <prop name="serialId">40</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">60 226.5</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_3DFace</prop>
+    <prop name="TabOrder">37</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">60 226.5</prop>
+    <prop name="Size">111 42</prop>
+    <extended>
+     <prop type="INT" name="decimals">3</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="F_ReadBack" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">41</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">20 329</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">38</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">0.5624999999999996 0 0 1.964788732394367 31.25000000000014 -497.6654929577469</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Actual SET</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,1,0,0,0,0,Italic</prop>
+    </prop>
+    <prop name="Location">20 329</prop>
+    <prop name="Size">281 72</prop>
+   </properties>
+  </shape>
+  <shape Name="L_ReadBack_voltage" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">42</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">170.03125 182.6871104570637</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">39</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">Voltage</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">170.03125 182.6871104570637</prop>
+    <prop name="Size">21 31</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">V</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="L_ReadBack_current" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">43</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">170 231.5</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">40</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">Voltage</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">170 231.5</prop>
+    <prop name="Size">21 31</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">A</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="F_Channel" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">44</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">0 169</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">41</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1.46 0 0 0.9424083769633509 30 -39.26701570680629</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Title</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">0 169</prop>
+    <prop name="Size">501 192</prop>
+   </properties>
+  </shape>
+ </shapes>
+</panel>

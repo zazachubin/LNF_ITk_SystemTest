@@ -1,0 +1,7 @@
+DAQ970_Setup --- http://192.168.2.10
+PSU_HMP4040_Setup --- http://192.168.2.20
+
+PSU_HMP4040 --- http://192.168.2.30
+DAQ970 --- http://192.168.2.40
+PYNQ-BOARD --- http://192.168.2.99
+Signal_Generator --- 192.168.2.50

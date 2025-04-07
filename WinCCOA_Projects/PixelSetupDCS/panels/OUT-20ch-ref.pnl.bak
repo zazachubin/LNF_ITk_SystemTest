@@ -1,0 +1,1838 @@
+V 14
+1
+LANG:10001 0 
+PANEL,-1 -1 361 567 N "_3DFace" 0
+E E E E E 1 -1 -1 0  38 26
+""0  1
+E E 4
+"CBRef" "1"
+"EClose" E
+"dpi" "96"
+"pdpi" "96"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10001 0 
+2 0
+"PT_OUT_CH20_C12_NAME"
+""
+1 50 227 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C12\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 50 227 108 241
+0 2 2 "0s" 0 0 0 192 0 0  50 227 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 7 OUT_C12
+2 1
+"PT_OUT_CH20_C11_NAME"
+""
+1 50 248 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+1 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C11\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 50 248 108 262
+0 2 2 "0s" 0 0 0 192 0 0  50 248 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 7 OUT_C11
+2 2
+"PT_OUT_CH20_C10_NAME"
+""
+1 50 269 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+2 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C10\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 50 269 108 283
+0 2 2 "0s" 0 0 0 192 0 0  50 269 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 7 OUT_C10
+2 3
+"PT_OUT_CH20_C9_NAME"
+""
+1 58.23529411764707 290 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+3 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C9\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 58.23529411764707 290 108 304
+0 2 2 "0s" 0 0 0 192 0 0  58.23529411764707 290 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 6 OUT_C9
+2 4
+"PT_OUT_CH20_C8_NAME"
+""
+1 58.23529411764707 311 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+4 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C8\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 58.23529411764707 311 108 325
+0 2 2 "0s" 0 0 0 192 0 0  58.23529411764707 311 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 6 OUT_C8
+2 5
+"PT_OUT_CH20_C7_NAME"
+""
+1 58.23529411764707 332 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+5 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C7\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 58.23529411764707 332 108 346
+0 2 2 "0s" 0 0 0 192 0 0  58.23529411764707 332 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 6 OUT_C7
+2 6
+"PT_OUT_CH20_C6_NAME"
+""
+1 58.23529411764707 353 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+6 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C6\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 58.23529411764707 353 108 367
+0 2 2 "0s" 0 0 0 192 0 0  58.23529411764707 353 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 6 OUT_C6
+2 7
+"PT_OUT_CH20_C5_NAME"
+""
+1 58.23529411764707 374 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+7 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C5\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 58.23529411764707 374 108 388
+0 2 2 "0s" 0 0 0 192 0 0  58.23529411764707 374 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 6 OUT_C5
+2 8
+"PT_OUT_CH20_C4_NAME"
+""
+1 58 395 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+8 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C4\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 58 395 108 409
+0 2 2 "0s" 0 0 0 192 0 0  58 395 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 6 OUT_C4
+2 9
+"PT_OUT_CH20_C3_NAME"
+""
+1 58.29411764705881 416 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+9 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C3\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 58.29411764705881 416 108 430
+0 2 2 "0s" 0 0 0 192 0 0  58.29411764705881 416 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 6 OUT_C3
+2 10
+"PT_OUT_CH20_C2_NAME"
+""
+1 58.23529411764707 437 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+10 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C2\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 58.23529411764707 437 108 451
+0 2 2 "0s" 0 0 0 192 0 0  58.23529411764707 437 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 6 OUT_C2
+2 11
+"PT_OUT_CH20_C1_NAME"
+""
+1 58.23529411764707 458 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+11 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C1\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 58.23529411764707 458 108 472
+0 2 2 "0s" 0 0 0 192 0 0  58.23529411764707 458 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 6 OUT_C1
+2 12
+"PT_OUT_CH20_C16_NAME"
+""
+1 50.00000000000003 143 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+12 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C16\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 50.00000000000003 143 108 157
+0 2 2 "0s" 0 0 0 192 0 0  50.00000000000003 143 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 7 OUT_C16
+2 13
+"PT_OUT_CH20_C15_NAME"
+""
+1 50.00000000000003 164 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+13 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C15\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 50.00000000000003 164 108 178
+0 2 2 "0s" 0 0 0 192 0 0  50.00000000000003 164 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 7 OUT_C15
+2 14
+"PT_OUT_CH20_C14_NAME"
+""
+1 50.00000000000001 185 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+14 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C14\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 50.00000000000001 185 108 199
+0 2 2 "0s" 0 0 0 192 0 0  50.00000000000001 185 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 7 OUT_C14
+2 15
+"PT_OUT_CH20_C13_NAME"
+""
+1 50.23529411764707 206 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+15 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C13\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 50.23529411764707 206 108 220
+0 2 2 "0s" 0 0 0 192 0 0  50.23529411764707 206 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 7 OUT_C13
+2 16
+"PT_OUT_CH20_C20_NAME"
+""
+1 50 59 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+16 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C20\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 50 59 108 73
+0 2 2 "0s" 0 0 0 192 0 0  50 59 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 7 OUT_C20
+2 17
+"PT_OUT_CH20_C19_NAME"
+""
+1 50 80 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+17 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C19\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 50 80 108 94
+0 2 2 "0s" 0 0 0 192 0 0  50 80 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 7 OUT_C19
+2 18
+"PT_OUT_CH20_C18_NAME"
+""
+1 50 101 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+18 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C18\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 50 101 108 115
+0 2 2 "0s" 0 0 0 192 0 0  50 101 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 7 OUT_C18
+2 19
+"PT_OUT_CH20_C17_NAME"
+""
+1 50.23529411764704 122 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+19 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+"main()
+{
+  uint dpID;
+  int elID;
+  string dpName;
+  dpGetId(\"System1:MonitorController/Crate1/DigitalIO_s9\", dpID, elID);
+  dpName = dpGetName(dpID, elID);
+  //DebugN(\"DP ID: \", dpID, \"DPE ID: \", elID);
+  DebugN(\"DP Name: \", dpName);
+  uint spos = dpName.indexOf(\"DigitalIO_s\");
+  DebugN(\"position of DigitalIO_s = \", spos);
+  dyn_string vsplitname = dpName.split(\"DigitalIO_\", \"\");
+  string slotname = vsplitname.takeLast();
+  DebugN(\"slot name = \", slotname);
+  string chname = \"OUT_\" + slotname.toUpper() + \"_C17\";
+  this.text(chname);
+}
+" 0
+ E 0 1 3 2 1 E U  0 E 50.23529411764704 122 108 136
+0 2 2 "0s" 0 0 0 192 0 0  50.23529411764704 122 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 7 OUT_C17
+7 28
+"E_OUT_CH20_C20_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+28 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_b\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,3);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 -3.5 1 E 229.5 69.5 7.5 7.5
+7 29
+"E_OUT_CH20_C19_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+29 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_b\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,2);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 17.5 1 E 229.5 69.5 7.5 7.5
+7 30
+"E_OUT_CH20_C18_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+30 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_b\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,1);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 38.5 1 E 229.5 69.5 7.5 7.5
+7 31
+"E_OUT_CH20_C17_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+31 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_b\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,0);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 59.5 1 E 229.5 69.5 7.5 7.5
+7 32
+"E_OUT_CH20_C16_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+32 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,15);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 80.5 1 E 229.5 69.5 7.5 7.5
+7 33
+"E_OUT_CH20_C15_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+33 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,14);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 101.5 1 E 229.5 69.5 7.5 7.5
+7 34
+"E_OUT_CH20_C14_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+34 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,13);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 122.5 1 E 229.5 69.5 7.5 7.5
+7 35
+"E_OUT_CH20_C13_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+35 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,12);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 143.5 1 E 229.5 69.5 7.5 7.5
+7 36
+"E_OUT_CH20_C12_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+36 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,11);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 164.5 1 E 229.5 69.5 7.5 7.5
+7 37
+"E_OUT_CH20_C11_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+37 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,10);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1.1 -65 178.55 1 E 229.5 69.5 7.5 7.5
+7 38
+"E_OUT_CH20_C10_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+38 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,9);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 206.5 1 E 229.5 69.5 7.5 7.5
+7 39
+"E_OUT_CH20_C9_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+39 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,8);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 227.5 1 E 229.5 69.5 7.5 7.5
+7 40
+"E_OUT_CH20_C8_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+40 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,7);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 248.5 1 E 229.5 69.5 7.5 7.5
+7 41
+"E_OUT_CH20_C7_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+41 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,6);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 269.5 1 E 229.5 69.5 7.5 7.5
+7 42
+"E_OUT_CH20_C6_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+42 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,5);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 290.5 1 E 229.5 69.5 7.5 7.5
+7 43
+"E_OUT_CH20_C5_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+43 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,4);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 311.5 1 E 229.5 69.5 7.5 7.5
+7 44
+"E_OUT_CH20_C4_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+44 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,3);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 332.5 1 E 229.5 69.5 7.5 7.5
+7 45
+"E_OUT_CH20_C3_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+45 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,2);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 353.5 1 E 229.5 69.5 7.5 7.5
+7 46
+"E_OUT_CH20_C2_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+46 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,1);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 374.5 1 E 229.5 69.5 7.5 7.5
+7 47
+"E_OUT_CH20_C1_STATUS"
+""
+1 229.5 69.5 E E E 1 E 1 E N {0,0,0} E N {255,255,255} E E
+ E E
+47 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "1"
+"main()
+{
+  dyn_errClass err;
+  int i;
+
+  i = dpConnect(\"onValueChangeIO\",\"System1:LISSY.OUT_S10_state_a\");
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void onValueChangeIO(string dpe, bit32 value)
+{
+  int bPos;
+
+  Debug(\"T_ERR\",value);
+
+  bPos = getBit(value,0);
+  Debug(\"T_ERR===========>\",bPos);
+  if (bPos)
+     this.backCol(\"red\");
+  else
+     this.backCol(\"green\");
+}
+" 0
+ E 0 1 3 2 1 E 1 0 1 -65 395.5 1 E 229.5 69.5 7.5 7.5
+2 48
+"PT_OUT_CH20_OPCUA_STATUS"
+""
+1 90 516.5 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+48 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+4
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+"transformable" "0"
+E E 0 1 3 2 1 E U  0 E 90 516.5 226 531
+0 2 2 "0s" 0 0 0 192 0 0  90 516.5 1
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 21 OPC UA Server status:
+14 49
+"TF_OUT_CH20_OPCUA_STATUS"
+""
+1 147.9411764705882 573 E E E 1 E 1 E N "_WindowText" E N "_Window" E E
+ E E
+49 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0  231 511.5 294 535.5
+2 "0s" 0 0 0 2 0 -1  E "main()
+{
+  dyn_errClass err;
+  int i;
+
+  //first get the DPE name of the relevant MonFPGA
+  string heartbeatDPEName;
+  string cardDPName;
+  dyn_string splitItems;
+  cardDPName=\"System1:MonitorController/Crate1/DigitalIO_s9\";
+  splitItems = cardDPName.split(\"DigitalIO\");
+  if (splitItems.count()>0){
+    //DebugN(\"splitItems size = \", splitItems.count());
+    //DebugN(\"splitItems.at(0) = \", splitItems.at(0));
+    heartbeatDPEName = splitItems.at(0) + \"MonFPGA.heartbeat\";
+    //DebugN(\"heartbeatDPEName = \", heartbeatDPEName);
+  }
+
+  i = dpConnect(\"printHeartbeat\", heartbeatDPEName);
+
+  err = getLastError();
+  if(dynlen(err) > 0)
+  {
+    DebugN(\"An error occurred:\", err);
+    int errC = throwError(err);
+  }
+}
+
+void printHeartbeat(string dp, float heartbeat){
+  this.text = heartbeat;
+}
+" 0
+ E
+30 50
+"F_OUT_CH20_STATUS"
+""
+1 140 33 E E E 1 E 1 E N "_WindowText" E N {0,0,0} E E
+ E E
+50 0 0 0 0 0
+E E E
+1
+1
+LANG:10001 0 
+
+3
+"layoutAlignment" "AlignNone"
+"dashclr"N "_Transparent"
+"antiAliased" "0"
+E E 0 1 3 2 1 E 0.4454545454545454 0 0.9255533199195171 77.63636363636364 4.956740442655942 0 E 140 33 251 531
+1
+LANG:10001 31 Sans Serif,-1,12,5,50,0,0,0,0,0
+0 1
+LANG:10001 6 Status
+0
+LAYER, 1 
+1
+LANG:10001 0 
+0
+LAYER, 2 
+1
+LANG:10001 0 
+0
+LAYER, 3 
+1
+LANG:10001 0 
+0
+LAYER, 4 
+1
+LANG:10001 0 
+0
+LAYER, 5 
+1
+LANG:10001 0 
+0
+LAYER, 6 
+1
+LANG:10001 0 
+0
+LAYER, 7 
+1
+LANG:10001 0 
+0
+0

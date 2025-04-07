@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel version="14">
+ <properties>
+  <prop name="Name">
+   <prop name="en_US.utf8"></prop>
+  </prop>
+  <prop name="Size">665 193</prop>
+  <prop name="BackColor">_3DFace</prop>
+  <prop name="RefPoint">-1.99999999999989 -2</prop>
+  <prop name="InitAndTermRef">True</prop>
+  <prop name="SendClick">False</prop>
+  <prop name="RefFileName"></prop>
+  <prop name="DPI">96</prop>
+  <prop name="PDPI">90.59422903341648</prop>
+  <prop name="layoutType">None</prop>
+ </properties>
+ <events>
+  <script name="ScopeLib" isEscaped="1"><![CDATA[// DPs
+const string cooling_Voltage = &quot;System1:COOLING.Voltage&quot;;
+const string cooling_Current = &quot;System1:COOLING.Current&quot;;
+const string cooling_Status = &quot;System1:COOLING.Status&quot;;
+
+const string vMon_Cooling = &quot;System1:PSU_HMP4040.Channel2.vMon&quot;;
+const string iMon_Cooling = &quot;System1:PSU_HMP4040.Channel2.iMon&quot;;
+const string status_Cooling = &quot;System1:PSU_HMP4040.Channel2.MonStatus&quot;;
+
+const string dp_Cooling_SetVoltage = &quot;System1:PSU_HMP4040.Channel2.setVoltage&quot;;
+const string dp_Cooling_SetCurrent = &quot;System1:PSU_HMP4040.Channel2.setCurrent&quot;;
+
+const string dp_Cooling_ReadBackVoltage = &quot;System1:PSU_HMP4040.Channel2.readBackVoltage&quot;;
+const string dp_Cooling_ReadBackCurrent = &quot;System1:PSU_HMP4040.Channel2.readBackCurrent&quot;;
+
+// Initialize Cooling Power parameters
+void initialize()
+{
+  dpSet(dp_Cooling_SetVoltage, 10.00);
+  dpSet(dp_Cooling_SetCurrent, 2.50);
+}
+
+// Display Cooling Status
+void display_PowerStatus(bool status){
+  dpSet(cooling_Status, status);
+
+  if (status)
+  {
+    REC_CooligStatus.backCol(&quot;green&quot;);
+    L_CoolingStatus.text(&quot;On&quot;);
+    F_Cooling.dashBackCol(&quot;green&quot;);
+  }
+  if (!status)
+  {
+    REC_CooligStatus.backCol(&quot;red&quot;);
+    L_CoolingStatus.text(&quot;OFF&quot;);
+    F_Cooling.dashBackCol(&quot;red&quot;);
+  }
+}
+
+// Display Cooling Voltage on LCD
+void displayLCD_Voltage(float newValue){
+  LCD_Voltage.value(newValue);
+  dpSet(cooling_Voltage, newValue);
+}
+
+// Display Cooling Current on LCD
+void displayLCD_Current(float newValue){
+  LCD_Current.value(newValue);
+  dpSet(cooling_Current, newValue);
+}
+
+// Display settings dialog window
+void openSettingsDialog()
+{
+  string settingsDialogTitle = &quot;Cooling Settings&quot;;
+  openDialog(&quot;SettingsDialog.xml&quot;, makeDynString(&quot;$ref_dp_SetVoltage:&quot; + dp_Cooling_SetVoltage, &quot;$ref_dp_SetCurrent:&quot; + dp_Cooling_SetCurrent, &quot;$ref_dp_readBackVoltage:&quot; + dp_Cooling_ReadBackVoltage, &quot;$ref_dp_readBackCurrent:&quot; + dp_Cooling_ReadBackCurrent, &quot;$ref_title:&quot; + settingsDialogTitle));
+}
+]]></script>
+  <script name="Initialize" isEscaped="1"><![CDATA[main()
+{
+  // Initialize Power parameters
+  initialize();
+
+  // dp event
+  dpConnect(&quot;dpEvent_CoolingVoltage&quot;, vMon_Cooling);
+  dpConnect(&quot;dpEvent_CoolingCurrent&quot;, iMon_Cooling);
+  dpConnect(&quot;dpEvent_CoolingStatus&quot;, status_Cooling);
+}
+
+// Cooling Voltage dp event
+void dpEvent_CoolingVoltage(string dpName, float newValue){
+  displayLCD_Voltage(newValue);
+}
+
+// Cooling Current dp event
+void dpEvent_CoolingCurrent(string dpName, float newValue){
+  displayLCD_Current(newValue);
+}
+
+// Cooling ON/OFF status dp event
+void dpEvent_CoolingStatus(string dpName, bool newValue){
+  display_PowerStatus(newValue);
+}]]></script>
+ </events>
+ <shapes>
+  <shape Name="LCD_Voltage" shapeType="LCD" layerId="0">
+   <properties>
+    <prop name="serialId">0</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">30 59.99999999999999</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_3DFace</prop>
+    <prop name="TabOrder">0</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">30 59.99999999999999</prop>
+    <prop name="Size">311 51</prop>
+    <extended>
+     <prop type="INT" name="decimals">2</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="LCD_Current" shapeType="LCD" layerId="0">
+   <properties>
+    <prop name="serialId">1</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">30 120</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_3DFace</prop>
+    <prop name="TabOrder">1</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">30 120</prop>
+    <prop name="Size">311 51</prop>
+    <extended>
+     <prop type="INT" name="decimals">2</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="L_MonVoltage" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">2</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">350 70</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">2</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">Voltage</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">350 70</prop>
+    <prop name="Size">27 31</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">V</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="L_MonCurrent" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">3</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">350 130</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">3</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">Voltage</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">350 130</prop>
+    <prop name="Size">27 31</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">A</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="REC_CooligStatus" shapeType="RECTANGLE" layerId="0">
+   <properties>
+    <prop name="serialId">4</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">610 380</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">WF_Frame</prop>
+    <prop name="TabOrder">4</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[solid]</prop>
+    <prop name="Geometry">2 0 0 1.571428571428571 -829.9999999999999 -537.142857142857</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Location">610 380</prop>
+    <prop name="Size">41 71</prop>
+    <prop name="CornerRadius">0</prop>
+    <prop name="Transformable">True</prop>
+   </properties>
+  </shape>
+  <shape Name="F_MON" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">5</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">20 329</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">5</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1.642857142857142 0 0 2.112676056338028 -12.85714285714284 -665.0704225352114</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">MON</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,13,5,50,1,0,0,0,0,Italic</prop>
+    </prop>
+    <prop name="Location">20 329</prop>
+    <prop name="Size">281 72</prop>
+   </properties>
+  </shape>
+  <shape Name="BUT_Settings" shapeType="PUSH_BUTTON" layerId="0">
+   <properties>
+    <prop name="serialId">15</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">500 71.3041970062548</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_ButtonText</prop>
+    <prop name="BackColor">_Button</prop>
+    <prop name="TabOrder">14</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">Settings</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">500 40</prop>
+    <prop name="Size">151 141</prop>
+    <prop name="BorderStyle">Styled</prop>
+    <prop name="Image" SharedPixmap="1">
+     <prop name="BackgroundPixmap">setting.svg</prop>
+    </prop>
+   </properties>
+   <events>
+    <script name="Clicked" isEscaped="1"><![CDATA[main(mapping event)
+{
+  openSettingsDialog();
+}]]></script>
+   </events>
+  </shape>
+  <shape Name="F_Cooling" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">17</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">20 329</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">15</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">2.321428571428571 0 0 2.676056338028166 -36.42857142857142 -880.4225352112667</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">COOLING</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">20 329</prop>
+    <prop name="Size">281 72</prop>
+   </properties>
+  </shape>
+  <shape Name="L_CoolingStatus" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">20</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">400 100</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">17</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">400 100</prop>
+    <prop name="Size">61 31</prop>
+    <extended>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">4</prop>
+    </extended>
+   </properties>
+  </shape>
+ </shapes>
+</panel>

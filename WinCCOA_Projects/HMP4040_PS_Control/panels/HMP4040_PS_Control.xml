@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel version="14">
+ <properties>
+  <prop name="Name">
+   <prop name="en_US.utf8"></prop>
+  </prop>
+  <prop name="Size">1299 738</prop>
+  <prop name="BackColor">_3DFace</prop>
+  <prop name="RefPoint">100 94</prop>
+  <prop name="InitAndTermRef">True</prop>
+  <prop name="SendClick">False</prop>
+  <prop name="RefFileName"></prop>
+  <prop name="DPI">96</prop>
+  <prop name="PDPI">90.59422903341648</prop>
+  <prop name="layoutType">None</prop>
+ </properties>
+ <shapes>
+  <reference parentSerial="-1" Name="PANEL_REF_CH1" referenceId="0">
+   <properties>
+    <prop name="FileName">ChannelWidget.xml</prop>
+    <prop name="Location">24 68.00000000000003</prop>
+    <prop name="Geometry">1 0 0 1 23.49999999999994 4.999999999999972</prop>
+    <prop name="TabOrder">1</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$dp_Ch_ref</prop>
+      <prop name="Value">1</prop>
+     </prop>
+     <prop name="dollarParameter">
+      <prop name="Dollar">$dp_PSU_ref</prop>
+      <prop name="Value">System1:ps1</prop>
+     </prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+   </properties>
+  </reference>
+  <reference parentSerial="-1" Name="PANEL_REF1" referenceId="1">
+   <properties>
+    <prop name="FileName">ChannelWidget.xml</prop>
+    <prop name="Location">29.5 267.625</prop>
+    <prop name="Geometry">1 0 0 1 18 -10.43750000000023</prop>
+    <prop name="TabOrder">2</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$dp_Ch_ref</prop>
+      <prop name="Value">2</prop>
+     </prop>
+     <prop name="dollarParameter">
+      <prop name="Dollar">$dp_PSU_ref</prop>
+      <prop name="Value">System1:ps1</prop>
+     </prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+   </properties>
+  </reference>
+  <reference parentSerial="-1" Name="PANEL_REF2" referenceId="2">
+   <properties>
+    <prop name="FileName">ChannelWidget.xml</prop>
+    <prop name="Location">29.01495361328125 447.875</prop>
+    <prop name="Geometry">1 0 0 1 18.48504638671875 -4.125000000000338</prop>
+    <prop name="TabOrder">3</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$dp_Ch_ref</prop>
+      <prop name="Value">3</prop>
+     </prop>
+     <prop name="dollarParameter">
+      <prop name="Dollar">$dp_PSU_ref</prop>
+      <prop name="Value">System1:ps1</prop>
+     </prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+   </properties>
+  </reference>
+  <reference parentSerial="-1" Name="PANEL_REF3" referenceId="3">
+   <properties>
+    <prop name="FileName">ChannelWidget.xml</prop>
+    <prop name="Location">28.5299072265625 628.25</prop>
+    <prop name="Geometry">1 0 0 1 18.9700927734375 0.4999999999996589</prop>
+    <prop name="TabOrder">4</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$dp_Ch_ref</prop>
+      <prop name="Value">4</prop>
+     </prop>
+     <prop name="dollarParameter">
+      <prop name="Dollar">$dp_PSU_ref</prop>
+      <prop name="Value">System1:ps1</prop>
+     </prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+   </properties>
+  </reference>
+  <shape Name="F_Channel1" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">74</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">0 169</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">5</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1.389999999999999 0 0 0.900523560209424 5.000000000000273 -154.1884816753927</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Channel 1</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">0 169</prop>
+    <prop name="Size">501 192</prop>
+   </properties>
+  </shape>
+  <shape Name="F_Channel2" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">144</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">0 169</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">6</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1.389999999999999 0 0 0.900523560209424 5.000000000000727 30.81151832460733</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Channel 2</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">0 169</prop>
+    <prop name="Size">501 192</prop>
+   </properties>
+  </shape>
+  <shape Name="F_Channel3" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">145</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">0 169</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">7</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1.389999999999997 0 0 0.900523560209424 5.000000000001468 216.3740183246072</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Channel 3</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">0 169</prop>
+    <prop name="Size">501 192</prop>
+   </properties>
+  </shape>
+  <shape Name="F_Channel4" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">146</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">0 169</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">8</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1.389999999999994 0 0 0.900523560209424 5.000000000002956 404.3740183246072</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Channel 4</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">0 169</prop>
+    <prop name="Size">501 192</prop>
+   </properties>
+  </shape>
+  <reference parentSerial="-1" Name="PANEL_REF4" referenceId="4">
+   <properties>
+    <prop name="FileName">PlotGUI.xml</prop>
+    <prop name="Location">780 74.73437499999977</prop>
+    <prop name="Geometry">0.9981851179673319 0 0 1.042857142857143 -47.56805807622491 -27.93727678571404</prop>
+    <prop name="TabOrder">9</prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+   </properties>
+  </reference>
+ </shapes>
+</panel>

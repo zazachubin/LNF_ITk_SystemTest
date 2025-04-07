@@ -1,0 +1,81 @@
+V 14
+1
+LANG:10001 0 
+PANEL,-1 -1 500 400 N "_3DFace" 0
+E E E E E 1 -1 -1 0  30 10
+""0  1
+E E 3
+"CBRef" "1"
+"EClose" E
+"dpi" "95.9161"
+0 0 0
+""
+DISPLAY_LAYER, 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0
+LAYER, 0 
+1
+LANG:10001 0 
+28 0
+"T2I"
+""
+1 7 5 E E E 1 E 1 E N "_3DText" E N "_3DFace" E E
+ E E
+0 0 0 0 0 0
+E E E
+0
+1
+LANG:10001 0 
+
+1
+"layoutAlignment" "AlignNone"
+1
+LANG:10001 30 Sans Serif,9,-1,5,50,0,0,0,0,0
+0  5 3 495 397
+E5 "MonFPGA" 1
+LANG:10001 7 MonFPGA
+0
+"ILockFPGA" 1
+LANG:10001 9 ILockFPGA
+0
+"GSS" 1
+LANG:10001 8 GSS Card
+0
+"IO" 1
+LANG:10001 7 IO Card
+0
+"T2I" 1
+LANG:10001 8 T2I Card
+1 "createDpts.pnl" 1
+LANG:10001 0 
+0
+
+
+0
+LAYER, 1 
+1
+LANG:10001 0 
+0
+LAYER, 2 
+1
+LANG:10001 0 
+0
+LAYER, 3 
+1
+LANG:10001 0 
+0
+LAYER, 4 
+1
+LANG:10001 0 
+0
+LAYER, 5 
+1
+LANG:10001 0 
+0
+LAYER, 6 
+1
+LANG:10001 0 
+0
+LAYER, 7 
+1
+LANG:10001 0 
+0
+0

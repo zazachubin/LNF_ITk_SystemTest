@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel version="14">
+ <properties>
+  <prop name="Name">
+   <prop name="en_US.utf8"></prop>
+  </prop>
+  <prop name="Size">284 150</prop>
+  <prop name="BackColor">_3DFace</prop>
+  <prop name="RefPoint">120 79</prop>
+  <prop name="InitAndTermRef">True</prop>
+  <prop name="SendClick">False</prop>
+  <prop name="RefFileName"></prop>
+  <prop name="DPI">96</prop>
+  <prop name="PDPI">90.59422903341648</prop>
+  <prop name="layoutType">None</prop>
+ </properties>
+ <events>
+  <script name="ScopeLib" isEscaped="1"><![CDATA[const string dpRef = $dpRef;
+
+const string dpChannelRef = $dpChannelRef;
+
+
+const string dpTest = dpRef + dpChannelRef;
+]]></script>
+  <script name="Initialize" isEscaped="1"><![CDATA[main()
+{
+  DebugN(dpTest);
+}]]></script>
+ </events>
+ <shapes>
+  <shape Name="CreateDPs" shapeType="PUSH_BUTTON" layerId="0">
+   <properties>
+    <prop name="serialId">5</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">88 64</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_ButtonText</prop>
+    <prop name="BackColor">_Button</prop>
+    <prop name="TabOrder">3</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,12,-1,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">88 50</prop>
+    <prop name="Size">131 51</prop>
+    <prop name="BorderStyle">Styled</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">CreateDPs</prop>
+    </prop>
+   </properties>
+   <events>
+    <script name="Clicked" isEscaped="1"><![CDATA[#uses &quot;test.ctl&quot;
+main(mapping event)
+{
+  Debug(&quot;==================================&quot;);
+  createDpts();
+}]]></script>
+   </events>
+  </shape>
+ </shapes>
+</panel>

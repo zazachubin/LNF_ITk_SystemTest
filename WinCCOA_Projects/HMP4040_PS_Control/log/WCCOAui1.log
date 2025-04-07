@@ -1,0 +1,3288 @@
+["Created Datapoint:"]["OPCUA_Var1"]["with Type:"]["MyOPCUAType"]
+["Created Datapoint:"]["OPCUA_Var1"]["with Type:"]["MyOPCUAType"]
+["Created Datapoint:"]["OPCUA_Var1"]["with Type:"]["MyOPCUAType"]
+["Created Datapoint:"]["OPCUA_Var1"]["with Type:"]["MyOPCUAType"]
+["Created Datapoint:"]["OPCUA_Var2"]["with Type:"]["MyOPCUAType"]
+["Created Datapoint:"]["OPCUA_Var3"]["with Type:"]["MyOPCUAType"]
+["Created Datapoint:"]["OPCUA_Var1"]["with Type:"]["MyOPCUAType"]
+["Created Datapoint:"]["OPCUA_Var2"]["with Type:"]["MyOPCUAType"]
+["Created Datapoint:"]["OPCUA_Var3"]["with Type:"]["MyOPCUAType"]
+["Assigned OPC UA Node:"]["ns=2;s=Machine1/Temperature"]["to DP:"]["OPCUA_Var1"]
+["Assigned OPC UA Node:"]["ns=2;s=Machine1/Temperature"]["to DP:"]["OPCUA_Var2"]
+["Assigned OPC UA Node:"]["ns=2;s=Machine1/Temperature"]["to DP:"]["OPCUA_Var3"]
+["Created Datapoint:"]["OPCUA_Var0"]["with Type:"]["MyOPCUAType"]
+["Created Datapoint:"]["OPCUA_Var1"]["with Type:"]["MyOPCUAType"]
+["Assigned OPC UA Node:"]["ns=2;s=Machine1/Pressure"]["to DP:"]["OPCUA_Var1"]
+["Created Datapoint:"]["OPCUA_Var2"]["with Type:"]["MyOPCUAType"]
+["Assigned OPC UA Node:"]["ns=2;s=Machine2/Speed"]["to DP:"]["OPCUA_Var2"]
+["Created Datapoint:"]["OPCUA_Var3"]["with Type:"]["MyOPCUAType"]
+["Assigned OPC UA Node:"]["ns=2;s=Machine1/Pressure"]["to DP:"]["OPCUA_Var1"]
+["Assigned OPC UA Node:"]["ns=2;s=Machine2/Speed"]["to DP:"]["OPCUA_Var2"]
+["Assigned OPC UA Node:"]["ns=2;s=Machine1/Temperature"]["to DP:"]["OPCUA_Var1"]
+["Assigned OPC UA Node:"]["ns=2;s=Machine1/Pressure"]["to DP:"]["OPCUA_Var2"]
+["Assigned OPC UA Node:"]["ns=2;s=Machine2/Speed"]["to DP:"]["OPCUA_Var3"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["✅ Created Datapoint:"]["OPCUA.channel1.actual.fuseTrip"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["✅ Created Datapoint:"]["OPCUA.channel1.actual.fuseTrip"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["✅ Datapoint creation and configuration completed."]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["✅ Datapoint creation and configuration completed."]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["SELECTED Channels:"][0]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Selected Channel:"]["channel1"]
+["✅ Datapoint creation and configuration completed."]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Selected Channel:"]["channel1"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Selected Channel:"]["channel1"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Selected Channel:"]["channel1"]
+["SELECTED Channels:"]["channel1"]
+["✅ Datapoint creation and configuration completed."]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Selected Channel:"]["channel1"]
+["SELECTED Channels:"]["channel1"]
+["✅ Datapoint creation and configuration completed."]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Selected Channel:"]["channel1"]
+["SELECTED Channels:"]["channel1"]
+["✅ Datapoint creation and configuration completed."]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["✅ Created Datapoint:"]["OPCUA.channel1.actual.fuseTrip"]
+["valve data point type created, result: "][0]
+[-1]
+[-1]
+[0]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Channels:"][dyn_string 4 items
+     1: "channel1"
+     2: "channel2"
+     3: "channel3"
+     4: "channel4"
+]
+["Groups:"][dyn_string 3 items
+     1: "actual"
+     2: "readbackSettings"
+     3: "settings"
+]
+["Actual Vars:"][dyn_string 5 items
+     1: "fuseTrip"
+     2: "iMon"
+     3: "isOn"
+     4: "trip"
+     5: "vMon"
+]
+["Readback Vars:"][dyn_string 12 items
+     1: "fuseDelay"
+     2: "fuseLink"
+     3: "fuseOnOff"
+     4: "i0"
+     5: "iRangeMax"
+     6: "iRangeMin"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+    11: "vRangeMax"
+    12: "vRangeMin"
+]
+["Settings Vars:"][dyn_string 10 items
+     1: "clearTrip"
+     2: "fuseDelay"
+     3: "fuseLink"
+     4: "fuseOnOff"
+     5: "fuseUnlink"
+     6: "i0"
+     7: "onOff"
+     8: "v0"
+     9: "vProtectionLevel"
+    10: "vProtectionMode"
+]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Processing Channel:"]["channel1"]
+["Processing Channel:"]["channel2"]
+["Processing Channel:"]["channel3"]
+["Processing Channel:"]["channel4"]
+["Processing Channel:"]["channel1"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["settings"]
+["Processing Channel:"]["channel2"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["settings"]
+["Processing Channel:"]["channel3"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["settings"]
+["Processing Channel:"]["channel4"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["settings"]
+["Processing Channel:"]["channel1"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["settings"]
+["Processing Channel:"]["channel1"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel1.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel1.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel1.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel1.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionMode"]
+["Processing Channel:"]["channel2"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel2.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel2.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel2.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel2.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionMode"]
+["Processing Channel:"]["channel3"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel3.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel3.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel3.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel3.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionMode"]
+["Processing Channel:"]["channel4"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel4.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel4.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel4.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel4.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionMode"]
+["Processing Channel:"]["channel1"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel1.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel1.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel1.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel1.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionMode"]
+["Processing Channel:"]["channel2"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel2.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel2.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel2.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel2.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionMode"]
+["Processing Channel:"]["channel3"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel3.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel3.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel3.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel3.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionMode"]
+["Processing Channel:"]["channel4"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel4.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel4.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel4.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel4.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionMode"]
+["Processing Channel:"]["channel1"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel1.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel1.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel1.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel1.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionMode"]
+["Processing Channel:"]["channel2"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel2.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel2.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel2.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel2.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionMode"]
+["Processing Channel:"]["channel3"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel3.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel3.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel3.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel3.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionMode"]
+["Processing Channel:"]["channel4"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel4.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel4.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel4.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel4.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionMode"]
+["Processing Channel:"]["channel1"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel1.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel1.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel1.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel1.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionMode"]
+["Processing Channel:"]["channel2"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel2.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel2.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel2.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel2.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionMode"]
+["Processing Channel:"]["channel3"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel3.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel3.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel3.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel3.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionMode"]
+["Processing Channel:"]["channel4"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel4.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel4.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel4.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel4.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionMode"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel1.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel1.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel1.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel1.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionMode"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel2.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel2.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel2.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel2.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionMode"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel3.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel3.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel3.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel3.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionMode"]
+["Processing parameters:"]["actual"]
+["Processing parameters:"]["TEST_PS.channel4.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel4.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel4.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.vMon"]
+["Processing parameters:"]["readbackSettings"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMin"]
+["Processing parameters:"]["settings"]
+["Processing parameters:"]["TEST_PS.channel4.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel1.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel1.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel1.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.vMon"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMin"]
+["Processing parameters:"]["TEST_PS.channel1.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel2.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel2.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel2.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.vMon"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMin"]
+["Processing parameters:"]["TEST_PS.channel2.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel3.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel3.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel3.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.vMon"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMin"]
+["Processing parameters:"]["TEST_PS.channel3.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel4.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel4.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel4.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.vMon"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMin"]
+["Processing parameters:"]["TEST_PS.channel4.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel1.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel1.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel1.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel1.actual.vMon"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel1.readbackSettings.vRangeMin"]
+["Processing parameters:"]["TEST_PS.channel1.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel1.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel1.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel1.settings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel2.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel2.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel2.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel2.actual.vMon"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel2.readbackSettings.vRangeMin"]
+["Processing parameters:"]["TEST_PS.channel2.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel2.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel2.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel2.settings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel3.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel3.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel3.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel3.actual.vMon"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel3.readbackSettings.vRangeMin"]
+["Processing parameters:"]["TEST_PS.channel3.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel3.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel3.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel3.settings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel4.actual.fuseTrip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.iMon"]
+["Processing parameters:"]["TEST_PS.channel4.actual.isOn"]
+["Processing parameters:"]["TEST_PS.channel4.actual.trip"]
+["Processing parameters:"]["TEST_PS.channel4.actual.vMon"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.iRangeMin"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vProtectionMode"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMax"]
+["Processing parameters:"]["TEST_PS.channel4.readbackSettings.vRangeMin"]
+["Processing parameters:"]["TEST_PS.channel4.settings.clearTrip"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseDelay"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseLink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseOnOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.fuseUnlink"]
+["Processing parameters:"]["TEST_PS.channel4.settings.i0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.onOff"]
+["Processing parameters:"]["TEST_PS.channel4.settings.v0"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionLevel"]
+["Processing parameters:"]["TEST_PS.channel4.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.vProtectionMode"]
+["✅ Datapoint creation and configuration completed."]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.vProtectionMode"]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.vProtectionMode"]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.vProtectionMode"]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoints deleting are completed."]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel1.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel1.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel1.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel2.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel2.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel2.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel3.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel3.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel3.settings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.fuseTrip"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.iMon"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.isOn"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.trip"]
+["Processing DPT generation:"]["TEST_PS.channel4.actual.vMon"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.iRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.iRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vProtectionMode"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vRangeMax"]
+["Processing DPT generation:"]["TEST_PS.channel4.readbackSettings.vRangeMin"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.clearTrip"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseDelay"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseLink"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseOnOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.fuseUnlink"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.i0"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.onOff"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.v0"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.vProtectionLevel"]
+["Processing DPT generation:"]["TEST_PS.channel4.settings.vProtectionMode"]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["already exists"]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["already exists"]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["already exists"]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoint creation and configuration completed."]
+["already exists"]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["Created Datapoint:"]["OPCUA_Var1"]["with Type:"]["MyOPCUAType"]
+["Assigned OPC UA Node:"]["ns=2;s=Machine1/Temperature"]["to DP:"]["OPCUA_Var1"]
+["Created Datapoint:"]["OPCUA_Var2"]["with Type:"]["MyOPCUAType"]
+["Assigned OPC UA Node:"]["ns=2;s=Machine1/Pressure"]["to DP:"]["OPCUA_Var2"]
+["Created Datapoint:"]["OPCUA_Var3"]["with Type:"]["MyOPCUAType"]
+["Assigned OPC UA Node:"]["ns=2;s=Machine2/Speed"]["to DP:"]["OPCUA_Var3"]
+ATTENTION: default value of option vblank_mode overridden by environment.
+ATTENTION: default value of option vblank_mode overridden by environment.
+Please register the custom scheme 'qthelp' via QWebEngineUrlScheme::registerScheme() before installing the custom scheme handler.
+["OPC UA Address assigned:"]["System1:ps5.channel1.actual.vMon"]["->"]["opc.tcp://localhost:4841/"]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+2025.04.02 12:05:32.909[""]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+2025.04.02 12:06:11.527[""]
+2025.04.02 12:06:12.833[""]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+2025.04.02 12:06:58.836[""]
+2025.04.02 12:08:36.819[""]
+2025.04.02 12:09:53.369[""]
+2025.04.02 12:09:58.249[""]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+2025.04.02 12:14:23.373[""]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+ATTENTION: default value of option vblank_mode overridden by environment.
+ATTENTION: default value of option vblank_mode overridden by environment.
+Please register the custom scheme 'qthelp' via QWebEngineUrlScheme::registerScheme() before installing the custom scheme handler.
+[358998:359054:0402/164749.309035:ERROR:command_buffer_proxy_impl.cc(141)] ContextResult::kTransientFailure: Failed to send GpuChannelMsg_CreateCommandBuffer.
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+2025.04.02 17:06:27.434[""]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+2025.04.02 17:06:54.069[""]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+ATTENTION: default value of option vblank_mode overridden by environment.
+ATTENTION: default value of option vblank_mode overridden by environment.
+Please register the custom scheme 'qthelp' via QWebEngineUrlScheme::registerScheme() before installing the custom scheme handler.
+[387665:387721:0402/172630.008676:ERROR:command_buffer_proxy_impl.cc(141)] ContextResult::kTransientFailure: Failed to send GpuChannelMsg_CreateCommandBuffer.
+["✅ Datapoints deleting are completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]
+["✅ Datapoints deleting are completed."]
+["✅ Datapoint creation and configuration completed."]

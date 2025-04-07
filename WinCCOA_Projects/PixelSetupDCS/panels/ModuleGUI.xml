@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel version="14">
+ <properties>
+  <prop name="Name">
+   <prop name="en_US.utf8"></prop>
+  </prop>
+  <prop name="Size">283 278</prop>
+  <prop name="BackColor">_3DFace</prop>
+  <prop name="RefPoint">40 50</prop>
+  <prop name="InitAndTermRef">True</prop>
+  <prop name="SendClick">False</prop>
+  <prop name="RefFileName"></prop>
+  <prop name="DPI">96</prop>
+  <prop name="PDPI">90.59422903341648</prop>
+  <prop name="layoutType">None</prop>
+ </properties>
+ <events>
+  <script name="ScopeLib" isEscaped="1"><![CDATA[#uses &quot;lib&quot;
+
+const string dpRef = $dpRef;
+
+const string dpVoltage = dpRef + &quot;.Voltage&quot;;
+const string dpCurrent = dpRef + &quot;.Current&quot;;
+const string dpTemperature = dpRef + &quot;.Temperature&quot;;
+
+//const string dpFE1_Status = dpRef + &quot;.FE1_Status&quot;;
+//const string dpFE2_Status = dpRef + &quot;.FE2_Status&quot;;
+//const string dpFE3_Status = dpRef + &quot;.FE3_Status&quot;;
+//const string dpFE4_Status = dpRef + &quot;.FE4_Status&quot;;
+
+
+const string DECODING_LINK_ALIGNED_00_Ch1 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_00.Ch1&quot;;
+const string DECODING_LINK_ALIGNED_00_Ch2 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_00.Ch2&quot;;
+const string DECODING_LINK_ALIGNED_00_Ch3 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_00.Ch3&quot;;
+const string DECODING_LINK_ALIGNED_00_Ch4 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_00.Ch4&quot;;
+const string DECODING_LINK_ALIGNED_00_Ch5 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_00.Ch5&quot;;
+const string DECODING_LINK_ALIGNED_00_Ch6 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_00.Ch6&quot;;
+
+const string DECODING_LINK_ALIGNED_01_Ch1 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_01.Ch1&quot;;
+const string DECODING_LINK_ALIGNED_01_Ch2 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_01.Ch2&quot;;
+const string DECODING_LINK_ALIGNED_01_Ch3 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_01.Ch3&quot;;
+const string DECODING_LINK_ALIGNED_01_Ch4 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_01.Ch4&quot;;
+const string DECODING_LINK_ALIGNED_01_Ch5 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_01.Ch5&quot;;
+const string DECODING_LINK_ALIGNED_01_Ch6 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_01.Ch6&quot;;
+
+const string DECODING_LINK_ALIGNED_02_Ch1 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_02.Ch1&quot;;
+const string DECODING_LINK_ALIGNED_02_Ch2 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_02.Ch2&quot;;
+const string DECODING_LINK_ALIGNED_02_Ch3 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_02.Ch3&quot;;
+const string DECODING_LINK_ALIGNED_02_Ch4 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_02.Ch4&quot;;
+const string DECODING_LINK_ALIGNED_02_Ch5 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_02.Ch5&quot;;
+const string DECODING_LINK_ALIGNED_02_Ch6 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_02.Ch6&quot;;
+
+const string DECODING_LINK_ALIGNED_03_Ch1 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_03.Ch1&quot;;
+const string DECODING_LINK_ALIGNED_03_Ch2 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_03.Ch2&quot;;
+const string DECODING_LINK_ALIGNED_03_Ch3 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_03.Ch3&quot;;
+const string DECODING_LINK_ALIGNED_03_Ch4 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_03.Ch4&quot;;
+const string DECODING_LINK_ALIGNED_03_Ch5 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_03.Ch5&quot;;
+const string DECODING_LINK_ALIGNED_03_Ch6 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_03.Ch6&quot;;
+
+
+// Display Module Voltage on LCD
+void displayLCD_ModuleVoltage(float newValue){
+  LCD_Voltage.value(newValue);
+}
+
+// Display Module Current on LCD
+void displayLCD_ModuleCurrent(float newValue){
+  LCD_Current.value(newValue);
+}
+
+// Display Module Temperature on LCD
+void displayLCD_ModuleTemperature(float newValue){
+  LCD_Temperature.value(newValue);
+}
+
+void updateFEsAlignment(bool FE1_Status, bool FE2_Status, bool FE3_Status, bool FE4_Status)
+{
+  if (FE1_Status)
+      setValue(&quot;REC_FE1&quot;, &quot;backCol&quot;, &quot;green&quot;);
+    else
+      setValue(&quot;REC_FE1&quot;, &quot;backCol&quot;, &quot;red&quot;);
+
+    if (FE2_Status)
+      setValue(&quot;REC_FE2&quot;, &quot;backCol&quot;, &quot;green&quot;);
+    else
+      setValue(&quot;REC_FE2&quot;, &quot;backCol&quot;, &quot;red&quot;);
+
+    if (FE3_Status)
+      setValue(&quot;REC_FE3&quot;, &quot;backCol&quot;, &quot;green&quot;);
+    else
+      setValue(&quot;REC_FE3&quot;, &quot;backCol&quot;, &quot;red&quot;);
+
+    if (FE4_Status)
+      setValue(&quot;REC_FE4&quot;, &quot;backCol&quot;, &quot;green&quot;);
+    else
+      setValue(&quot;REC_FE4&quot;, &quot;backCol&quot;, &quot;red&quot;);
+}
+
+// Display FEs Alignment
+void displayFEsAlignment()
+{
+  bool FE1_Status = FALSE;
+  bool FE2_Status = FALSE;
+  bool FE3_Status = FALSE;
+  bool FE4_Status = FALSE;
+
+  int DP_index = DPs_Selector.currentIndex();
+
+  switch(DP_index)
+  {
+
+  case 0 :
+    {
+      dpGet(DECODING_LINK_ALIGNED_01_Ch2, FE1_Status);
+      dpGet(DECODING_LINK_ALIGNED_01_Ch3, FE2_Status);
+      dpGet(DECODING_LINK_ALIGNED_01_Ch4, FE3_Status);
+      dpGet(DECODING_LINK_ALIGNED_01_Ch1, FE4_Status);
+
+      updateFEsAlignment(FE1_Status, FE2_Status, FE3_Status, FE4_Status);
+      break;
+    }
+  case 1 :
+    {
+      dpGet(DECODING_LINK_ALIGNED_00_Ch2, FE1_Status);
+      dpGet(DECODING_LINK_ALIGNED_00_Ch3, FE2_Status);
+      dpGet(DECODING_LINK_ALIGNED_00_Ch4, FE3_Status);
+      dpGet(DECODING_LINK_ALIGNED_00_Ch1, FE4_Status);
+
+      updateFEsAlignment(FE1_Status, FE2_Status, FE3_Status, FE4_Status);
+      break;
+    }
+
+  case 2 :
+    {
+      dpGet(DECODING_LINK_ALIGNED_02_Ch2, FE1_Status);
+      dpGet(DECODING_LINK_ALIGNED_00_Ch5, FE2_Status);
+      dpGet(DECODING_LINK_ALIGNED_00_Ch6, FE3_Status);
+      dpGet(DECODING_LINK_ALIGNED_02_Ch1, FE4_Status);
+
+      updateFEsAlignment(FE1_Status, FE2_Status, FE3_Status, FE4_Status);
+      break;
+    }
+
+  case 3 :
+    {
+      dpGet(DECODING_LINK_ALIGNED_03_Ch2, FE1_Status);
+      dpGet(DECODING_LINK_ALIGNED_01_Ch5, FE2_Status);
+      dpGet(DECODING_LINK_ALIGNED_01_Ch6, FE3_Status);
+      dpGet(DECODING_LINK_ALIGNED_03_Ch1, FE4_Status);
+
+      updateFEsAlignment(FE1_Status, FE2_Status, FE3_Status, FE4_Status);
+      break;
+    }
+
+  case 4 :
+    {
+      dpGet(DECODING_LINK_ALIGNED_03_Ch4, FE1_Status);
+      dpGet(DECODING_LINK_ALIGNED_03_Ch5, FE2_Status);
+      dpGet(DECODING_LINK_ALIGNED_03_Ch6, FE3_Status);
+      dpGet(DECODING_LINK_ALIGNED_03_Ch3, FE4_Status);
+
+      updateFEsAlignment(FE1_Status, FE2_Status, FE3_Status, FE4_Status);
+      break;
+    }
+
+  case 5 :
+    {
+      dpGet(DECODING_LINK_ALIGNED_02_Ch4, FE1_Status);
+      dpGet(DECODING_LINK_ALIGNED_02_Ch5, FE2_Status);
+      dpGet(DECODING_LINK_ALIGNED_02_Ch6, FE3_Status);
+      dpGet(DECODING_LINK_ALIGNED_02_Ch3, FE4_Status);
+
+      updateFEsAlignment(FE1_Status, FE2_Status, FE3_Status, FE4_Status);
+      break;
+    }
+
+  default: {
+
+    Debug(&quot;Default&quot;);
+    break;
+
+  }
+ }
+
+}
+
+
+
+]]></script>
+  <script name="Initialize" isEscaped="1"><![CDATA[main()
+{
+  dpConnect(&quot;dpEvent_ModuleVoltage&quot;, dpVoltage);
+  dpConnect(&quot;dpEvent_ModuleCurrent&quot;, dpCurrent);
+  dpConnect(&quot;dpEvent_ModuleTemperature&quot;, dpTemperature);
+
+  // Elinks dps change event
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_00_Ch1);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_00_Ch2);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_00_Ch3);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_00_Ch4);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_00_Ch5);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_00_Ch6);
+
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_01_Ch1);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_01_Ch2);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_01_Ch3);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_01_Ch4);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_01_Ch5);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_01_Ch6);
+
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_02_Ch1);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_02_Ch2);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_02_Ch3);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_02_Ch4);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_02_Ch5);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_02_Ch6);
+
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_03_Ch1);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_03_Ch2);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_03_Ch3);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_03_Ch4);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_03_Ch5);
+  dpConnect(&quot;dpEvent_ElinksAlignment&quot;, DECODING_LINK_ALIGNED_03_Ch6);
+
+}
+
+// Callback function
+void dpEvent_ModuleVoltage(string dpName, float newValue){
+  displayLCD_ModuleVoltage(newValue);
+}
+
+// Callback function
+void dpEvent_ModuleCurrent(string dpName, float newValue){
+  displayLCD_ModuleCurrent(newValue);
+}
+
+// Callback function
+void dpEvent_ModuleTemperature(string dpName, float newValue){
+  displayLCD_ModuleTemperature(newValue);
+}
+
+// FE1 Alignment dp event
+void dpEvent_ElinksAlignment(string dpName, bool newValue){
+  displayFEsAlignment();
+}]]></script>
+ </events>
+ <shapes>
+  <shape Name="REC_MODULE" shapeType="RECTANGLE" layerId="0">
+   <properties>
+    <prop name="serialId">0</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">40 50</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">WF_Warning</prop>
+    <prop name="TabOrder">0</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[solid]</prop>
+    <prop name="Geometry">0.7297297297297295 0 0 0.8125 -25.18918918918918 -32.95833333333334</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Location">40 50</prop>
+    <prop name="Size">371 321</prop>
+    <prop name="CornerRadius">0</prop>
+    <prop name="Transformable">True</prop>
+   </properties>
+  </shape>
+  <shape Name="REC_FE1" shapeType="RECTANGLE" layerId="0">
+   <properties>
+    <prop name="serialId">3</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">60 50</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">WF_Frame</prop>
+    <prop name="TabOrder">2</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[none,oneColor,JoinRound,CapRound,10]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[solid]</prop>
+    <prop name="Geometry">1.5 0 0 0.6666666666666666 -76.00000000000001 -15.66666666666667</prop>
+    <prop name="BorderStyle">Raised</prop>
+    <prop name="Location">60 50</prop>
+    <prop name="Size">81 61</prop>
+    <prop name="CornerRadius">0</prop>
+    <prop name="Transformable">True</prop>
+   </properties>
+  </shape>
+  <shape Name="REC_FE4" shapeType="RECTANGLE" layerId="0">
+   <properties>
+    <prop name="serialId">5</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">60 50</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">WF_Frame</prop>
+    <prop name="TabOrder">4</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[none,oneColor,JoinRound,CapRound,10]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[solid]</prop>
+    <prop name="Geometry">1.5 0 0 0.6642857142857144 54 -15.54761904761904</prop>
+    <prop name="BorderStyle">Raised</prop>
+    <prop name="Location">60 50</prop>
+    <prop name="Size">81 61</prop>
+    <prop name="CornerRadius">0</prop>
+    <prop name="Transformable">True</prop>
+   </properties>
+  </shape>
+  <shape Name="REC_FE3" shapeType="RECTANGLE" layerId="0">
+   <properties>
+    <prop name="serialId">6</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">60 50</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">WF_Frame</prop>
+    <prop name="TabOrder">5</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[none,oneColor,JoinRound,CapRound,10]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[solid]</prop>
+    <prop name="Geometry">1.5 0 0 0.6642857142857147 54 34.45238095238093</prop>
+    <prop name="BorderStyle">Raised</prop>
+    <prop name="Location">60 50</prop>
+    <prop name="Size">81 61</prop>
+    <prop name="CornerRadius">0</prop>
+    <prop name="Transformable">True</prop>
+   </properties>
+  </shape>
+  <shape Name="REC_FE2" shapeType="RECTANGLE" layerId="0">
+   <properties>
+    <prop name="serialId">7</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">60 50</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">WF_Frame</prop>
+    <prop name="TabOrder">6</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[none,oneColor,JoinRound,CapRound,10]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[solid]</prop>
+    <prop name="Geometry">1.5 0 0 0.6666666666666672 -76.00000000000001 34.33333333333331</prop>
+    <prop name="BorderStyle">Raised</prop>
+    <prop name="Location">60 50</prop>
+    <prop name="Size">81 61</prop>
+    <prop name="CornerRadius">0</prop>
+    <prop name="Transformable">True</prop>
+   </properties>
+  </shape>
+  <shape Name="LCD_Voltage" shapeType="LCD" layerId="0">
+   <properties>
+    <prop name="serialId">8</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">154 130</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_3DFace</prop>
+    <prop name="TabOrder">7</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">154 130</prop>
+    <prop name="Size">91 48</prop>
+    <extended>
+     <prop type="INT" name="decimals">2</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="LCD_Current" shapeType="LCD" layerId="0">
+   <properties>
+    <prop name="serialId">9</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">154 180</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_3DFace</prop>
+    <prop name="TabOrder">8</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">154 180</prop>
+    <prop name="Size">91 43</prop>
+    <extended>
+     <prop type="INT" name="decimals">2</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="F_Set" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">10</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">50 139</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">9</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1.333333333333333 0 0 1.96174863387978 -52.66666666666671 -164.6830601092895</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Temperature [°C]</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,13,5,50,1,0,0,0,0,Italic</prop>
+    </prop>
+    <prop name="Location">50 139</prop>
+    <prop name="Size">91 62</prop>
+   </properties>
+  </shape>
+  <shape Name="F_MON" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">11</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">50 139</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">10</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1.333333333333333 0 0 1.978142076502733 77.33333333333333 -167.9617486338798</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">MON</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,13,5,50,1,0,0,0,0,Italic</prop>
+    </prop>
+    <prop name="Location">50 139</prop>
+    <prop name="Size">91 62</prop>
+   </properties>
+  </shape>
+  <shape Name="LCD_Temperature" shapeType="LCD" layerId="0">
+   <properties>
+    <prop name="serialId">12</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">23.99999999999998 130</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_3DFace</prop>
+    <prop name="TabOrder">11</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">23.99999999999998 130</prop>
+    <prop name="Size">101 89</prop>
+    <extended>
+     <prop type="INT" name="decimals">2</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="L_FE1" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">18</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">44 17.66666666666666</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">17</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">FE1</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">44 17.66666666666666</prop>
+    <prop name="Size">61 41</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">FE1</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="L_FE2" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">19</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">44 67.66666666666667</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">18</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">FE2</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">44 67.66666666666667</prop>
+    <prop name="Size">61 41</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">FE2</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="L_FE3" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">20</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">174 67.66666666666667</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">19</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">FE3</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">174 67.66666666666667</prop>
+    <prop name="Size">61 40</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">FE3</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="L_FE4" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">21</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">174 17.66666666666667</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">20</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">FE4</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">174 17.66666666666667</prop>
+    <prop name="Size">61 40</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">FE4</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="L_Voltage" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">23</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">244 138.8333333333333</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">22</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">Voltage</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">244 138.8333333333333</prop>
+    <prop name="Size">21 30</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">V</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="L_Current" shapeType="Label" layerId="0">
+   <properties>
+    <prop name="serialId">24</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">244 186.5</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_Transparent</prop>
+    <prop name="TabOrder">23</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">Voltage</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">244 186.5</prop>
+    <prop name="Size">21 30</prop>
+    <extended>
+     <prop type="CHAR_STRING" name="text">A</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+     <prop type="ENUM" name="alignment">132</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="DPs_Selector" shapeType="COMBO_BOX" layerId="0">
+   <properties>
+    <prop name="serialId">27</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">73.99999999999996 232.4666666666667</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">_Window</prop>
+    <prop name="TabOrder">25</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">73.99999999999996 232.4666666666667</prop>
+    <prop name="Size">131 31</prop>
+    <prop name="Listitems">
+     <prop name="Item">
+      <prop name="Text">
+       <prop name="en_US.utf8">DP1</prop>
+      </prop>
+      <prop name="Select">False</prop>
+     </prop>
+     <prop name="Item">
+      <prop name="Text">
+       <prop name="en_US.utf8">DP2</prop>
+      </prop>
+      <prop name="Select">False</prop>
+     </prop>
+     <prop name="Item">
+      <prop name="Text">
+       <prop name="en_US.utf8">DP3</prop>
+      </prop>
+      <prop name="Select">False</prop>
+     </prop>
+     <prop name="Item">
+      <prop name="Text">
+       <prop name="en_US.utf8">DP4</prop>
+      </prop>
+      <prop name="Select">False</prop>
+     </prop>
+     <prop name="Item">
+      <prop name="Text">
+       <prop name="en_US.utf8">DP5</prop>
+      </prop>
+      <prop name="Select">False</prop>
+     </prop>
+     <prop name="Item">
+      <prop name="Text">
+       <prop name="en_US.utf8">DP6</prop>
+      </prop>
+      <prop name="Select">False</prop>
+     </prop>
+    </prop>
+    <prop name="Editable">True</prop>
+   </properties>
+   <events>
+    <script name="Changed" isEscaped="1"><![CDATA[main()
+{
+  displayFEsAlignment();
+}]]></script>
+   </events>
+  </shape>
+ </shapes>
+ <groups>
+  <layout parentSerial="-1" Name="LAYOUT_GROUP1" serial="0">
+   <properties>
+    <prop name="shapeSerial">0</prop>
+    <prop name="shapeSerial">5</prop>
+    <prop name="isContainerShape">True</prop>
+    <prop name="layoutType">VBox</prop>
+   </properties>
+  </layout>
+ </groups>
+</panel>

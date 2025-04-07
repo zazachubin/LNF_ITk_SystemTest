@@ -1,0 +1,8 @@
+[general]
+pvss_path = "/opt/WinCC_OA/3.19"
+proj_path = "/home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/HMP4040_PS_Control"
+proj_version = "3.19"
+langs = "en_US.utf8"
+useNGA = 1
+[ui]
+defaultFont = "Noto Sans"

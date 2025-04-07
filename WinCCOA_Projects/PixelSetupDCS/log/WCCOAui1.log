@@ -1,0 +1,930 @@
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.11.29 11:23:06.351, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/dcs_itkpixsr1st/ATLITPLISSY/panels/lissy-sr1-pix.pnl [dcs_itkpixsr1st/ATLITPLISSY/panels/lissy-sr1-pix.pnl]
+    Object: 657 named: "TF_MONFPGA_HEARTBEAT" of type: TEXT_FIELD
+    Script: Initialize
+    Line: 13, dpConnect, MonitorController/Crate1/MonFPGA.alive
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.11.29 11:23:06.351, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/dcs_itkpixsr1st/ATLITPLISSY/panels/lissy-sr1-pix.pnl [dcs_itkpixsr1st/ATLITPLISSY/panels/lissy-sr1-pix.pnl]
+    Object: 954 named: "TF_OPCUA_STATUS" of type: TEXT_FIELD
+    Script: Initialize
+    Line: 11, dpConnect, _mon_opcua_server.State.ConnState
+
+]
+["adc_chan<32760"][14747]
+["Temp in degC = "][30.279]
+["adc_chan<32760"][14744]
+["Temp in degC = "][30.289]
+["adc_chan<32760"][14745]
+["Temp in degC = "][30.2857]
+["adc_chan<32760"][14746]
+["Temp in degC = "][30.2823]
+["adc_chan<32760"][14745]
+["Temp in degC = "][30.2857]
+["adc_chan<32760"][14735]
+["Temp in degC = "][30.3187]
+["adc_chan<32760"][14737]
+["Temp in degC = "][30.3121]
+["adc_chan<32760"][14736]
+["Temp in degC = "][30.3154]
+["adc_chan<32760"][14735]
+["Temp in degC = "][30.3187]
+["adc_chan<32760"][14737]
+["Temp in degC = "][30.3121]
+["adc_chan<32760"][14731]
+["Temp in degC = "][30.3319]
+["adc_chan<32760"][14729]
+["Temp in degC = "][30.3386]
+["adc_chan<32760"][14730]
+["Temp in degC = "][30.3352]
+["adc_chan<32760"][14729]
+["Temp in degC = "][30.3386]
+["adc_chan<32760"][14730]
+["Temp in degC = "][30.3352]
+["adc_chan<32760"][14727]
+["Temp in degC = "][30.3452]
+["adc_chan<32760"][14728]
+["Temp in degC = "][30.3419]
+["adc_chan<32760"][14727]
+["Temp in degC = "][30.3452]
+["adc_chan<32760"][14729]
+["Temp in degC = "][30.3386]
+["adc_chan<32760"][14731]
+["Temp in degC = "][30.3319]
+["adc_chan<32760"][14730]
+["Temp in degC = "][30.3352]
+["adc_chan<32760"][14728]
+["Temp in degC = "][30.3419]
+["adc_chan<32760"][14736]
+["Temp in degC = "][30.3154]
+["adc_chan<32760"][14735]
+["Temp in degC = "][30.3187]
+["adc_chan<32760"][14736]
+["Temp in degC = "][30.3154]
+["adc_chan<32760"][14735]
+["Temp in degC = "][30.3187]
+["adc_chan<32760"][14736]
+["Temp in degC = "][30.3154]
+["adc_chan<32760"][14734]
+["Temp in degC = "][30.322]
+["adc_chan<32760"][14735]
+["Temp in degC = "][30.3187]
+["adc_chan<32760"][14734]
+["Temp in degC = "][30.322]
+["adc_chan<32760"][14733]
+["Temp in degC = "][30.3253]
+["adc_chan<32760"][14723]
+["Temp in degC = "][30.3584]
+["adc_chan<32760"][14725]
+["Temp in degC = "][30.3518]
+["adc_chan<32760"][14724]
+["Temp in degC = "][30.3551]
+["adc_chan<32760"][14722]
+["Temp in degC = "][30.3617]
+["adc_chan<32760"][14723]
+["Temp in degC = "][30.3584]
+["adc_chan<32760"][14722]
+["Temp in degC = "][30.3617]
+["adc_chan<32760"][14724]
+["Temp in degC = "][30.3551]
+["adc_chan<32760"][14725]
+["Temp in degC = "][30.3518]
+["adc_chan<32760"][14726]
+["Temp in degC = "][30.3485]
+["adc_chan<32760"][14724]
+["Temp in degC = "][30.3551]
+["Test"]["Test"]["Test"]["Test"]["Test"]["Test"]["Test"]["Test"]["Test"]["Test"]["Test"]["Test"]["Test"]["Test"][-1][-1][-1][-1][-1][-1][-1][-1][-1][-1][-1][-1][-1][-1][-1][-1][7.293][7.293][7.294][7.294][7.296][7.296][7.298][7.298][7.299][7.299][7.3][7.3][7.301][7.301][7.302][7.302][7.303][7.303][7.305][7.305][7.306][7.306][7.307][7.307][0][0][0][0][0][0][5.466][5.466][5.799][5.799][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][5.658][5.658][5.885][5.885][6.072][6.072][6.215][6.215][6.328][6.328][6.422][6.422][6.512][6.512][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][5.399][5.399][5.727][5.727][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0]["System1:ModulesSPChain"]
+["System1:COOLING"]
+[0][0]["System1:ModulesSPChain"]
+["System1:COOLING"]
+[0][0][0][0]["System1:ModulesSPChain"]
+["System1:COOLING"]
+[0][0][0][0][0][0]["System1:ModulesSPChain"]
+["System1:COOLING"]
+[0][0][0][0]["System1:ModulesSPChain"]
+["System1:COOLING"]
+[0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0][0]["System1:Module1"]
+["System1:Module2"]
+[0][0]["System1:Module1"]
+["System1:Module2"]
+["System1:Module1"]
+[0][0][0][0][0][0][0][0][0][0][0][0][0][0]["System1:Module2"]
+["System1:Module2"]
+[0][0]["System1:Module2"]
+[0][0]["System1:Module1"]
+[0][0][0][0][0][0]["System1:Module1.Temperature"]
+[522.522]
+["System1:Module2.Temperature"]
+[522.451]
+[0][0]["System1:Module1.Temperature"]
+[522.57]
+["System1:Module2.Temperature"]
+[522.618]
+[0][0][0][0][0][0][0][0][0][0]["System1:Module1.Temperature"]
+[522.594]
+["System1:Module1.Temperature"]
+[522.57]
+[0][0]["System1:Module1.Temperature"]
+[522.594]
+[0][0]["System1:Module1.Temperature"]
+[522.57]
+["System1:Module1.Temperature"]
+[522.594]
+[0][0][0][0][0][0]["System1:Module1.Temperature"]
+[522.618]
+[0][0]["System1:Module2.Temperature"]
+[522.594]
+[0][0][0][0]["System1:Module2.Temperature"]
+[522.618]
+["System1:Module2.Temperature"]
+[522.594]
+[0][0]["System1:Module2.Temperature"]
+[522.618]
+[0][0]["System1:Module1.Temperature"]
+[522.641]
+["System1:Module1.Temperature"]
+[522.618]
+[0][0]["System1:Module1.Temperature"]
+[522.641]
+[0][0]["System1:Module2.Temperature"]
+[522.594]
+[0][0]["System1:Module1.Temperature"]
+[522.665]
+["System1:Module2.Temperature"]
+[522.618]
+["System1:Module1.Temperature"]
+[522.641]
+["System1:Module1.Temperature"]
+[522.665]
+["System1:Module2.Temperature"]
+[522.594]
+[0][0]["System1:Module2.Temperature"]
+[522.618]
+["System1:Module2.Temperature"]
+[522.594]
+[0][0]["System1:Module1.Temperature"]
+[522.689]
+["System1:Module2.Temperature"]
+[522.618]
+[0][0]["System1:Module2.Temperature"]
+[522.594]
+[0][0]["System1:Module2.Temperature"]
+[522.618]
+["System1:Module2.Temperature"]
+[522.594]
+[0][0][0][0]["System1:Module1.Temperature"]
+[522.713]
+["System1:Module1.Temperature"]
+[522.689]
+[0][0]["System1:Module1.Temperature"]
+[522.713]
+[0][0][0][0]["System1:Module1.Temperature"]
+[522.737]
+[0][0]["System1:Module1.Temperature"]
+[522.761]
+[0][0][0][0]["System1:Module1.Temperature"]
+[522.761]
+["System1:Module2.Temperature"]
+[522.594]
+[0][0]["System1:Module1.Temperature"]
+[522.761]
+["System1:Module2.Temperature"]
+[522.594]
+[0][0][0][0][0][0][5.45][5.45][5.78][5.78][0][0][0][0][0][0][0][0][5.407][5.407][5.811][5.811][5.954][5.954][6.09][6.09][6.2][6.2][6.274][6.274][6.349][6.349][6.411][6.411][6.875][6.875][6.881][6.881][6.888][6.888][6.894][6.894][6.9][6.9][6.907][6.907][6.91][6.91][6.913][6.913][TRUE]
+[TRUE]
+[TRUE]
+[TRUE]
+[TRUE]
+[-1]
+[TRUE]
+[TRUE]
+[TRUE]
+[10]
+[10.5]
+[10.5]
+[65528]
+[15]
+["ERROR: Could not read number of channels for OUT card"][""]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[1326923:7:1212/171145.967677:ERROR:command_buffer_proxy_impl.cc(141)] ContextResult::kTransientFailure: Failed to send GpuChannelMsg_CreateCommandBuffer.
+ATTENTION: default value of option vblank_mode overridden by environment.
+Please register the custom scheme 'qthelp' via QWebEngineUrlScheme::registerScheme() before installing the custom scheme handler.
+[1327502:1327560:1212/171240.406562:ERROR:command_buffer_proxy_impl.cc(141)] ContextResult::kTransientFailure: Failed to send GpuChannelMsg_CreateCommandBuffer.
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+["Event"]
+libEGL warning: DRI2: failed to authenticate
+ATTENTION: default value of option vblank_mode overridden by environment.
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[16085]
+[16083]
+[16082]
+[16080]
+[16079]
+[16077]
+[16076]
+[16074]
+[16072]
+[16071]
+[16070]
+[16068]
+[16067]
+[16066]
+[16064]
+[16063]
+[16062]
+[16060]
+[16059]
+[16058]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[".setVoltage"]
+[".setVoltage"]
+[65528]
+[15]
+[".readBackVoltage"]
+[".readBackVoltage"]
+[".readBackVoltage"]
+[".readBackVoltage"]
+[".readBackVoltage"]
+[".readBackVoltage"]
+[".readBackVoltage"]
+[".readBackVoltage"]
+[".readBackVoltage"]
+[""]
+[""]
+["System1:PSU_HMP4040.Channel1"]
+["System1:PSU_HMP4040.Channel1"]
+["System1:PSU_HMP4040.Channel2"]
+["System1:PSU_HMP4040.Channel2"]
+["System1:PSU_HMP4040.Channel2"]
+["System1:PSU_HMP4040.Channel2"]
+["System1:PSU_HMP4040.Channel2"]
+["System1:PSU_HMP4040.Channel2"]
+[0]
+[0]
+["System1:PSU_HMP4040.Channel1.setVoltage"]
+["System1:PSU_HMP4040.Channel1.setVoltage"]
+[""]
+[""]
+["System1:PSU_HMP4040.Channel1.readBackVoltage"]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+[65528]
+[15]
+["00000011111100000011111100000011"]
+[65528]
+[15]
+[0]
+[65528]
+["00000000000000001111111111111000"]
+[15]
+[65528]
+["00000000000000001111111111111000"]
+[15]
+[65528]
+["00000000000000001111111111111000"]
+[15]
+["00000000000000000000000000001111"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.673, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 28 named: "E_OUT_CH20_C20_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_b
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.673, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 29 named: "E_OUT_CH20_C19_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_b
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.674, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 30 named: "E_OUT_CH20_C18_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_b
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.674, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 31 named: "E_OUT_CH20_C17_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_b
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.674, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 32 named: "E_OUT_CH20_C16_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.674, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 33 named: "E_OUT_CH20_C15_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.674, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 34 named: "E_OUT_CH20_C14_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.674, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 35 named: "E_OUT_CH20_C13_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.674, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 36 named: "E_OUT_CH20_C12_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.674, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 37 named: "E_OUT_CH20_C11_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.675, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 38 named: "E_OUT_CH20_C10_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.675, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 39 named: "E_OUT_CH20_C9_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.675, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 40 named: "E_OUT_CH20_C8_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.675, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 41 named: "E_OUT_CH20_C7_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.675, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 42 named: "E_OUT_CH20_C6_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.675, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 43 named: "E_OUT_CH20_C5_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.675, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 44 named: "E_OUT_CH20_C4_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.675, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 45 named: "E_OUT_CH20_C3_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.676, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 46 named: "E_OUT_CH20_C2_STATUS" of type: ELLIPSE
+    Script: Initialize
+    Line: 6, dpConnect, System1:MonitorController/Crate1/DigitalIO_s9.out_a
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:09:42.676, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 49 named: "TF_OUT_CH20_OPCUA_STATUS" of type: TEXT_FIELD
+    Script: Initialize
+    Line: 19, dpConnect, System1:MonitorController/Crate1/MonFPGA.heartbeat
+
+]
+["T_ERR"]["00000000000000001111111111111000"]["T_ERR===========>"][0]["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["DP Name: "]["System1:"]
+["position of DigitalIO_s = "][4294967295]
+["slot name = "]["System1:"]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:24:09.568, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/OUT-20ch-ref.pnl [OUT-20ch-ref.pnl]
+    Object: 49 named: "TF_OUT_CH20_OPCUA_STATUS" of type: TEXT_FIELD
+    Script: Initialize
+    Line: 19, dpConnect, System1:MonitorController/Crate1/MonFPGA.heartbeat
+
+]
+["T_ERR"]["00000000000000000000000000001111"]["T_ERR"]["00000000000000000000000000001111"]["T_ERR"]["00000000000000000000000000001111"]["T_ERR"]["00000000000000000000000000001111"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][0]["T_ERR===========>"][0]["T_ERR===========>"][0]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000001111111111111000"]["T_ERR"]["00000000000000000000000000001111"]["T_ERR"]["00000000000000000000000000001111"]["T_ERR"]["00000000000000000000000000001111"]["T_ERR"]["00000000000000000000000000001111"]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][1]["T_ERR===========>"][0]["T_ERR===========>"][0]["T_ERR===========>"][0]["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:50:26.416, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/InterlockGUI.xml [InterlockGUI.xml]
+    Object: 10 named: "TF_OPCUA_STATUS" of type: TEXT_FIELD
+    Script: Initialize
+    Line: 19, dpConnect, System1:MonitorController/Crate1/MonFPGA.heartbeat
+
+]
+[15]
+["00000000000000000000000000001111"]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:54:50.709, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/InterlockGUI.xml [InterlockGUI.xml]
+    Object: 10 named: "TF_OPCUA_STATUS" of type: TEXT_FIELD
+    Script: Initialize
+    Line: 19, dpConnect, System1:MonitorController/Crate1/MonFPGA.heartbeat
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 12:55:32.233, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/InterlockGUI.xml [InterlockGUI.xml]
+    Object: 10 named: "TF_OPCUA_STATUS" of type: TEXT_FIELD
+    Script: Initialize
+    Line: 19, dpConnect, System1:MonitorController/Crate1/MonFPGA.heartbeat
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 13:02:36.007, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/InterlockGUI.xml [InterlockGUI.xml]
+    Object: 10 named: "TF_OPCUA_STATUS" of type: TEXT_FIELD
+    Script: Initialize
+    Line: 19, dpConnect, System1:MonitorController/Crate1/MonFPGA.heartbeat
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 13:02:51.896, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/PixelSetupDCS.xml [PixelSetupDCS.xml]
+    Object: 10 named: "TF_OPCUA_STATUS" of type: TEXT_FIELD (PANEL_REF4.TF_OPCUA_STATUS)
+    In reference: InterlockGUI.xml Group: 2 named: "PANEL_REF4"
+    Script: Initialize
+    Line: 19, dpConnect, System1:MonitorController/Crate1/MonFPGA.heartbeat
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 13:28:23.243, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/PixelSetupDCS.xml [PixelSetupDCS.xml]
+    Object: 10 named: "TF_OPCUA_STATUS" of type: TEXT_FIELD (PANEL_REF4.TF_OPCUA_STATUS)
+    In reference: InterlockGUI.xml Group: 2 named: "PANEL_REF4"
+    Script: Initialize
+    Line: 19, dpConnect, System1:MonitorController/Crate1/MonFPGA.heartbeat
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 14:44:06.250, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/PixelSetupDCS.xml [PixelSetupDCS.xml]
+    Object: 10 named: "TF_OPCUA_STATUS" of type: TEXT_FIELD (PANEL_REF4.TF_OPCUA_STATUS)
+    In reference: InterlockGUI.xml Group: 2 named: "PANEL_REF4"
+    Script: Initialize
+    Line: 19, dpConnect, System1:MonitorController/Crate1/MonFPGA.heartbeat
+
+]
+["An error occurred:"][dyn_errClass 1 items
+     1: WCCOAui      (1), 2024.12.18 15:40:42.590, CTRL, WARNING,    71, DP does not exist, 
+    Module: _QuickTest_
+    Panel: /home/felix/Downloads/PixelSetupDCS/panels/PixelSetupDCS.xml [PixelSetupDCS.xml]
+    Object: 10 named: "TF_OPCUA_STATUS" of type: TEXT_FIELD (PANEL_REF4.TF_OPCUA_STATUS)
+    In reference: InterlockGUI.xml Group: 2 named: "PANEL_REF4"
+    Script: Initialize
+    Line: 19, dpConnect, System1:MonitorController/Crate1/MonFPGA.heartbeat
+
+]
+[""]
+[""]
+["=================================="][""]
+["=================================="][""]
+[""]
+[""]
+[1]
+[1]
+[2]
+[1]
+[0]
+[1]
+[1]
+[1]
+[1]
+[1]
+[1]
+[1]
+["Execution"]
+["DP1"][2]
+["Execution"]
+["DP1"][0]
+["Execution"]
+["DP1"][1]
+["Execution"]
+["DP1"][1]
+["Execution"]
+["DP1"][2]
+["Execution"]
+["DP2"][0]
+["Execution"]
+["Default"][1]
+["DP2"][0]
+["DP1"][2]
+["DP3"][3]
+["DP4"][4]
+["DP5"][5]
+["DP6"]

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel version="14">
+ <properties>
+  <prop name="Name">
+   <prop name="en_US.utf8"></prop>
+  </prop>
+  <prop name="Size">518 368</prop>
+  <prop name="BackColor">_3DFace</prop>
+  <prop name="RefPoint">130 89</prop>
+  <prop name="InitAndTermRef">True</prop>
+  <prop name="SendClick">False</prop>
+  <prop name="RefFileName"></prop>
+  <prop name="DPI">96</prop>
+  <prop name="PDPI">90.59422903341648</prop>
+  <prop name="layoutType">None</prop>
+ </properties>
+ <shapes>
+  <shape Name="PUSH_BUTTON1" shapeType="PUSH_BUTTON" layerId="0">
+   <properties>
+    <prop name="serialId">0</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">180 91</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_ButtonText</prop>
+    <prop name="BackColor">_Button</prop>
+    <prop name="TabOrder">0</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">180 72</prop>
+    <prop name="Size">141 61</prop>
+    <prop name="BorderStyle">Styled</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">PUSH_BUTTON1</prop>
+    </prop>
+   </properties>
+   <events>
+    <script name="Clicked" isEscaped="1"><![CDATA[//#uses &quot;dp&quot;
+#uses &quot;para&quot;
+
+main(mapping event)
+{
+  string dpPrefix = &quot;OPCUA_&quot;;  // Prefix for created datapoints
+  string dpType = &quot;MyOPCUAType&quot;;  // Datapoint Type (DPT) to use
+  dyn_string nodeIds = makeDynString(  // List of OPC UA node IDs
+    &quot;ns=2;s=Machine1/Temperature&quot;,
+    &quot;ns=2;s=Machine1/Pressure&quot;,
+    &quot;ns=2;s=Machine2/Speed&quot;
+  );
+
+  int i;
+  for (i = 1; i &lt;= dynlen(nodeIds); i++)
+  {
+    string dpName = dpPrefix + &quot;Var&quot; + i;  // Generate unique DP name
+
+    // 1Check if datapoint exists, create if not
+    if (!dpExists(dpName))
+    {
+      dpCreate(dpName, dpType);
+      DebugN(&quot;Created Datapoint:&quot;, dpName, &quot;with Type:&quot;, dpType);
+    }
+
+    // Assign OPC UA peripheral link
+    string nodeId = nodeIds[i];  // Get OPC UA node ID
+    dpSet(dpName + &quot;._address&quot;, nodeId);
+    dpSet(dpName + &quot;._driver&quot;, &quot;opcua_client&quot;);  // Assign driver
+
+    // 3Set polling time (500ms) or enable subscription mode
+    dpSet(dpName + &quot;._polling&quot;, 500);  // Poll every 500ms
+    dpSet(dpName + &quot;._subscription&quot;, 1);  // Enable subscription
+
+    DebugN(&quot;Assigned OPC UA Node:&quot;, nodeId, &quot;to DP:&quot;, dpName);
+  }
+}]]></script>
+   </events>
+  </shape>
+  <shape Name="CreateDPT" shapeType="PUSH_BUTTON" layerId="0">
+   <properties>
+    <prop name="serialId">4</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">180 191.4444444444445</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_ButtonText</prop>
+    <prop name="BackColor">_Button</prop>
+    <prop name="TabOrder">3</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">180 165</prop>
+    <prop name="Size">141 71</prop>
+    <prop name="BorderStyle">Styled</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">CreateDPTs</prop>
+    </prop>
+   </properties>
+   <events>
+    <script name="Clicked" isEscaped="1"><![CDATA[//Crate
+bool createDptCrate()
+{
+    string dpPrefix = &quot;TEST_PS&quot;;  // Root name for created datapoints
+
+
+    dyn_string channels = makeDynString(&quot;channel1&quot;, &quot;channel2&quot;, &quot;channel3&quot;, &quot;channel4&quot;);
+    dyn_string groups = makeDynString(&quot;actual&quot;, &quot;readbackSettings&quot;, &quot;settings&quot;);
+
+    dyn_string actualVars = makeDynString(&quot;fuseTrip&quot;, &quot;iMon&quot;, &quot;isOn&quot;, &quot;trip&quot;, &quot;vMon&quot;);
+    dyn_string readbackVars = makeDynString(&quot;fuseDelay&quot;, &quot;fuseLink&quot;, &quot;fuseOnOff&quot;, &quot;i0&quot;,
+                                            &quot;iRangeMax&quot;, &quot;iRangeMin&quot;, &quot;onOff&quot;, &quot;v0&quot;,
+                                            &quot;vProtectionLevel&quot;, &quot;vProtectionMode&quot;,
+                                            &quot;vRangeMax&quot;, &quot;vRangeMin&quot;);
+    dyn_string settingsVars = makeDynString(&quot;clearTrip&quot;, &quot;fuseDelay&quot;, &quot;fuseLink&quot;, &quot;fuseOnOff&quot;,
+                                            &quot;fuseUnlink&quot;, &quot;i0&quot;, &quot;onOff&quot;, &quot;v0&quot;,
+                                            &quot;vProtectionLevel&quot;, &quot;vProtectionMode&quot;);
+
+    // Debugging to check arrays
+    //DebugN(&quot;Channels:&quot;, channels);
+    //DebugN(&quot;Groups:&quot;, groups);
+    //DebugN(&quot;Actual Vars:&quot;, actualVars);
+    //DebugN(&quot;Readback Vars:&quot;, readbackVars);
+    //DebugN(&quot;Settings Vars:&quot;, settingsVars);
+
+
+    // Ensure arrays are not empty
+    if (dynlen(channels) == 0 || dynlen(groups) == 0)
+    {
+      DebugN(&quot;🚨 Error: One or more arrays are empty! Stopping execution.&quot;);
+    }
+
+
+    // the names of vars and the way of generating DPT come directly from examples of dpTypeCreate
+    dyn_dyn_string xxdepes;
+    dyn_dyn_int xxdepei;
+    dynAppend(xxdepes, makeDynString(&quot;TEST_PS&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;));
+    dynAppend(xxdepei, makeDynInt(DPEL_STRUCT));
+
+    // Loop through channels
+    for (int i = 1; i &lt;= dynlen(channels); i++)
+    {
+      string channel = channels[i];
+      dynAppend(xxdepes, makeDynString(&quot;&quot;, channel, &quot;&quot;, &quot;&quot;));
+      dynAppend(xxdepei, makeDynInt(0, DPEL_STRUCT));
+
+      // Loop through groups
+      for (int j = 1; j &lt;= dynlen(groups); j++)
+      {
+        string group = groups[j];
+        dyn_string variables;
+
+        if (group == &quot;actual&quot;)
+          variables = actualVars;
+        else if (group == &quot;readbackSettings&quot;)
+          variables = readbackVars;
+        else if (group == &quot;settings&quot;)
+          variables = settingsVars;
+
+        dynAppend(xxdepes, makeDynString(&quot;&quot;, &quot;&quot;, group, &quot;&quot;));
+        dynAppend(xxdepei, makeDynInt(0, 0, DPEL_STRUCT));
+
+        if (dynlen(variables) == 0) continue;
+
+        for (int k = 1; k &lt;= dynlen(variables); k++)
+        {
+            dynAppend(xxdepes, makeDynString(&quot;&quot;, &quot;&quot;, &quot;&quot;, variables[k]));
+            dynAppend(xxdepei, makeDynInt(0, 0, 0, DPEL_BOOL));
+
+
+            string dpName = dpPrefix + &quot;.&quot; + channel + &quot;.&quot; + group + &quot;.&quot; + variables[k];
+            DebugN(&quot;Processing DPT generation:&quot;, dpName);
+        }
+      }
+    }
+
+    int status = dpTypeCreate(xxdepes, xxdepei);
+    DebugN(&quot;✅ Datapoint creation and configuration completed.&quot;);
+
+    // Check if datapoint exists, create if not
+    //if (!dpExists(dpName))
+    //{
+    //  dpCreate(dpName, dpType); // Create DP with the defined type
+    //  DebugN(&quot;✅ Created Datapoint:&quot;, dpName);
+    //}
+
+
+    if (dpExists(&quot;test&quot;)) DebugN(&quot;already exists&quot;);
+
+    else dpCreate(&quot;number_1&quot;,&quot;ExampleDP_Int&quot;); // Create
+    dpCreate(&quot;test&quot;, &quot;TEST_PS&quot;);
+
+    return status == 0;
+}
+
+bool test()
+{
+    // the names of vars and the way of generating DPT come directly from examples of dpTypeCreate
+    dyn_dyn_string xxdepes;
+    dyn_dyn_int xxdepei;
+    dynAppend(xxdepes, makeDynString(&quot;TEST_PS&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;));
+    dynAppend(xxdepei, makeDynInt(DPEL_STRUCT));
+
+    dynAppend(xxdepes, makeDynString(&quot;&quot;, &quot;channel1&quot;, &quot;&quot;, &quot;&quot;));
+    dynAppend(xxdepei, makeDynInt(0, DPEL_STRUCT));
+
+    dynAppend(xxdepes, makeDynString(&quot;&quot;, &quot;&quot;, &quot;readbackSettings&quot;, &quot;&quot;));
+    dynAppend(xxdepei, makeDynInt(0, 0, DPEL_STRUCT));
+
+    dynAppend(xxdepes, makeDynString(&quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;v0&quot;));
+    dynAppend(xxdepei, makeDynInt(0, 0, 0, DPEL_FLOAT));
+
+    int status = dpTypeCreate(xxdepes, xxdepei);
+    DebugN(&quot;✅ Datapoint creation and configuration completed.&quot;);
+
+    if (dpExists(&quot;ps5&quot;)) DebugN(&quot;already exists&quot;);
+
+    else dpCreate(&quot;ps5&quot;,&quot;TEST_PS&quot;); // Create
+
+    return status == 0;
+}
+
+bool deleteDpt()
+{
+  string dpB = &quot;test&quot;;
+  int retV;
+  retV = dpDelete(dpB);
+  DebugN(retV);
+  return status == 0;
+}
+
+
+main(mapping event)
+{
+  //createDptCrate();
+  test();
+}
+
+
+]]></script>
+   </events>
+  </shape>
+  <shape Name="DELETE" shapeType="PUSH_BUTTON" layerId="0">
+   <properties>
+    <prop name="serialId">5</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">367 141</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_ButtonText</prop>
+    <prop name="BackColor">_Button</prop>
+    <prop name="TabOrder">4</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">367 132</prop>
+    <prop name="Size">81 41</prop>
+    <prop name="BorderStyle">Styled</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">dpDELETE</prop>
+    </prop>
+   </properties>
+   <events>
+    <script name="Clicked" isEscaped="1"><![CDATA[main(mapping event)
+{
+  dpDelete(&quot;ps5&quot;);
+  dpTypeDelete(&quot;TEST_PS&quot;);
+  DebugN(&quot;✅ Datapoints deleting are completed.&quot;);
+}]]></script>
+   </events>
+  </shape>
+  <shape Name="Config" shapeType="PUSH_BUTTON" layerId="0">
+   <properties>
+    <prop name="serialId">6</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">190 299</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_ButtonText</prop>
+    <prop name="BackColor">_Button</prop>
+    <prop name="TabOrder">5</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">190 290</prop>
+    <prop name="Size">121 41</prop>
+    <prop name="BorderStyle">Styled</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Config_DPEs</prop>
+    </prop>
+   </properties>
+   <events>
+    <script name="Clicked" isEscaped="1"><![CDATA[#uses &quot;para.ctl&quot;
+const string CONNECTIONSETTING_KEY_DRIVER_NUMBER = &quot;DRIVER_NUMBER&quot;;
+const string CONNECTIONSETTING_KEY_SERVER_NAME = &quot;SERVER_NAME&quot;;
+const string CONNECTIONSETTING_KEY_SUBSCRIPTION_NAME = &quot;SUBSCRIPTION_NAME&quot;;
+
+main(mapping event)
+{
+  string dpe, address;
+  dyn_string dsExceptionInfo;
+  bool success;
+  bool active = TRUE;
+
+  dpe = &quot;System1:ps5.channel1.readbackSettings.v0&quot;;
+  address = &quot;/0:Objects/2:ps1/2:channel1/2:readbackSettings/2:v0&quot;;
+
+
+
+	dpSetWait(dpe+&quot;:_address.._type&quot;, DPCONFIG_PERIPH_ADDR_MAIN);
+  dpSetWait(dpe+&quot;:_address.._drv_ident&quot;, &quot;OPCUA&quot;);
+  dpSetWait(dpe+&quot;:_distrib.._driver&quot;,4);
+
+  //dpSetWait(dpe + &quot;:_address.._subscription&quot;, &quot;HMP4040_Subscription&quot;);
+
+  dpSetWait(dpe + &quot;:_address.._direction&quot;,&quot;INPUT&quot;);
+
+  dpSetWait(dpe + &quot;:_address.._subscription&quot;, &quot;HMP4040_Subscription&quot;);
+
+  // Activate the Address
+  dpSetWait(dpe + &quot;:_address.._active&quot;, TRUE);
+
+
+  //dpSetWait(dpe + &quot;:_distrib.._type&quot;, DPCONFIG_PERIPH_ADDR_MAIN,
+  //          dpe + &quot;:_distrib.._drv_ident&quot;, &quot;OPCUA&quot;,
+	//					dpe + &quot;:_distrib.._driver&quot;, 4);
+
+
+  //dpSetWait(dpe + &quot;:_address.._mode&quot;,&quot;INPUT&quot;);
+  //dpSetWait(dpe + &quot;:_address.._direction&quot;,&quot;INPUT&quot;);
+
+
+  //HMP4040_Subscription
+
+
+
+  //dpSetWait(dpe+&quot;:&quot;+config+&quot;.._reference&quot;, &quot;OPCUA CLIENT&quot;);
+
+				   //dpe+&quot;:&quot;+config+&quot;.._subindex&quot;,dpc[2],
+				   //dpe+&quot;:&quot;+config+&quot;.._mode&quot;,dpc[3],
+				   //dpe+&quot;:&quot;+config+&quot;.._reply&quot;,dpc[6],
+				   //dpe+&quot;:&quot;+config+&quot;.._datatype&quot;,dpc[7],
+           //dpe+&quot;:&quot;+config+&quot;.._poll_group&quot;, dpc[11],
+
+
+
+}]]></script>
+   </events>
+  </shape>
+ </shapes>
+</panel>

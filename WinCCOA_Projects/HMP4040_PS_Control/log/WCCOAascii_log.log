@@ -1,0 +1,13 @@
+WCCOAascii   (0), 2025.03.26 15:13:22.407, SYS,  INFO,        1, Manager Start, PROJ, HMP4040_PS_Control, V 3.19 - 3.19 P009 platform Linux x86_64 linked at Feb 13 2024 09:32:02 (5a6458ed9fd)
+WCCOAascii   (0), 2025.03.26 15:13:22.407, SYS,  INFO,        3, Trying to connect to (SYS: 0 Data -num 0 CONN: 1) @ pctesta2:4897
+WCCOAascii   (0), 2025.03.26 15:13:22.408, SYS,  INFO,        4, Connected to (SYS: 0 Data -num 0 CONN: 1) @ localhost (::1)
+WCCOAascii   (1), 2025.03.26 15:13:22.411, SYS,  INFO,        6, Initialization by Data Manager finished
+WCCOAascii   (1), 2025.03.26 15:13:22.411, SYS,  INFO,        3, Trying to connect to (SYS: 1 Event -num 0 CONN: 1) @ pctesta2:4998
+WCCOAascii   (1), 2025.03.26 15:13:22.411, SYS,  INFO,        4, Connected to (SYS: 1 Event -num 0 CONN: 1) @ localhost (::1)
+WCCOAascii   (1), 2025.03.26 15:13:22.414, SYS,  INFO,      102, Waiting for user names/passwords
+WCCOAascii   (1), 2025.03.26 15:13:22.414, SYS,  INFO,      103, User names/passwords initialized
+WCCOAascii   (1), 2025.03.26 15:13:22.418, SYS,  INFO,      181, Closing connection to (SYS: 1 Data -num 0 CONN: 1)
+WCCOAascii   (1), 2025.03.26 15:13:22.419, SYS,  INFO,      181, Closing connection to (SYS: 1 Event -num 0 CONN: 1)
+WCCOAascii   (1), 2025.03.26 15:13:22.419, SYS,  INFO,       39, Connection lost, MAN: (SYS: 1 Event -num 0 CONN: 1), Connection closed
+WCCOAascii   (1), 2025.03.26 15:13:22.419, SYS,  INFO,       39, Connection lost, MAN: (SYS: 1 Data -num 0 CONN: 1), Connection closed
+WCCOAascii   (1), 2025.03.26 15:13:22.419, SYS,  INFO,        2, Manager Stop

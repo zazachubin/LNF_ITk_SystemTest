@@ -1,0 +1,280 @@
+WCCILpmon    (1), 2025.03.26 15:13:21.084, SYS,  INFO,        1, Manager Start, START_MODE
+WCCILpmon    (1), 2025.03.26 15:13:21.188, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILdata" -PROJ "HMP4040_PS_Control" -pmonIndex 1 
+WCCILpmon    (1), 2025.03.26 15:13:21.297, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAnextgenarch" -PROJ "HMP4040_PS_Control" -pmonIndex 2 
+WCCILpmon    (1), 2025.03.26 15:13:21.413, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILevent" -PROJ "HMP4040_PS_Control" -pmonIndex 3 
+WCCILpmon    (1), 2025.03.26 15:13:21.627, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILproxy" -PROJ "HMP4040_PS_Control" -pmonIndex 4 
+WCCILpmon    (1), 2025.03.26 15:13:21.828, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOActrl" -PROJ "HMP4040_PS_Control" -pmonIndex 5 -f pvss_scripts.lst
+WCCILpmon    (1), 2025.03.26 15:13:22.029, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILsim" -PROJ "HMP4040_PS_Control" -pmonIndex 6 
+WCCILpmon    (1), 2025.03.26 15:13:22.230, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.03.26 15:13:24.071, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2025.03.26 15:19:39.215, SYS,  INFO,       28/pmon, Got INS command from ::1, inserting new manager WCCOAopcua at index 8
+WCCILpmon    (1), 2025.03.26 15:19:39.215, SYS,  INFO,       11/pmon, Detected stopped manager WCCOAopcua(1) - restarting it #1
+WCCILpmon    (1), 2025.03.26 15:19:39.216, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 
+WCCILpmon    (1), 2025.03.26 15:19:39.275, SYS,  INFO,       11/pmon, Detected stopped manager WCCOAopcua(1) - restarting it #2
+WCCILpmon    (1), 2025.03.26 15:19:39.276, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 
+WCCILpmon    (1), 2025.03.26 15:19:39.401, SYS,  INFO,       11/pmon, Detected stopped manager WCCOAopcua(1) - restarting it #3
+WCCILpmon    (1), 2025.03.26 15:19:39.401, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 
+WCCILpmon    (1), 2025.03.26 15:19:39.528, SYS,  INFO,       11/pmon, Detected stopped manager WCCOAopcua(1) - restarting it #4
+WCCILpmon    (1), 2025.03.26 15:19:39.528, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 
+WCCILpmon    (1), 2025.03.26 15:19:39.651, SYS,  INFO,       11/pmon, Detected stopped manager WCCOAopcua(1) - restarting it #5
+WCCILpmon    (1), 2025.03.26 15:19:39.651, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 
+WCCILpmon    (1), 2025.03.26 15:19:39.796, SYS,  INFO,       12/pmon, Manager WCCOAopcua(1) restarting too rapidly - giving up restarting
+WCCILpmon    (1), 2025.03.26 15:19:50.351, SYS,  INFO,       29/pmon, Got PROP_PUT command from ::1, changing manager WCCOAopcua(1) at index 8
+WCCILpmon    (1), 2025.03.26 15:19:55.134, SYS,  INFO,       24/pmon, Got START command from ::1, starting the manager WCCOAopcua(1) at index 8
+WCCILpmon    (1), 2025.03.26 15:19:55.134, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 -num 4
+WCCILpmon    (1), 2025.03.26 18:37:09.833, SYS,  INFO,       24/pmon, Got START command from ::1, starting the manager WCCOAui(1) at index 7
+WCCILpmon    (1), 2025.03.26 18:37:09.834, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.03.27 17:07:50.545, SYS,  INFO,       21/pmon, Got STOP_ALL command from ::1, stopping the project
+WCCILpmon    (1), 2025.03.27 17:07:50.545, SYS,  INFO,       17/pmon, Stopping Manager WCCOAopcua(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.27 17:07:50.545, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.27 17:07:50.545, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.27 17:07:50.545, SYS,  INFO,       17/pmon, Stopping Manager WCCOAnextgenarch(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.27 17:07:51.596, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2025.03.27 17:07:51.610, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2025.03.27 17:07:51.614, SYS,  INFO,       17/pmon, Stopping Manager WCCILproxy(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.27 17:07:51.615, SYS,  INFO,       13/pmon, Completely stopped the project - waiting for commands
+WCCILpmon    (1), 2025.03.27 17:08:02.657, SYS,  INFO,       20/pmon, Got START_ALL command from ::1, starting the project
+WCCILpmon    (1), 2025.03.27 17:08:02.658, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILdata" -PROJ "HMP4040_PS_Control" -pmonIndex 1 
+WCCILpmon    (1), 2025.03.27 17:08:02.859, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAnextgenarch" -PROJ "HMP4040_PS_Control" -pmonIndex 2 
+WCCILpmon    (1), 2025.03.27 17:08:03.060, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILevent" -PROJ "HMP4040_PS_Control" -pmonIndex 3 
+WCCILpmon    (1), 2025.03.27 17:08:03.261, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILproxy" -PROJ "HMP4040_PS_Control" -pmonIndex 4 
+WCCILpmon    (1), 2025.03.27 17:08:03.462, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOActrl" -PROJ "HMP4040_PS_Control" -pmonIndex 5 -f pvss_scripts.lst
+WCCILpmon    (1), 2025.03.27 17:08:03.662, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILsim" -PROJ "HMP4040_PS_Control" -pmonIndex 6 
+WCCILpmon    (1), 2025.03.27 17:08:03.801, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.03.27 17:08:05.704, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 -num 4
+WCCILpmon    (1), 2025.03.27 17:08:05.815, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2025.03.28 11:20:54.144, SYS,  INFO,       24/pmon, Got START command from ::1, starting the manager WCCOAui(1) at index 7
+WCCILpmon    (1), 2025.03.28 11:20:54.145, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.03.28 14:29:16.988, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2025.03.28 14:29:16.988, SYS,  INFO,       17/pmon, Stopping Manager WCCOAopcua(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 14:29:16.988, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 14:29:16.988, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 14:29:16.988, SYS,  INFO,       17/pmon, Stopping Manager WCCOAnextgenarch(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 14:29:18.503, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 14:29:18.517, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 14:29:18.522, SYS,  INFO,       17/pmon, Stopping Manager WCCILproxy(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 14:29:18.523, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2025.03.28 14:29:18.523, SYS,  INFO,        2, Manager Stop
+WCCILpmon    (1), 2025.03.28 15:20:51.663, SYS,  INFO,        1, Manager Start, START_MODE
+WCCILpmon    (1), 2025.03.28 15:20:51.766, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILdata" -PROJ "HMP4040_PS_Control" -pmonIndex 1 
+WCCILpmon    (1), 2025.03.28 15:20:51.868, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAnextgenarch" -PROJ "HMP4040_PS_Control" -pmonIndex 2 
+WCCILpmon    (1), 2025.03.28 15:20:51.972, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILevent" -PROJ "HMP4040_PS_Control" -pmonIndex 3 
+WCCILpmon    (1), 2025.03.28 15:20:52.186, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILproxy" -PROJ "HMP4040_PS_Control" -pmonIndex 4 
+WCCILpmon    (1), 2025.03.28 15:20:52.387, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOActrl" -PROJ "HMP4040_PS_Control" -pmonIndex 5 -f pvss_scripts.lst
+WCCILpmon    (1), 2025.03.28 15:20:52.588, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILsim" -PROJ "HMP4040_PS_Control" -pmonIndex 6 
+WCCILpmon    (1), 2025.03.28 15:20:52.789, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.03.28 15:20:55.232, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 -num 4
+WCCILpmon    (1), 2025.03.28 15:20:55.433, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2025.03.28 15:39:02.668, SYS,  INFO,       21/pmon, Got STOP_ALL command from ::1, stopping the project
+WCCILpmon    (1), 2025.03.28 15:39:02.669, SYS,  INFO,       17/pmon, Stopping Manager WCCOAopcua(4) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 15:39:02.669, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 15:39:02.669, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 15:39:02.669, SYS,  INFO,       17/pmon, Stopping Manager WCCOAnextgenarch(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 15:39:03.722, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 15:39:03.736, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 15:39:03.741, SYS,  INFO,       17/pmon, Stopping Manager WCCILproxy(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.28 15:39:03.742, SYS,  INFO,       13/pmon, Completely stopped the project - waiting for commands
+WCCILpmon    (1), 2025.03.28 15:39:11.064, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2025.03.28 15:39:11.064, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2025.03.28 15:39:11.064, SYS,  INFO,        2, Manager Stop
+WCCILpmon    (1), 2025.03.28 15:49:35.980, SYS,  INFO,        1, Manager Start, START_MODE
+WCCILpmon    (1), 2025.03.28 15:49:36.083, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILdata" -PROJ "HMP4040_PS_Control" -pmonIndex 1 
+WCCILpmon    (1), 2025.03.28 15:49:36.199, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAnextgenarch" -PROJ "HMP4040_PS_Control" -pmonIndex 2 
+WCCILpmon    (1), 2025.03.28 15:49:36.317, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILevent" -PROJ "HMP4040_PS_Control" -pmonIndex 3 
+WCCILpmon    (1), 2025.03.28 15:49:36.518, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILproxy" -PROJ "HMP4040_PS_Control" -pmonIndex 4 
+WCCILpmon    (1), 2025.03.28 15:49:36.719, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOActrl" -PROJ "HMP4040_PS_Control" -pmonIndex 5 -f pvss_scripts.lst
+WCCILpmon    (1), 2025.03.28 15:49:36.920, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILsim" -PROJ "HMP4040_PS_Control" -pmonIndex 6 
+WCCILpmon    (1), 2025.03.28 15:49:37.121, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.03.28 15:49:47.725, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 -num 4
+WCCILpmon    (1), 2025.03.28 15:49:47.926, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2025.03.30 22:49:09.437, SYS,  INFO,       21/pmon, Got STOP_ALL command from ::1, stopping the project
+WCCILpmon    (1), 2025.03.30 22:49:09.438, SYS,  INFO,       17/pmon, Stopping Manager WCCOAopcua(4) with signal SIGTERM
+WCCILpmon    (1), 2025.03.30 22:49:09.438, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.30 22:49:09.438, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.30 22:49:09.438, SYS,  INFO,       17/pmon, Stopping Manager WCCOAnextgenarch(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.30 22:49:10.540, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2025.03.30 22:49:10.554, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2025.03.30 22:49:10.558, SYS,  INFO,       17/pmon, Stopping Manager WCCILproxy(1) with signal SIGTERM
+WCCILpmon    (1), 2025.03.30 22:49:10.559, SYS,  INFO,       13/pmon, Completely stopped the project - waiting for commands
+WCCILpmon    (1), 2025.03.30 22:49:20.599, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2025.03.30 22:49:20.599, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2025.03.30 22:49:20.599, SYS,  INFO,        2, Manager Stop
+WCCILpmon    (1), 2025.03.30 22:54:48.048, SYS,  INFO,        1, Manager Start, START_MODE
+WCCILpmon    (1), 2025.03.30 22:54:48.151, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILdata" -PROJ "HMP4040_PS_Control" -pmonIndex 1 
+WCCILpmon    (1), 2025.03.30 22:54:48.255, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAnextgenarch" -PROJ "HMP4040_PS_Control" -pmonIndex 2 
+WCCILpmon    (1), 2025.03.30 22:54:48.358, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILevent" -PROJ "HMP4040_PS_Control" -pmonIndex 3 
+WCCILpmon    (1), 2025.03.30 22:54:48.573, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILproxy" -PROJ "HMP4040_PS_Control" -pmonIndex 4 
+WCCILpmon    (1), 2025.03.30 22:54:48.774, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOActrl" -PROJ "HMP4040_PS_Control" -pmonIndex 5 -f pvss_scripts.lst
+WCCILpmon    (1), 2025.03.30 22:54:48.975, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILsim" -PROJ "HMP4040_PS_Control" -pmonIndex 6 
+WCCILpmon    (1), 2025.03.30 22:54:49.176, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.03.30 22:54:51.919, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 -num 4
+WCCILpmon    (1), 2025.03.30 22:54:52.120, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2025.04.02 15:29:15.957, SYS,  INFO,       21/pmon, Got STOP_ALL command from ::1, stopping the project
+WCCILpmon    (1), 2025.04.02 15:29:15.958, SYS,  INFO,       17/pmon, Stopping Manager WCCOAopcua(4) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 15:29:15.958, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 15:29:15.958, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 15:29:15.958, SYS,  INFO,       17/pmon, Stopping Manager WCCOAnextgenarch(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 15:29:17.036, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 15:29:17.050, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 15:29:17.055, SYS,  INFO,       17/pmon, Stopping Manager WCCILproxy(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 15:29:17.057, SYS,  INFO,       13/pmon, Completely stopped the project - waiting for commands
+WCCILpmon    (1), 2025.04.02 15:35:06.595, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2025.04.02 15:35:06.595, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2025.04.02 15:35:06.595, SYS,  INFO,        2, Manager Stop
+WCCILpmon    (1), 2025.04.02 16:09:15.357, SYS,  INFO,        1, Manager Start, START_MODE
+WCCILpmon    (1), 2025.04.02 16:09:15.461, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILdata" -PROJ "HMP4040_PS_Control" -pmonIndex 1 
+WCCILpmon    (1), 2025.04.02 16:09:15.562, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAnextgenarch" -PROJ "HMP4040_PS_Control" -pmonIndex 2 
+WCCILpmon    (1), 2025.04.02 16:09:15.781, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILevent" -PROJ "HMP4040_PS_Control" -pmonIndex 3 
+WCCILpmon    (1), 2025.04.02 16:09:15.981, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILproxy" -PROJ "HMP4040_PS_Control" -pmonIndex 4 
+WCCILpmon    (1), 2025.04.02 16:09:16.183, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOActrl" -PROJ "HMP4040_PS_Control" -pmonIndex 5 -f pvss_scripts.lst
+WCCILpmon    (1), 2025.04.02 16:09:16.384, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILsim" -PROJ "HMP4040_PS_Control" -pmonIndex 6 
+WCCILpmon    (1), 2025.04.02 16:09:16.584, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.04.02 16:09:20.741, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 -num 4
+WCCILpmon    (1), 2025.04.02 16:09:20.942, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2025.04.02 23:05:28.200, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2025.04.02 23:05:28.200, SYS,  INFO,       17/pmon, Stopping Manager WCCOAopcua(4) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 23:05:28.200, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 23:05:28.200, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 23:05:28.200, SYS,  INFO,       17/pmon, Stopping Manager WCCOAnextgenarch(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 23:05:29.259, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 23:05:29.273, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 23:05:29.278, SYS,  INFO,       17/pmon, Stopping Manager WCCILproxy(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.02 23:05:29.279, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2025.04.02 23:05:29.279, SYS,  INFO,        2, Manager Stop
+WCCILpmon    (1), 2025.04.03 14:27:21.766, SYS,  INFO,        1, Manager Start, START_MODE
+WCCILpmon    (1), 2025.04.03 14:27:21.870, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILdata" -PROJ "HMP4040_PS_Control" -pmonIndex 1 
+WCCILpmon    (1), 2025.04.03 14:27:21.968, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAnextgenarch" -PROJ "HMP4040_PS_Control" -pmonIndex 2 
+WCCILpmon    (1), 2025.04.03 14:27:22.086, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILevent" -PROJ "HMP4040_PS_Control" -pmonIndex 3 
+WCCILpmon    (1), 2025.04.03 14:27:22.287, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILproxy" -PROJ "HMP4040_PS_Control" -pmonIndex 4 
+WCCILpmon    (1), 2025.04.03 14:27:22.488, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOActrl" -PROJ "HMP4040_PS_Control" -pmonIndex 5 -f pvss_scripts.lst
+WCCILpmon    (1), 2025.04.03 14:27:22.689, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILsim" -PROJ "HMP4040_PS_Control" -pmonIndex 6 
+WCCILpmon    (1), 2025.04.03 14:27:22.890, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.04.03 14:27:24.531, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 -num 4
+WCCILpmon    (1), 2025.04.03 14:27:24.732, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2025.04.03 14:28:01.071, SYS,  INFO,       21/pmon, Got STOP_ALL command from ::1, stopping the project
+WCCILpmon    (1), 2025.04.03 14:28:01.071, SYS,  INFO,       17/pmon, Stopping Manager WCCOAopcua(4) with signal SIGTERM
+WCCILpmon    (1), 2025.04.03 14:28:01.071, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.03 14:28:01.071, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.03 14:28:01.071, SYS,  INFO,       17/pmon, Stopping Manager WCCOAnextgenarch(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.03 14:28:02.585, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.03 14:28:02.601, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.03 14:28:02.605, SYS,  INFO,       17/pmon, Stopping Manager WCCILproxy(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.03 14:28:02.607, SYS,  INFO,       13/pmon, Completely stopped the project - waiting for commands
+WCCILpmon    (1), 2025.04.03 14:28:31.532, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2025.04.03 14:28:31.532, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2025.04.03 14:28:31.532, SYS,  INFO,        2, Manager Stop
+WCCILpmon    (1), 2025.04.04 14:54:22.670, SYS,  INFO,        1, Manager Start, WAIT_MODE
+WCCILpmon    (1), 2025.04.04 14:54:27.603, SYS,  INFO,       20/pmon, Got START_ALL command from ::1, starting the project
+WCCILpmon    (1), 2025.04.04 14:54:27.606, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILdata" -PROJ "HMP4040_PS_Control" -pmonIndex 1 
+WCCILpmon    (1), 2025.04.04 14:54:27.807, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAnextgenarch" -PROJ "HMP4040_PS_Control" -pmonIndex 2 
+WCCILpmon    (1), 2025.04.04 14:54:28.008, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILevent" -PROJ "HMP4040_PS_Control" -pmonIndex 3 
+WCCILpmon    (1), 2025.04.04 14:54:28.209, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILproxy" -PROJ "HMP4040_PS_Control" -pmonIndex 4 
+WCCILpmon    (1), 2025.04.04 14:54:28.409, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOActrl" -PROJ "HMP4040_PS_Control" -pmonIndex 5 -f pvss_scripts.lst
+WCCILpmon    (1), 2025.04.04 14:54:28.610, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILsim" -PROJ "HMP4040_PS_Control" -pmonIndex 6 
+WCCILpmon    (1), 2025.04.04 14:54:28.812, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.04.04 14:54:30.905, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 -num 4
+WCCILpmon    (1), 2025.04.04 14:54:31.105, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2025.04.04 15:36:02.316, SYS,  INFO,       21/pmon, Got STOP_ALL command from ::1, stopping the project
+WCCILpmon    (1), 2025.04.04 15:36:02.316, SYS,  INFO,       17/pmon, Stopping Manager WCCOAopcua(4) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 15:36:02.316, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 15:36:02.316, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 15:36:02.316, SYS,  INFO,       17/pmon, Stopping Manager WCCOAnextgenarch(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 15:36:03.381, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 15:36:03.395, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 15:36:03.400, SYS,  INFO,       17/pmon, Stopping Manager WCCILproxy(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 15:36:03.401, SYS,  INFO,       13/pmon, Completely stopped the project - waiting for commands
+WCCILpmon    (1), 2025.04.04 15:36:16.792, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2025.04.04 15:36:16.792, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2025.04.04 15:36:16.792, SYS,  INFO,        2, Manager Stop
+WCCILpmon    (1), 2025.04.04 17:02:32.765, SYS,  INFO,        1, Manager Start, START_MODE
+WCCILpmon    (1), 2025.04.04 17:02:32.868, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILdata" -PROJ "HMP4040_PS_Control" -pmonIndex 1 
+WCCILpmon    (1), 2025.04.04 17:02:32.969, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAnextgenarch" -PROJ "HMP4040_PS_Control" -pmonIndex 2 
+WCCILpmon    (1), 2025.04.04 17:02:33.086, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILevent" -PROJ "HMP4040_PS_Control" -pmonIndex 3 
+WCCILpmon    (1), 2025.04.04 17:02:33.287, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILproxy" -PROJ "HMP4040_PS_Control" -pmonIndex 4 
+WCCILpmon    (1), 2025.04.04 17:02:33.488, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOActrl" -PROJ "HMP4040_PS_Control" -pmonIndex 5 -f pvss_scripts.lst
+WCCILpmon    (1), 2025.04.04 17:02:33.689, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILsim" -PROJ "HMP4040_PS_Control" -pmonIndex 6 
+WCCILpmon    (1), 2025.04.04 17:02:33.890, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.04.04 17:02:35.431, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 -num 4
+WCCILpmon    (1), 2025.04.04 17:02:35.632, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2025.04.04 17:59:27.116, SYS,  INFO,       21/pmon, Got STOP_ALL command from ::1, stopping the project
+WCCILpmon    (1), 2025.04.04 17:59:27.116, SYS,  INFO,       17/pmon, Stopping Manager WCCOAopcua(4) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 17:59:27.116, SYS,  INFO,       17/pmon, Stopping Manager WCCOAui(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 17:59:27.117, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 17:59:27.117, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 17:59:27.117, SYS,  INFO,       17/pmon, Stopping Manager WCCOAnextgenarch(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 17:59:28.630, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 17:59:28.644, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 17:59:28.648, SYS,  INFO,       17/pmon, Stopping Manager WCCILproxy(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 17:59:28.650, SYS,  INFO,       13/pmon, Completely stopped the project - waiting for commands
+WCCILpmon    (1), 2025.04.04 17:59:50.198, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2025.04.04 17:59:50.199, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2025.04.04 17:59:50.199, SYS,  INFO,        2, Manager Stop
+WCCILpmon    (1), 2025.04.04 18:03:35.186, SYS,  INFO,        1, Manager Start, WAIT_MODE
+WCCILpmon    (1), 2025.04.04 18:03:37.233, SYS,  INFO,       20/pmon, Got START_ALL command from ::1, starting the project
+WCCILpmon    (1), 2025.04.04 18:03:37.235, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILdata" -PROJ "HMP4040_PS_Control" -pmonIndex 1 
+WCCILpmon    (1), 2025.04.04 18:03:37.436, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAnextgenarch" -PROJ "HMP4040_PS_Control" -pmonIndex 2 
+WCCILpmon    (1), 2025.04.04 18:03:37.561, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILevent" -PROJ "HMP4040_PS_Control" -pmonIndex 3 
+WCCILpmon    (1), 2025.04.04 18:03:37.762, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILproxy" -PROJ "HMP4040_PS_Control" -pmonIndex 4 
+WCCILpmon    (1), 2025.04.04 18:03:37.963, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOActrl" -PROJ "HMP4040_PS_Control" -pmonIndex 5 -f pvss_scripts.lst
+WCCILpmon    (1), 2025.04.04 18:03:38.164, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILsim" -PROJ "HMP4040_PS_Control" -pmonIndex 6 
+WCCILpmon    (1), 2025.04.04 18:03:38.365, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.04.04 18:03:39.877, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 -num 4
+WCCILpmon    (1), 2025.04.04 18:03:40.077, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2025.04.04 23:58:05.646, SYS,  INFO,       21/pmon, Got STOP_ALL command from ::1, stopping the project
+WCCILpmon    (1), 2025.04.04 23:58:05.647, SYS,  INFO,       17/pmon, Stopping Manager WCCOAopcua(4) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 23:58:05.647, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 23:58:05.647, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 23:58:05.647, SYS,  INFO,       17/pmon, Stopping Manager WCCOAnextgenarch(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 23:58:06.739, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 23:58:06.752, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 23:58:06.756, SYS,  INFO,       17/pmon, Stopping Manager WCCILproxy(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.04 23:58:06.757, SYS,  INFO,       13/pmon, Completely stopped the project - waiting for commands
+WCCILpmon    (1), 2025.04.04 23:58:12.744, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2025.04.04 23:58:12.744, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2025.04.04 23:58:12.744, SYS,  INFO,        2, Manager Stop
+WCCILpmon    (1), 2025.04.05 04:05:29.176, SYS,  INFO,        1, Manager Start, WAIT_MODE
+WCCILpmon    (1), 2025.04.05 04:05:31.369, SYS,  INFO,       20/pmon, Got START_ALL command from ::1, starting the project
+WCCILpmon    (1), 2025.04.05 04:05:31.472, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILdata" -PROJ "HMP4040_PS_Control" -pmonIndex 1 
+WCCILpmon    (1), 2025.04.05 04:05:31.673, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAnextgenarch" -PROJ "HMP4040_PS_Control" -pmonIndex 2 
+WCCILpmon    (1), 2025.04.05 04:05:31.874, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILevent" -PROJ "HMP4040_PS_Control" -pmonIndex 3 
+WCCILpmon    (1), 2025.04.05 04:05:32.075, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILproxy" -PROJ "HMP4040_PS_Control" -pmonIndex 4 
+WCCILpmon    (1), 2025.04.05 04:05:32.276, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOActrl" -PROJ "HMP4040_PS_Control" -pmonIndex 5 -f pvss_scripts.lst
+WCCILpmon    (1), 2025.04.05 04:05:32.477, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILsim" -PROJ "HMP4040_PS_Control" -pmonIndex 6 
+WCCILpmon    (1), 2025.04.05 04:05:32.678, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.04.05 04:05:44.465, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 -num 4
+WCCILpmon    (1), 2025.04.05 04:05:44.666, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2025.04.06 20:58:47.494, SYS,  INFO,       21/pmon, Got STOP_ALL command from ::1, stopping the project
+WCCILpmon    (1), 2025.04.06 20:58:47.508, SYS,  INFO,       17/pmon, Stopping Manager WCCOAopcua(4) with signal SIGTERM
+WCCILpmon    (1), 2025.04.06 20:58:47.528, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.06 20:58:47.528, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.06 20:58:47.528, SYS,  INFO,       17/pmon, Stopping Manager WCCOAnextgenarch(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.06 20:58:48.690, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.06 20:58:48.790, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.06 20:58:48.872, SYS,  INFO,       17/pmon, Stopping Manager WCCILproxy(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.06 20:58:48.926, SYS,  INFO,       13/pmon, Completely stopped the project - waiting for commands
+WCCILpmon    (1), 2025.04.06 21:20:42.667, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2025.04.06 21:20:42.667, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2025.04.06 21:20:42.667, SYS,  INFO,        2, Manager Stop
+WCCILpmon    (1), 2025.04.07 17:34:52.821, SYS,  INFO,        1, Manager Start, WAIT_MODE
+WCCILpmon    (1), 2025.04.07 17:34:54.917, SYS,  INFO,       20/pmon, Got START_ALL command from ::1, starting the project
+WCCILpmon    (1), 2025.04.07 17:34:55.020, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILdata" -PROJ "HMP4040_PS_Control" -pmonIndex 1 
+WCCILpmon    (1), 2025.04.07 17:34:55.221, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAnextgenarch" -PROJ "HMP4040_PS_Control" -pmonIndex 2 
+WCCILpmon    (1), 2025.04.07 17:34:55.422, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILevent" -PROJ "HMP4040_PS_Control" -pmonIndex 3 
+WCCILpmon    (1), 2025.04.07 17:34:55.623, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILproxy" -PROJ "HMP4040_PS_Control" -pmonIndex 4 
+WCCILpmon    (1), 2025.04.07 17:34:55.751, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOActrl" -PROJ "HMP4040_PS_Control" -pmonIndex 5 -f pvss_scripts.lst
+WCCILpmon    (1), 2025.04.07 17:34:55.952, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCILsim" -PROJ "HMP4040_PS_Control" -pmonIndex 6 
+WCCILpmon    (1), 2025.04.07 17:34:56.153, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAui" -PROJ "HMP4040_PS_Control" -pmonIndex 7 -m gedi
+WCCILpmon    (1), 2025.04.07 17:34:59.982, SYS,  INFO,        1, Manager Start, "/opt/WinCC_OA/3.19/bin/WCCOAopcua" -PROJ "HMP4040_PS_Control" -pmonIndex 8 -num 4
+WCCILpmon    (1), 2025.04.07 17:35:00.183, SYS,  INFO,        9/pmon, The project is up and running. Entering monitor mode
+WCCILpmon    (1), 2025.04.07 17:49:51.872, SYS,  INFO,       21/pmon, Got STOP_ALL command from ::1, stopping the project
+WCCILpmon    (1), 2025.04.07 17:49:51.872, SYS,  INFO,       17/pmon, Stopping Manager WCCOAopcua(4) with signal SIGTERM
+WCCILpmon    (1), 2025.04.07 17:49:51.872, SYS,  INFO,       17/pmon, Stopping Manager WCCILsim(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.07 17:49:51.872, SYS,  INFO,       17/pmon, Stopping Manager WCCOActrl(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.07 17:49:51.872, SYS,  INFO,       17/pmon, Stopping Manager WCCOAnextgenarch(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.07 17:49:52.922, SYS,  INFO,       17/pmon, Stopping Manager WCCILevent(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.07 17:49:52.938, SYS,  INFO,       17/pmon, Stopping Manager WCCILdata(0) with signal SIGTERM
+WCCILpmon    (1), 2025.04.07 17:49:52.942, SYS,  INFO,       17/pmon, Stopping Manager WCCILproxy(1) with signal SIGTERM
+WCCILpmon    (1), 2025.04.07 17:49:52.944, SYS,  INFO,       13/pmon, Completely stopped the project - waiting for commands
+WCCILpmon    (1), 2025.04.07 17:49:57.354, SYS,  INFO,        3/pmon, Got shutdown command - stopping the project and terminating
+WCCILpmon    (1), 2025.04.07 17:49:57.354, SYS,  INFO,       15/pmon, Completely stopped the project - terminating
+WCCILpmon    (1), 2025.04.07 17:49:57.354, SYS,  INFO,        2, Manager Stop
