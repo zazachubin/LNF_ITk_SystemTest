@@ -19,8 +19,8 @@
 
 // DPs
 //DAQ970A measure Module1 and Module 2 Voltages
-const string dp_SP_Chain_M1_Voltage = &quot;System1:DAQ970A.Ch105&quot;;
-const string dp_SP_Chain_M2_Voltage = &quot;System1:DAQ970A.Ch106&quot;;
+const string dp_SP_Chain_M1_Voltage = &quot;System1:DAQ970A.Ch101&quot;;
+const string dp_SP_Chain_M2_Voltage = &quot;System1:DAQ970A.Ch111&quot;;
 
 const string dp_SP_Chain_Current = &quot;System1:PSU_HMP4040.Channel4.iMon&quot;;
 const string dp_SP_Chain_Status = &quot;System1:PSU_HMP4040.Channel4.MonStatus&quot;;
@@ -53,7 +53,7 @@ void initialize()
 {
   dpSet(dp_lpm_status, FALSE);
   dpSet(dp_SP_Chain_SetVoltage, 5.00);
-  dpSet(dp_SP_Chain_SetCurrent, 5.80);
+  dpSet(dp_SP_Chain_SetCurrent, 5.88);
 }
 
 // Measure Module1 Voltage
@@ -74,17 +74,15 @@ void measure_SP_Chain_Current(float newValue){
 
 // Measure Module1 Temperature
 void measure_Module1Temperature(uint newValue){
-  uint precision = 1;
-  float temperature = ConvAdc2Temp(newValue, precision);
-
+  double temperatureNTC_res = ConvAdc2NTC_Res(newValue);
+  double temperature = module_NTC_10K_formula(temperatureNTC_res);
   dpSet(dp_Module1_Temperature, temperature);
 }
 
 // Measure Module2 Temperature
 void measure_Module2Temperature(uint newValue){
-  uint precision = 1;
-  float temperature = ConvAdc2Temp(newValue, precision);
-
+  double temperatureNTC_res = ConvAdc2NTC_Res(newValue);
+  double temperature = module_NTC_10K_formula(temperatureNTC_res);
   dpSet(dp_Module2_Temperature, temperature);
 }
 
@@ -122,12 +120,12 @@ void powerGen()
   {
     dpSet(dp_lpm_status, 0);
     dpSet(dp_SP_Chain_SetVoltage, 5.00);
-    dpSet(dp_SP_Chain_SetCurrent, 5.80);
+    dpSet(dp_SP_Chain_SetCurrent, 5.88);
   }
   else
   {
     dpSet(dp_SP_Chain_SetVoltage, 5.00);
-    dpSet(dp_SP_Chain_SetCurrent, 2.00);
+    dpSet(dp_SP_Chain_SetCurrent, 2.02);
     dpSet(dp_lpm_status, 1);
   }
 }

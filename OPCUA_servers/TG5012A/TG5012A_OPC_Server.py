@@ -86,10 +86,6 @@ class OPCUA_TG5012A():
                 gen.setDutyCycle(ch, 50)
                 gen.setPhase(ch, 0)
                 gen.setZLOAD(ch, '50')
-                #gen.setZLOAD(ch, 'OPEN')
-
-                #gen.setCh_On_Off(ch, 'ON')
-                gen.setCh_On_Off(ch, 'OFF')
 
             gen.tg5012A.write("LOCAL")
 

@@ -16,9 +16,9 @@
  </properties>
  <events>
   <script name="ScopeLib" isEscaped="1"><![CDATA[// DPs
-const string cooling_Voltage = &quot;System1:COOLING.Voltage&quot;;
-const string cooling_Current = &quot;System1:COOLING.Current&quot;;
-const string cooling_Status = &quot;System1:COOLING.Status&quot;;
+const string cooling_Voltage = &quot;System1:COOLING_PixelSetup.Voltage&quot;;
+const string cooling_Current = &quot;System1:COOLING_PixelSetup.Current&quot;;
+const string cooling_Status = &quot;System1:COOLING_PixelSetup.Status&quot;;
 
 const string vMon_Cooling = &quot;System1:PSU_HMP4040.Channel2.vMon&quot;;
 const string iMon_Cooling = &quot;System1:PSU_HMP4040.Channel2.iMon&quot;;

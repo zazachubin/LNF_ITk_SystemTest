@@ -29,8 +29,7 @@ const string lpGBT4_Status = &quot;System1:OptoBoard.OpticalLinksAlignment.lpGBT
 
 
 //DAQ970A measure
-const string vMon_OB = &quot;System1:DAQ970A.Ch107&quot;;
-//const string vMon_OB = &quot;System1:PSU_HMP4040.Channel1.vMon&quot;;
+const string vMon_OB = &quot;System1:DAQ970A.Ch102&quot;;
 
 const string iMon_OB = &quot;System1:PSU_HMP4040.Channel1.iMon&quot;;
 const string status_OB = &quot;System1:PSU_HMP4040.Channel1.MonStatus&quot;;

@@ -1,0 +1,2076 @@
+
+#############################################
+## DATA BASE REPAIR with parameter "on" requested on 2025.05.07 11:28:21.439 
+########### CHECKING DATABASE started on 2025.05.07 11:28:21.440 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/AlertHist
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/AlertHist
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertrg.key(1), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertrd.key(2), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertpr.key(3), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: alertrec.db(0), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: abitvar.db(4), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: abit32va.db(5), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: acharvar.db(6), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: aintvar.db(7), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: auintvar.db(8), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: afltvar.db(9), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: atxtvar.db(10), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: atimvar.db(11), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: adynvar.db(12), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: adpidvar.db(13), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: alngvar.db(14), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: aulngvar.db(15), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: abit64va.db(16), total of 0 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:21.451 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/AlertHist
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/AlertHist
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/alertrg.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/alertrd.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/alertpr.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/alertrec.db, total records =       0
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:21.454 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/AlertDpList
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/AlertDpList
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: adplist.key(1), total of 5 nodes
+
+
+------------------------------------------------------------------------
+
+Processing data file: adplist.db(0), total of 148 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:21.458 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/AlertDpList
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/AlertDpList
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/adplist.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/al0000000000/adplist.db, total records =     148
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:21.460 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/AlertDpList
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/AlertDpList
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: adplist.key(1), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: adplist.db(0), total of 0 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:21.463 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/AlertDpList
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/AlertDpList
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/adplist.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/adplist.db, total records =       0
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:21.464 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/ValHist
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/ValHist
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: vblklong.key(32), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: vblkflt.key(33), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: vblkptr.key(34), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: lastlong.key(35), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: lastflt.key(36), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: lastptr.key(37), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: vbitvar.db(0), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vbit32va.db(1), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vcharvar.db(2), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vintvar.db(3), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vuintvar.db(4), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vfltvar.db(5), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vtxtvar.db(6), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vtimvar.db(7), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vdynvar.db(8), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vdpidvar.db(9), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vlngvar.db(10), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vulngvar.db(11), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vbit64va.db(12), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lbitvar.db(13), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lbit32va.db(14), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lcharvar.db(15), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lintvar.db(16), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: luintvar.db(17), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lfltvar.db(18), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ltxtvar.db(19), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ltimvar.db(20), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ldynvar.db(21), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ldpidvar.db(22), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: llngvar.db(23), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lulngvar.db(24), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lbit64va.db(25), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vblklong.db(26), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vblkflt.db(27), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vblkptr.db(28), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lastlong.db(29), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lastflt.db(30), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lastptr.db(31), total of 0 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:21.477 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/ValHist
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/ValHist
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/vblklong.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/vblkflt.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/vblkptr.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/lastlong.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/lastflt.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/lastptr.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/vblklong.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/vblkflt.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/vblkptr.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/lastlong.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/lastflt.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/lastptr.db, total records =       0
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:21.480 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/DpList
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/DpList
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: dplist.key(1), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: dplist.db(0), total of 0 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:21.483 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/DpList
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/DpList
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/dplist.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/dplist.db, total records =       0
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:21.484 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/AlertHist
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/AlertHist
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertrg.key(1), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertrd.key(2), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertpr.key(3), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: alertrec.db(0), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: abitvar.db(4), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: abit32va.db(5), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: acharvar.db(6), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: aintvar.db(7), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: auintvar.db(8), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: afltvar.db(9), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: atxtvar.db(10), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: atimvar.db(11), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: adynvar.db(12), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: adpidvar.db(13), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: alngvar.db(14), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: aulngvar.db(15), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: abit64va.db(16), total of 0 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:21.490 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/AlertHist
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/AlertHist
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/alertrg.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/alertrd.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/alertpr.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/empty/alertrec.db, total records =       0
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:21.525 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/ValHist
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/ValHist
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: vblklong.key(32), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: vblkflt.key(33), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: vblkptr.key(34), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: lastlong.key(35), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: lastflt.key(36), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: lastptr.key(37), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: vbitvar.db(0), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vbit32va.db(1), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vcharvar.db(2), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vintvar.db(3), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vuintvar.db(4), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vfltvar.db(5), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vtxtvar.db(6), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vtimvar.db(7), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vdynvar.db(8), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vdpidvar.db(9), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vlngvar.db(10), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vulngvar.db(11), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vbit64va.db(12), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lbitvar.db(13), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lbit32va.db(14), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lcharvar.db(15), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lintvar.db(16), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: luintvar.db(17), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lfltvar.db(18), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ltxtvar.db(19), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ltimvar.db(20), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ldynvar.db(21), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ldpidvar.db(22), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: llngvar.db(23), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lulngvar.db(24), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lbit64va.db(25), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vblklong.db(26), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vblkflt.db(27), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vblkptr.db(28), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lastlong.db(29), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lastflt.db(30), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lastptr.db(31), total of 0 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:21.538 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/ValHist
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/ValHist
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/vblklong.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/vblkflt.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/vblkptr.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/lastlong.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/lastflt.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/lastptr.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/vblklong.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/vblkflt.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/vblkptr.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/lastlong.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/lastflt.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ancient/lastptr.db, total records =       0
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:21.914 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alliving/AlertHist
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alliving/AlertHist
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertrg.key(1), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertrd.key(2), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertpr.key(3), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: alertrec.db(0), total of 8 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: abitvar.db(4), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: abit32va.db(5), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: acharvar.db(6), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: aintvar.db(7), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: auintvar.db(8), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: afltvar.db(9), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: atxtvar.db(10), total of 16 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: atimvar.db(11), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: adynvar.db(12), total of 16 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: adpidvar.db(13), total of 8 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: alngvar.db(14), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: aulngvar.db(15), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: abit64va.db(16), total of 0 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:21.920 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alliving/AlertHist
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alliving/AlertHist
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alliving/alertrg.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alliving/alertrd.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alliving/alertpr.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alliving/alertrec.db, total records =       8
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:21.923 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/ValHist
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/ValHist
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: vblklong.key(32), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: vblkflt.key(33), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: vblkptr.key(34), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: lastlong.key(35), total of 71 nodes
+
+
+------------------------------------------------------------------------
+
+Processing key file: lastflt.key(36), total of 3 nodes
+
+
+------------------------------------------------------------------------
+
+Processing key file: lastptr.key(37), total of 39 nodes
+
+
+------------------------------------------------------------------------
+
+Processing data file: vbitvar.db(0), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vbit32va.db(1), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vcharvar.db(2), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vintvar.db(3), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vuintvar.db(4), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vfltvar.db(5), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vtxtvar.db(6), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vtimvar.db(7), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vdynvar.db(8), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vdpidvar.db(9), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vlngvar.db(10), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vulngvar.db(11), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vbit64va.db(12), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lbitvar.db(13), total of 373 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lbit32va.db(14), total of 132 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lcharvar.db(15), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lintvar.db(16), total of 759 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: luintvar.db(17), total of 273 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lfltvar.db(18), total of 157 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ltxtvar.db(19), total of 8547 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ltimvar.db(20), total of 720 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ldynvar.db(21), total of 11008 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ldpidvar.db(22), total of 13 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: llngvar.db(23), total of 15 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lulngvar.db(24), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lbit64va.db(25), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vblklong.db(26), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vblkflt.db(27), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vblkptr.db(28), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lastlong.db(29), total of 5614 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lastflt.db(30), total of 185 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lastptr.db(31), total of 2662 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:21.982 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/ValHist
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/ValHist
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/vblklong.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/vblkflt.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/vblkptr.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/lastlong.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/lastflt.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/lastptr.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/vblklong.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/vblkflt.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/vblkptr.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/lastlong.db, total records =    5614
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/lastflt.db, total records =     185
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/lastval/lastptr.db, total records =    2662
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:21.990 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/AlertDir
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/AlertDir
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertdir.key(1), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: alertdir.db(0), total of 1 record
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:21.993 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/AlertDir
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/AlertDir
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alertdir.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alertdir.db, total records =       1
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:21.995 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/DpList
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/DpList
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: dplist.key(1), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: dplist.db(0), total of 0 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:22.000 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/DpList
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/DpList
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/dplist.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/dplist.db, total records =       0
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:22.001 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/ValHist
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/ValHist
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: vblklong.key(32), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: vblkflt.key(33), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: vblkptr.key(34), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: lastlong.key(35), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: lastflt.key(36), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: lastptr.key(37), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: vbitvar.db(0), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vbit32va.db(1), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vcharvar.db(2), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vintvar.db(3), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vuintvar.db(4), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vfltvar.db(5), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vtxtvar.db(6), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vtimvar.db(7), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vdynvar.db(8), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vdpidvar.db(9), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vlngvar.db(10), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vulngvar.db(11), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vbit64va.db(12), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lbitvar.db(13), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lbit32va.db(14), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lcharvar.db(15), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lintvar.db(16), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: luintvar.db(17), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lfltvar.db(18), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ltxtvar.db(19), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ltimvar.db(20), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ldynvar.db(21), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ldpidvar.db(22), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: llngvar.db(23), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lulngvar.db(24), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lbit64va.db(25), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vblklong.db(26), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vblkflt.db(27), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: vblkptr.db(28), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lastlong.db(29), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lastflt.db(30), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lastptr.db(31), total of 0 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:22.015 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/ValHist
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/ValHist
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/vblklong.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/vblkflt.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/vblkptr.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/lastlong.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/lastflt.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/lastptr.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/vblklong.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/vblkflt.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/vblkptr.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/lastlong.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/lastflt.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/0000000000/lastptr.db, total records =       0
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:22.018 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/TypeAndId
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/TypeAndId
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: typeId.key(11), total of 8 nodes
+
+
+------------------------------------------------------------------------
+
+Processing key file: sysId.key(12), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: dpId.key(13), total of 20 nodes
+
+
+------------------------------------------------------------------------
+
+Processing key file: confId.key(14), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: fixId.key(15), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: aliasId.key(16), total of 4 nodes
+
+
+------------------------------------------------------------------------
+
+Processing key file: viewId.key(19), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: pvssGlobal.db(0), total of 1 record
+
+
+------------------------------------------------------------------------
+
+Processing data file: objName.db(1), total of 5572 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: objNameTxt.db(2), total of 5584 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: typeId.db(3), total of 250 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: elId.db(4), total of 4632 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: sysId.db(5), total of 1 record
+
+
+------------------------------------------------------------------------
+
+Processing data file: dpId.db(6), total of 562 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: confId.db(7), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: attrId.db(8), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: fixId.db(9), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: aliasId.db(10), total of 109 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: cnsTree.db(17), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: cnsView.db(18), total of 0 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:22.036 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/TypeAndId
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/TypeAndId
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/typeId.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/sysId.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/dpId.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/confId.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/fixId.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/aliasId.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/viewId.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/typeId.db, total records =     250
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/sysId.db, total records =       1
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/dpId.db, total records =     562
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/confId.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/fixId.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/aliasId.db, total records =     109
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/cnsView.db, total records =       0
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:22.039 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/DbDir
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/DbDir
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: dbdir.key(1), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: dbdir.db(0), total of 1 record
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:22.041 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/DbDir
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/DbDir
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/dbdir.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/dbdir.db, total records =       1
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:22.043 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/BgStatus
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/BgStatus
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: bgacstat.key(1), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: bgoastat.key(3), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: bgavgpp.key(5), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: bguint.key(7), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: bglcstat.key(9), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: bgolstat.key(11), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: bgupdfv.key(16), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: bgacstat.db(0), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: bgoastat.db(2), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: bgavgpp.db(4), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: bguint.db(6), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: bglcstat.db(8), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: bgolstat.db(10), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: bgdpel.db(12), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: bgldpel.db(13), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: bgupdfv.db(14), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: bgudpel.db(15), total of 0 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:22.048 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/BgStatus
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/BgStatus
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bgacstat.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bgoastat.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bgavgpp.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bguint.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bglcstat.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bgolstat.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bgupdfv.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bgacstat.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bgoastat.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bgavgpp.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bguint.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bglcstat.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bgolstat.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/bgupdfv.db, total records =       0
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:22.051 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/aloverflow/AlertHist
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/aloverflow/AlertHist
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertrg.key(1), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertrd.key(2), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertpr.key(3), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing data file: alertrec.db(0), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: abitvar.db(4), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: abit32va.db(5), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: acharvar.db(6), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: aintvar.db(7), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: auintvar.db(8), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: afltvar.db(9), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: atxtvar.db(10), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: atimvar.db(11), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: adynvar.db(12), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: adpidvar.db(13), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: alngvar.db(14), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: aulngvar.db(15), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: abit64va.db(16), total of 0 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:22.057 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/aloverflow/AlertHist
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/aloverflow/AlertHist
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/aloverflow/alertrg.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/aloverflow/alertrd.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/aloverflow/alertpr.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/aloverflow/alertrec.db, total records =       0
+
+key file rebuild completed
+########### CHECKING DATABASE started on 2025.05.07 11:28:22.058 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ConfHist
+ Command: /opt/WinCC_OA/3.19/bin/dbcheck -a -k -t /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ConfHist
+Raima Database Manager 4.5 [Build 1]
+Database Consistency Check Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+
+
+------------------------------------------------------------------------
+
+Processing key file: smooth.key(15), total of 6 nodes
+
+
+------------------------------------------------------------------------
+
+Processing key file: userrng.key(20), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: pvssrng.key(21), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: peradr.key(23), total of 12 nodes
+
+
+------------------------------------------------------------------------
+
+Processing key file: dflvalh.key(25), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: conv.key(30), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: archinfo.key(33), total of 10 nodes
+
+
+------------------------------------------------------------------------
+
+Processing key file: archclass.key(35), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertcl.key(37), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: alertval.key(40), total of 6 nodes
+
+
+------------------------------------------------------------------------
+
+Processing key file: genconf.key(43), total of 1 node
+
+
+------------------------------------------------------------------------
+
+Processing key file: dpauth.key(45), total of 4 nodes
+
+
+------------------------------------------------------------------------
+
+Processing key file: distinfo.key(47), total of 11 nodes
+
+
+------------------------------------------------------------------------
+
+Processing key file: distdrv.key(48), total of 12 nodes
+
+
+------------------------------------------------------------------------
+
+Processing key file: dpfunc.key(50), total of 3 nodes
+
+
+------------------------------------------------------------------------
+
+Processing data file: bitvar.db(0), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: bit32var.db(1), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: charvar.db(2), total of 6800 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: intvar.db(3), total of 401 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: uintvar.db(4), total of 12 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: floatvar.db(5), total of 304 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: textvar.db(6), total of 1369 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: timevar.db(7), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: dynvar.db(8), total of 8211 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: dpidvar.db(9), total of 588 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: lngvar.db(10), total of 24 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: ulngvar.db(11), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: bit64va.db(12), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: smooth.db(13), total of 107 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: smthattr.db(14), total of 107 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: userrng.db(16), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: userrngi.db(17), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: rngrec.db(18), total of 43 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: pvssrng.db(19), total of 29 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: peradr.db(22), total of 236 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: dflvalh.db(24), total of 14 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: conv.db(26), total of 28 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: sconvi.db(27), total of 28 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: sconv.db(28), total of 28 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: sconvatt.db(29), total of 140 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: archinfo.db(31), total of 217 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: archproc.db(32), total of 214 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: archclass.db(34), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: alertcl.db(36), total of 24 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: alertrr.db(38), total of 173 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: alertval.db(39), total of 130 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: genattr.db(41), total of 0 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: genconf.db(42), total of 20 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: dpauth.db(44), total of 85 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: distinfo.db(46), total of 245 records
+
+
+------------------------------------------------------------------------
+
+Processing data file: dpfunc.db(49), total of 72 records
+
+
+Database consistency check completed
+
+0 errors were encountered in 0 records/nodes
+########### RUNNING KEYBUILD IN DATABASE started on 2025.05.07 11:28:22.081 : /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ConfHist
+ Command: /opt/WinCC_OA/3.19/bin/keybuild /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/ConfHist
+Raima Database Manager 4.5 [Build 1]
+Key File Build Utility
+Copyright (C) 1984-1996, Raima Corporation, All Rights Reserved
+
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/smooth.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/userrng.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/pvssrng.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/peradr.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/dflvalh.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/conv.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/archinfo.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/archclass.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alertcl.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alertval.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/genconf.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/dpauth.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/distinfo.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/distdrv.key
+initializing key file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/dpfunc.key
+
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/smooth.db, total records =     107
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/userrng.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/pvssrng.db, total records =      29
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/peradr.db, total records =     236
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/dflvalh.db, total records =      14
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/conv.db, total records =      28
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/archinfo.db, total records =     217
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/archclass.db, total records =       0
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alertcl.db, total records =      24
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/alertval.db, total records =     130
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/genconf.db, total records =      20
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/dpauth.db, total records =      85
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/distinfo.db, total records =     245
+processing data file: /home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/db/wincc_oa/dpfunc.db, total records =      72
+
+key file rebuild completed

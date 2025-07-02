@@ -23,12 +23,7 @@ const string dpVoltage = dpRef + &quot;.Voltage&quot;;
 const string dpCurrent = dpRef + &quot;.Current&quot;;
 const string dpTemperature = dpRef + &quot;.Temperature&quot;;
 
-//const string dpFE1_Status = dpRef + &quot;.FE1_Status&quot;;
-//const string dpFE2_Status = dpRef + &quot;.FE2_Status&quot;;
-//const string dpFE3_Status = dpRef + &quot;.FE3_Status&quot;;
-//const string dpFE4_Status = dpRef + &quot;.FE4_Status&quot;;
-
-
+// Elink ports from the FELIX
 const string DECODING_LINK_ALIGNED_00_Ch1 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_00.Ch1&quot;;
 const string DECODING_LINK_ALIGNED_00_Ch2 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_00.Ch2&quot;;
 const string DECODING_LINK_ALIGNED_00_Ch3 = &quot;System1:OptoBoard.ElinksAlignment.DECODING_LINK_ALIGNED_00.Ch3&quot;;
@@ -510,7 +505,7 @@ void dpEvent_ElinksAlignment(string dpName, bool newValue){
    <properties>
     <prop name="serialId">12</prop>
     <prop name="Type"></prop>
-    <prop name="RefPoint">23.99999999999998 130</prop>
+    <prop name="RefPoint">23.99999999999996 128</prop>
     <prop name="Enable">True</prop>
     <prop name="Visible">True</prop>
     <prop name="ForeColor">_3DText</prop>
@@ -524,12 +519,19 @@ void dpEvent_ElinksAlignment(string dpName, bool newValue){
     <prop name="Font">
      <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
     </prop>
-    <prop name="Location">23.99999999999998 130</prop>
+    <prop name="Location">23.99999999999996 128</prop>
     <prop name="Size">101 89</prop>
     <extended>
      <prop type="INT" name="decimals">2</prop>
     </extended>
    </properties>
+   <events>
+    <script name="DoubleClicked" isEscaped="1"><![CDATA[main(mapping event)
+{
+  string settingsDialogTitle = &quot;Module 3 Plot&quot;;
+  openDialog(&quot;PlotGUI.xml&quot;, makeDynString());
+}]]></script>
+   </events>
   </shape>
   <shape Name="L_FE1" shapeType="Label" layerId="0">
    <properties>

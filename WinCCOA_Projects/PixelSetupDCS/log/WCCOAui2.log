@@ -632,3 +632,9 @@ QObject::startTimer: Timers cannot have negative intervals
 ["DP1"]
 ["00000000000000001111111111111111"]
 ["00000000000000001111111111111000"]
+The X11 connection broke (error 1). Did the X11 server die?
+The X11 connection broke (error 1). Did the X11 server die?
+The X11 connection broke (error 1). Did the X11 server die?
+The X11 connection broke: I/O error (code 1)
+X connection to :1 broken (explicit kill or server shutdown).
+The X11 connection broke (error 1). Did the X11 server die?

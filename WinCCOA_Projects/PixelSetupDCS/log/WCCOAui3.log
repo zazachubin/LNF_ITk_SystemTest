@@ -1,0 +1,8 @@
+The X11 connection broke (error 1). Did the X11 server die?
+qt.qpa.xcb: X server does not support XInput 2
+failed to get the current screen resources
+qt.qpa.gl: QXcbConnection: Failed to initialize GLX
+QXcbIntegration: Cannot create platform OpenGL context, neither GLX nor EGL are enabled
+Please register the custom scheme 'qthelp' via QWebEngineUrlScheme::registerScheme() before installing the custom scheme handler.
+The X11 connection broke (error 1). Did the X11 server die?
+The X11 connection broke (error 1). Did the X11 server die?

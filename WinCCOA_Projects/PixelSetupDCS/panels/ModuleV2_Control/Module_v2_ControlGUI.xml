@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel version="14">
+ <properties>
+  <prop name="Name">
+   <prop name="en_US.utf8"></prop>
+  </prop>
+  <prop name="Size">357 578</prop>
+  <prop name="BackColor">_3DFace</prop>
+  <prop name="RefPoint">70 60</prop>
+  <prop name="InitAndTermRef">True</prop>
+  <prop name="SendClick">False</prop>
+  <prop name="RefFileName"></prop>
+  <prop name="DPI">96</prop>
+  <prop name="PDPI">90.59422903341648</prop>
+  <prop name="layoutType">None</prop>
+ </properties>
+ <events>
+  <script name="ScopeLib" isEscaped="1"><![CDATA[#uses &quot;lib&quot;
+
+// DPs
+//DAQ970A measure Module 3 Voltages
+const string dp_M3_Voltage = &quot;System1:DAQ970A.Ch103&quot;;
+
+const string dp_M3_Current = &quot;System1:ps1.Channel1.iMon&quot;;
+const string dp_M3_Status = &quot;System1:ps1.Channel1.MonStatus&quot;;
+
+const string dp_M3_SetVoltage = &quot;System1:ps1.Channel1.setVoltage&quot;;
+const string dp_M3_SetCurrent = &quot;System1:ps1.Channel1.setCurrent&quot;;
+const string dp_M3_SetStatus = &quot;System1:ps1.Channel1.SetStatus&quot;;
+
+const string dp_M3_ReadBackVoltage = &quot;System1:ps1.Channel1.readBackVoltage&quot;;
+const string dp_M3_ReadBackCurrent = &quot;System1:ps1.Channel1.readBackCurrent&quot;;
+
+const string dp_Cooling_SetStatus = &quot;System1:ps1.Channel2.SetStatus&quot;;
+
+const string dp_Module3_adcValue_Temperature = &quot;System1:LISSY.Module3&quot;;
+
+const string dp_Module3_Voltage = &quot;System1:Module3.Voltage&quot;;
+const string dp_Module3_Current = &quot;System1:Module3.Current&quot;;
+const string dp_Module3_Temperature = &quot;System1:Module3.Temperature&quot;;
+
+const string dp_lpm_status = &quot;System1:gen1.channel2.OutputStatus&quot;;
+
+
+// Initialize SP Chain Power parameters
+void initialize()
+{
+  dpSet(dp_lpm_status, FALSE);
+  dpSet(dp_M3_SetVoltage, 4.00);
+  dpSet(dp_M3_SetCurrent, 6.060);
+}
+
+// Measure Module3 Voltage
+void measure_M3_Voltage(float newValue){
+  dpSet(dp_Module3_Voltage, newValue);
+}
+
+// Measure Module3 Current
+void measure_M3_Current(float newValue){
+  dpSet(dp_Module3_Current, newValue);
+}
+
+// Measure Module3 Temperature
+void measure_Module3Temperature(uint newValue){
+  uint precision = 1;
+  float temperature = ConvAdc2Temp(newValue, precision);
+
+  dpSet(dp_Module3_Temperature, temperature);
+}
+
+// Module3 Power on/off
+void powerModule3()
+{
+  bool isOn;
+  dpGet(dp_M3_Status, isOn);
+
+  if(isOn)
+  {
+    dpSet(dp_M3_SetStatus, 0);
+    dpSet(dp_Cooling_SetStatus, 0);
+  }
+  else
+  {
+    dpSet(dp_Cooling_SetStatus, 1);
+    dpSet(dp_M3_SetStatus, 1);
+  }
+}
+
+// SP Chain Power Button color update
+void updatePowerButtColour(bool isOn){
+   if(isOn) BUT_OnOff.backCol(&quot;STD_auto&quot;);
+   else BUT_OnOff.backCol(&quot;STD_used&quot;);
+}
+
+// Power Generator on/off for LMP
+void powerGen()
+{
+  bool isOn;
+  dpGet(dp_lpm_status, isOn);
+
+  if(isOn)
+  {
+    dpSet(dp_lpm_status, 0);
+    dpSet(dp_M3_SetVoltage, 4.00);
+    dpSet(dp_M3_SetCurrent, 6.060);
+  }
+  else
+  {
+    dpSet(dp_M3_SetVoltage, 4.00);
+    dpSet(dp_M3_SetCurrent, 2.00);
+    dpSet(dp_lpm_status, 1);
+  }
+}
+
+// LPM Button color update
+void updateLPM_ButtColour(bool isOn){
+   if(isOn) BUT_LP_MODE.backCol(&quot;STD_auto&quot;);
+   else BUT_LP_MODE.backCol(&quot;STD_used&quot;);
+}
+
+// Display settings dialog window
+void openSettingsDialog()
+{
+  string settingsDialogTitle = &quot;Module 3 Settings&quot;;
+  openDialog(&quot;SettingsDialog.xml&quot;, makeDynString(&quot;$ref_dp_SetVoltage:&quot; + dp_M3_SetVoltage, &quot;$ref_dp_SetCurrent:&quot; + dp_M3_SetCurrent, &quot;$ref_dp_readBackVoltage:&quot; + dp_M3_ReadBackVoltage, &quot;$ref_dp_readBackCurrent:&quot; + dp_M3_ReadBackCurrent, &quot;$ref_title:&quot; + settingsDialogTitle));
+}]]></script>
+  <script name="Initialize" isEscaped="1"><![CDATA[main()
+{
+  // Initialize Module3 Power parameters
+  initialize();
+
+  // dp event
+  dpConnect(&quot;dpEvent_M3_Voltage&quot;, dp_M3_Voltage);
+  dpConnect(&quot;dpEvent_M3_Current&quot;, dp_M3_Current);
+  dpConnect(&quot;dpEvent_PowerButtStatus&quot;, dp_M3_Status);
+  dpConnect(&quot;dpEvent_Module3Temperature&quot;, dp_Module3_adcValue_Temperature);
+
+  dpConnect(&quot;dpEvent_LPM&quot;, dp_lpm_status);
+
+}
+
+// SP_Chain Voltage dp event
+void dpEvent_M3_Voltage(string dpName, float newValue){
+  measure_M3_Voltage(newValue);
+}
+
+// SP_Chain Current dp event
+void dpEvent_M3_Current(string dpName, float newValue){
+  measure_M3_Current(newValue);
+}
+
+// Module3 temperature dp event
+void dpEvent_Module3Temperature(string dpName, uint newValue){
+  measure_Module3Temperature(newValue);
+}
+
+// Module 3 Power dp event
+void dpEvent_PowerButtStatus(string dpName, bool isOn){
+   updatePowerButtColour(isOn);
+}
+
+// Low Power Mode dp event
+void dpEvent_LPM(string dpName, bool isOn){
+   updateLPM_ButtColour(isOn);
+}]]></script>
+ </events>
+ <shapes>
+  <shape Name="F_Control" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">1</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">20 329</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">1</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1.107142857142857 0 0 1.126760563380282 -2.142857142857185 -40.70422535211269</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">SP Control</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">20 329</prop>
+    <prop name="Size">281 72</prop>
+   </properties>
+  </shape>
+  <reference parentSerial="-1" Name="PANEL_REF1" referenceId="0">
+   <properties>
+    <prop name="FileName">ModuleGUI.xml</prop>
+    <prop name="Location">50 40.00000000000006</prop>
+    <prop name="Geometry">1.067064914376743 0 0 1.004173241288626 16.95356431700518 61.2580281612971</prop>
+    <prop name="TabOrder">2</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$dpRef</prop>
+      <prop name="Value">System1:Module3</prop>
+     </prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+   </properties>
+  </reference>
+  <shape Name="F_Module3" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">19</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">20 329</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">3</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">1.107142857142857 0 0 4.225352112676055 -2.142857142857142 -1360.140845070422</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Module 3</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,1,0,0,0,0,Italic</prop>
+    </prop>
+    <prop name="Location">20 329</prop>
+    <prop name="Size">281 72</prop>
+   </properties>
+  </shape>
+  <shape Name="BUT_OnOff" shapeType="PUSH_BUTTON" layerId="0">
+   <properties>
+    <prop name="serialId">61</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">30 370</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_ButtonText</prop>
+    <prop name="BackColor">WF_Frame</prop>
+    <prop name="TabOrder">17</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">30 361.0447761194031</prop>
+    <prop name="Size">101 41</prop>
+    <prop name="BorderStyle">Styled</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">ON/OFF</prop>
+    </prop>
+    <prop name="Image" SharedPixmap="1">
+     <prop name="BackgroundPixmap">on-off-svgrepo-com.svg</prop>
+    </prop>
+   </properties>
+   <events>
+    <script name="Clicked" isEscaped="1"><![CDATA[main(mapping event)
+{
+  powerModule3();
+}]]></script>
+   </events>
+  </shape>
+  <shape Name="BUT_LP_MODE" shapeType="PUSH_BUTTON" layerId="0">
+   <properties>
+    <prop name="serialId">62</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">144.2499999999997 369.8960942958503</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_ButtonText</prop>
+    <prop name="BackColor">WF_Frame</prop>
+    <prop name="TabOrder">18</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">144.2499999999997 360.9431086616619</prop>
+    <prop name="Size">107 41</prop>
+    <prop name="BorderStyle">Styled</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">LPM/NPM</prop>
+    </prop>
+   </properties>
+   <events>
+    <script name="Clicked" isEscaped="1"><![CDATA[main(mapping event)
+{
+  powerGen();
+}]]></script>
+   </events>
+  </shape>
+  <shape Name="RECTANGLE1" shapeType="RECTANGLE" layerId="0">
+   <properties>
+    <prop name="serialId">63</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">600 380</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{55,44,255}</prop>
+    <prop name="TabOrder">19</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[solid]</prop>
+    <prop name="Geometry">1.631578947368421 0 0 1.7 -648.9473684210523 -236</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Location">600 380</prop>
+    <prop name="Size">-191 11</prop>
+    <prop name="CornerRadius">0</prop>
+    <prop name="Transformable">True</prop>
+   </properties>
+  </shape>
+  <shape Name="F_SP_Chain" shapeType="FRAME" layerId="0">
+   <properties>
+    <prop name="serialId">109</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">30 19</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">{0,0,0}</prop>
+    <prop name="TabOrder">20</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">0.5789473684210525 0 0 1.072319201995013 -7.368421052631563 -20.37406483790524</prop>
+    <prop name="BorderStyle">3D</prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">SP Modules Chain</prop>
+    </prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Location">30 19</prop>
+    <prop name="Size">571 402</prop>
+   </properties>
+  </shape>
+  <shape Name="PUSH_BUTTON1" shapeType="PUSH_BUTTON" layerId="0">
+   <properties>
+    <prop name="serialId">154</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">262.6666666666665 369.8418415322494</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_ButtonText</prop>
+    <prop name="BackColor">_Button</prop>
+    <prop name="TabOrder">21</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8">Settings</prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">262.6666666666665 360.6462336616619</prop>
+    <prop name="Size">47 41</prop>
+    <prop name="BorderStyle">Styled</prop>
+    <prop name="Image" SharedPixmap="1">
+     <prop name="BackgroundPixmap">setting.svg</prop>
+    </prop>
+   </properties>
+   <events>
+    <script name="Clicked" isEscaped="1"><![CDATA[main(mapping event)
+{
+  openSettingsDialog();
+}]]></script>
+   </events>
+  </shape>
+  <reference parentSerial="-1" Name="PANEL_REF2" referenceId="1">
+   <properties>
+    <prop name="FileName">ModuleV2_Control/CoolingGUI_Module_v2.xml</prop>
+    <prop name="Location">10.00000000000023 453</prop>
+    <prop name="Geometry">0.5076923076923078 0 0 0.7578947368421045 -1.169230769230837 86.67368421052663</prop>
+    <prop name="TabOrder">22</prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+   </properties>
+  </reference>
+ </shapes>
+</panel>

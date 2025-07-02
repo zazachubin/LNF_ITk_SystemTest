@@ -5,7 +5,7 @@ import pyvisa
 import time
 
 debug = False
-delay = 1
+delay = 0
 
 class OPCUA_DAQ970A():
     def __init__(self, ipAddress, serverName):
@@ -87,14 +87,15 @@ if __name__ == "__main__":
                     301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320]
     
     # List of DAQ channels parameters
-    daq_measureParam = ['VOLT:DC','VOLT:DC','VOLT:DC','VOLT:DC','VOLT:DC','VOLT:DC','VOLT:DC','VOLT:DC','VOLT:DC','RES','RES','RES','VOLT:DC','RES','RES','RES','RES','RES','RES','RES',
+    daq_measureParam = ['VOLT:DC','VOLT:DC','VOLT:DC','VOLT:DC','VOLT:DC','VOLT:DC','VOLT:DC','VOLT:DC','RES','RES','VOLT:DC','RES','VOLT:DC','RES','RES','RES','VOLT:DC','RES','RES','RES',
                         'RES','RES','RES','RES','RES','RES','RES','RES','RES','RES','RES','RES','RES','RES','RES','RES','RES','RES','RES','RES',
                         'RES','RES','RES','VOLT:DC','RES','RES','RES','VOLT:DC','RES','RES','RES','VOLT:DC','RES','RES','RES','VOLT:DC','RES','RES','RES','RES']
     
     # List of DAQ active channels
-    daq_channelsStatus = [False, False, False, False, True, True, True, True, True, True, True, True, True, True, True, True, False, False, False, False,
+    daq_channelsStatus = [True, True, True, False, True, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False,
                           False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False,
                           False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+
 
     # DAQ
     daq = DAQ970A(daq_port, daq_channels, daq_measureParam, daq_channelsStatus)

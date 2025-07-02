@@ -1,8 +1,8 @@
 backup
-/home/felix/Downloads/PixelSetupDCS/data/OnlineBackup/
+/home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/data/OnlineBackup/
 FILE
 0
-/home/felix/Downloads/PixelSetupDCS/
+/home/felix/opt/LNF_ITk_SyestemTest/WinCCOA_Projects/PixelSetupDCS/
 db/wincc_oa/0000000000/*
 db/wincc_oa/al0000000000/*
 db/wincc_oa/alliving/*

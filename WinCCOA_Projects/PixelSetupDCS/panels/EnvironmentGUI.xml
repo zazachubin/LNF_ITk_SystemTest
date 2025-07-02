@@ -4,7 +4,7 @@
   <prop name="Name">
    <prop name="en_US.utf8"></prop>
   </prop>
-  <prop name="Size">671 81</prop>
+  <prop name="Size">671 77</prop>
   <prop name="BackColor">_3DFace</prop>
   <prop name="RefPoint">-2 8</prop>
   <prop name="InitAndTermRef">True</prop>
@@ -19,23 +19,43 @@
 
 const string dp_Env_ADC_Temp = &quot;System1:LISSY.Environment&quot;;
 const string dp_AirTemperature = &quot;System1:Environment.AirTemperature&quot;;
+const string dp_DewPoint = &quot;System1:Environment.DewPoint&quot;;
 
+//DAQ970A measured dew point
+const string vDewPoint = &quot;System1:DAQ970A.Ch105&quot;;
 
 // Callback function
 void displayLCD_EnvTemperature(uint newValue){
-  uint precision = 1;
-  float temperature = ConvAdc2Temp(newValue, precision);
+  //uint precision = 1;
+  //float temperature = ConvAdc2Temp(newValue, precision);
+
+  double NTC_res = ConvAdc2NTC_Res(newValue);
+  double temperature = NTC_10K_formula(NTC_res);
+
   LCD_Env_Temp.value(temperature);
   dpSet(dp_AirTemperature, temperature);
+}
+
+// Callback function
+void displayLCD_EnvDewPoint(float newValue){
+  float DewPoint = dewPoint_formula(newValue);
+  LCD_DewPoint.value(DewPoint);
+  dpSet(dp_DewPoint, DewPoint);
 }]]></script>
   <script name="Initialize" isEscaped="1"><![CDATA[main()
 {
   dpConnect(&quot;dpEvent_EnvTemperature&quot;, dp_Env_ADC_Temp);
+  dpConnect(&quot;dpEvent_Env_DewPoint&quot;, vDewPoint);
 }
 
 // Environment Temperature dp event
 void dpEvent_EnvTemperature(string dpName, uint newValue){
   displayLCD_EnvTemperature(newValue);
+}
+
+// Environment DewPoint dp event
+void dpEvent_Env_DewPoint(string dpName, float newValue){
+  displayLCD_EnvDewPoint(newValue);
 }]]></script>
  </events>
  <shapes>
@@ -60,7 +80,7 @@ void dpEvent_EnvTemperature(string dpName, uint newValue){
     <prop name="BorderZoomable">False</prop>
     <prop name="BorderScalable">False</prop>
     <prop name="FillType">[outline]</prop>
-    <prop name="Geometry">1.196428571428571 0 0 0.8450704225352114 -23.92857142857143 -614.5070422535211</prop>
+    <prop name="Geometry">1.196428571428571 0 0 0.8450704225352115 -23.92857142857142 -614.5070422535214</prop>
     <prop name="BorderStyle">3D</prop>
     <prop name="Text">
      <prop name="en_US.utf8">Environment</prop>
@@ -76,7 +96,7 @@ void dpEvent_EnvTemperature(string dpName, uint newValue){
    <properties>
     <prop name="serialId">1</prop>
     <prop name="Type"></prop>
-    <prop name="RefPoint">260 30</prop>
+    <prop name="RefPoint">131 32</prop>
     <prop name="Enable">True</prop>
     <prop name="Visible">True</prop>
     <prop name="ForeColor">_3DText</prop>
@@ -90,18 +110,18 @@ void dpEvent_EnvTemperature(string dpName, uint newValue){
     <prop name="Font">
      <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
     </prop>
-    <prop name="Location">260 30</prop>
-    <prop name="Size">141 33</prop>
+    <prop name="Location">131 32</prop>
+    <prop name="Size">125 33</prop>
     <extended>
      <prop type="INT" name="decimals">2</prop>
     </extended>
    </properties>
   </shape>
-  <shape Name="PRIMITIVE_TEXT2" shapeType="PRIMITIVE_TEXT" layerId="0">
+  <shape Name="PRIMITIVE_TEXT_EnvTemp" shapeType="PRIMITIVE_TEXT" layerId="0">
    <properties>
     <prop name="serialId">2</prop>
     <prop name="Type"></prop>
-    <prop name="RefPoint">414 32.11111111111109</prop>
+    <prop name="RefPoint">266.6666666666667 32</prop>
     <prop name="Enable">True</prop>
     <prop name="Visible">True</prop>
     <prop name="ForeColor">_WindowText</prop>
@@ -118,13 +138,151 @@ void dpEvent_EnvTemperature(string dpName, uint newValue){
     <prop name="BorderZoomable">False</prop>
     <prop name="BorderScalable">False</prop>
     <prop name="FillType">[outline]</prop>
-    <prop name="Location">414 32.11111111111109</prop>
+    <prop name="Location">266.6666666666667 32</prop>
     <prop name="Size">41 31</prop>
     <prop name="Font">
      <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
     </prop>
     <prop name="Text">
      <prop name="en_US.utf8">°C</prop>
+    </prop>
+    <prop name="Distance">2</prop>
+    <prop name="BorderOffset">2</prop>
+    <prop name="Bordered">False</prop>
+    <prop name="Fit">False</prop>
+    <prop name="Transformable">False</prop>
+    <prop name="TextFormat">[0s,,,AlignLeft]</prop>
+   </properties>
+  </shape>
+  <shape Name="LCD_DewPoint" shapeType="LCD" layerId="0">
+   <properties>
+    <prop name="serialId">4</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">480 32</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_3DFace</prop>
+    <prop name="TabOrder">3</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">480 32</prop>
+    <prop name="Size">125 33</prop>
+    <extended>
+     <prop type="INT" name="decimals">2</prop>
+    </extended>
+   </properties>
+  </shape>
+  <shape Name="PRIMITIVE_TEXT_DewPoint" shapeType="PRIMITIVE_TEXT" layerId="0">
+   <properties>
+    <prop name="serialId">5</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">617 32</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">_Window</prop>
+    <prop name="TabOrder">4</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Location">617 32</prop>
+    <prop name="Size">41 31</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">°C</prop>
+    </prop>
+    <prop name="Distance">2</prop>
+    <prop name="BorderOffset">2</prop>
+    <prop name="Bordered">False</prop>
+    <prop name="Fit">False</prop>
+    <prop name="Transformable">False</prop>
+    <prop name="TextFormat">[0s,,,AlignLeft]</prop>
+   </properties>
+  </shape>
+  <shape Name="PRIMITIVE_TEXT_EnvTemperatureLabel" shapeType="PRIMITIVE_TEXT" layerId="0">
+   <properties>
+    <prop name="serialId">7</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">20 34.11111111111109</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">_Window</prop>
+    <prop name="TabOrder">5</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">2.25 0 0 1 -25 0</prop>
+    <prop name="Location">20 34.11111111111109</prop>
+    <prop name="Size">41 31</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Env Temp</prop>
+    </prop>
+    <prop name="Distance">2</prop>
+    <prop name="BorderOffset">2</prop>
+    <prop name="Bordered">False</prop>
+    <prop name="Fit">False</prop>
+    <prop name="Transformable">False</prop>
+    <prop name="TextFormat">[0s,,,AlignLeft]</prop>
+   </properties>
+  </shape>
+  <shape Name="PRIMITIVE_TEXT_DewPointLabel" shapeType="PRIMITIVE_TEXT" layerId="0">
+   <properties>
+    <prop name="serialId">8</prop>
+    <prop name="Type"></prop>
+    <prop name="RefPoint">20 34.11111111111109</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">_Window</prop>
+    <prop name="TabOrder">6</prop>
+    <prop name="ToolTipText">
+     <prop name="en_US.utf8"></prop>
+    </prop>
+    <prop name="layoutAlignment">AlignNone</prop>
+    <prop name="snapMode">Point</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">False</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapProjecting,1]</prop>
+    <prop name="BorderZoomable">False</prop>
+    <prop name="BorderScalable">False</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Geometry">3 0 0 1 278 0</prop>
+    <prop name="Location">20 34.11111111111109</prop>
+    <prop name="Size">41 31</prop>
+    <prop name="Font">
+     <prop name="en_US.utf8">Noto Sans,-1,16,5,75,0,0,0,0,0,Bold</prop>
+    </prop>
+    <prop name="Text">
+     <prop name="en_US.utf8">Env DewPoint</prop>
     </prop>
     <prop name="Distance">2</prop>
     <prop name="BorderOffset">2</prop>

@@ -43,7 +43,7 @@
     <prop name="ShowGrid">False</prop>
     <prop name="ShowBackgroundGrid">True</prop>
     <prop name="TimeRange">600</prop>
-    <prop name="curveDownsamplings">0 0 0 0 0 0 </prop>
+    <prop name="curveDownsamplings">0 0 0 0 0 0 0 0 </prop>
     <prop name="ScrollPercent">90</prop>
     <prop name="LegendFont">
      <prop name="en_US.utf8">Noto Sans,-1,16,5,50,0,0,0,0,0</prop>
@@ -67,10 +67,10 @@
       <prop name="LegendShowDate">False</prop>
       <prop name="LegendShowMilli">False</prop>
       <prop name="LegendName">
-       <prop name="en_US.utf8">OptoBoard Voltage</prop>
+       <prop name="en_US.utf8">OptoBoard.Voltage</prop>
       </prop>
       <prop name="LegendUnit">
-       <prop name="en_US.utf8"></prop>
+       <prop name="en_US.utf8">V</prop>
       </prop>
       <prop name="VisibleInLegend">True</prop>
       <prop name="AutoScale">False</prop>
@@ -108,7 +108,7 @@
        <prop name="en_US.utf8">OptoBoard Current</prop>
       </prop>
       <prop name="LegendUnit">
-       <prop name="en_US.utf8"></prop>
+       <prop name="en_US.utf8">A</prop>
       </prop>
       <prop name="VisibleInLegend">True</prop>
       <prop name="AutoScale">False</prop>
@@ -146,7 +146,7 @@
        <prop name="en_US.utf8">Module1 Voltage</prop>
       </prop>
       <prop name="LegendUnit">
-       <prop name="en_US.utf8"></prop>
+       <prop name="en_US.utf8">V</prop>
       </prop>
       <prop name="VisibleInLegend">True</prop>
       <prop name="AutoScale">False</prop>
@@ -184,7 +184,7 @@
        <prop name="en_US.utf8">Module1 Current</prop>
       </prop>
       <prop name="LegendUnit">
-       <prop name="en_US.utf8"></prop>
+       <prop name="en_US.utf8">A</prop>
       </prop>
       <prop name="VisibleInLegend">True</prop>
       <prop name="AutoScale">False</prop>
@@ -210,7 +210,7 @@
      </prop>
      <prop type="ValueOverTime" name="TrendCurve">
       <prop name="Name">#1_5</prop>
-      <prop name="DataSource">System1:COOLING.Voltage</prop>
+      <prop name="DataSource">System1:Module2.Voltage</prop>
       <prop name="PointType">0</prop>
       <prop name="Type">2</prop>
       <prop name="Filled">0</prop>
@@ -219,10 +219,10 @@
       <prop name="LegendShowDate">False</prop>
       <prop name="LegendShowMilli">False</prop>
       <prop name="LegendName">
-       <prop name="en_US.utf8">COOLING Voltage</prop>
+       <prop name="en_US.utf8">Module2 Voltage</prop>
       </prop>
       <prop name="LegendUnit">
-       <prop name="en_US.utf8"></prop>
+       <prop name="en_US.utf8">V</prop>
       </prop>
       <prop name="VisibleInLegend">True</prop>
       <prop name="AutoScale">False</prop>
@@ -248,7 +248,7 @@
      </prop>
      <prop type="ValueOverTime" name="TrendCurve">
       <prop name="Name">#1_6</prop>
-      <prop name="DataSource">System1:COOLING.Current</prop>
+      <prop name="DataSource">System1:Module2.Current</prop>
       <prop name="PointType">0</prop>
       <prop name="Type">2</prop>
       <prop name="Filled">0</prop>
@@ -257,10 +257,10 @@
       <prop name="LegendShowDate">False</prop>
       <prop name="LegendShowMilli">False</prop>
       <prop name="LegendName">
-       <prop name="en_US.utf8">COOLING Current</prop>
+       <prop name="en_US.utf8">Module2 Current</prop>
       </prop>
       <prop name="LegendUnit">
-       <prop name="en_US.utf8"></prop>
+       <prop name="en_US.utf8">A</prop>
       </prop>
       <prop name="VisibleInLegend">True</prop>
       <prop name="AutoScale">False</prop>
@@ -282,6 +282,82 @@
        <prop name="AutoFormat">True</prop>
        <prop name="Visible">True</prop>
        <prop name="Position">Right</prop>
+      </CurveScale>
+     </prop>
+     <prop type="ValueOverTime" name="TrendCurve">
+      <prop name="Name">#1_7</prop>
+      <prop name="DataSource">System1:COOLING_PixelSetup.Voltage</prop>
+      <prop name="PointType">0</prop>
+      <prop name="Type">2</prop>
+      <prop name="Filled">0</prop>
+      <prop name="RefValue">0</prop>
+      <prop name="LegendFormat"></prop>
+      <prop name="LegendShowDate">False</prop>
+      <prop name="LegendShowMilli">False</prop>
+      <prop name="LegendName">
+       <prop name="en_US.utf8">COOLING_PixelSetup.Voltage</prop>
+      </prop>
+      <prop name="LegendUnit">
+       <prop name="en_US.utf8">V</prop>
+      </prop>
+      <prop name="VisibleInLegend">True</prop>
+      <prop name="AutoScale">False</prop>
+      <prop name="ValueShape"></prop>
+      <prop name="TimeShape"></prop>
+      <prop name="Min">0</prop>
+      <prop name="Max">10</prop>
+      <prop name="LineType">[solid,oneColor,JoinMiter,CapButt,0]</prop>
+      <prop name="Color">schwarz</prop>
+      <prop name="GridVisible">False</prop>
+      <prop name="GridAboveCount">0</prop>
+      <prop name="GridBelowCount">0</prop>
+      <prop name="GridAboveDistance">0</prop>
+      <prop name="GridBelowDistance">0</prop>
+      <prop name="GridRefValue">0</prop>
+      <CurveScale>
+       <prop name="Format1">%g</prop>
+       <prop name="Format2">%x</prop>
+       <prop name="AutoFormat">True</prop>
+       <prop name="Visible">True</prop>
+       <prop name="Position">Left</prop>
+      </CurveScale>
+     </prop>
+     <prop type="ValueOverTime" name="TrendCurve">
+      <prop name="Name">#1_8</prop>
+      <prop name="DataSource">System1:COOLING_PixelSetup.Current</prop>
+      <prop name="PointType">0</prop>
+      <prop name="Type">2</prop>
+      <prop name="Filled">0</prop>
+      <prop name="RefValue">0</prop>
+      <prop name="LegendFormat"></prop>
+      <prop name="LegendShowDate">False</prop>
+      <prop name="LegendShowMilli">False</prop>
+      <prop name="LegendName">
+       <prop name="en_US.utf8">COOLING_PixelSetup.Current</prop>
+      </prop>
+      <prop name="LegendUnit">
+       <prop name="en_US.utf8">A</prop>
+      </prop>
+      <prop name="VisibleInLegend">True</prop>
+      <prop name="AutoScale">False</prop>
+      <prop name="ValueShape"></prop>
+      <prop name="TimeShape"></prop>
+      <prop name="Min">0</prop>
+      <prop name="Max">10</prop>
+      <prop name="LineType">[solid,oneColor,JoinMiter,CapButt,0]</prop>
+      <prop name="Color">schwarz</prop>
+      <prop name="GridVisible">False</prop>
+      <prop name="GridAboveCount">0</prop>
+      <prop name="GridBelowCount">0</prop>
+      <prop name="GridAboveDistance">0</prop>
+      <prop name="GridBelowDistance">0</prop>
+      <prop name="GridRefValue">0</prop>
+      <CurveScale>
+       <prop name="Format1">%g</prop>
+       <prop name="Format2">%x</prop>
+       <prop name="AutoFormat">True</prop>
+       <prop name="Visible">True</prop>
+       <prop name="Position">Left</prop>
       </CurveScale>
      </prop>
      <prop name="TimeScaleOneLine">True</prop>

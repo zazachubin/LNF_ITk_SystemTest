@@ -9,10 +9,11 @@ WCCILevent       | always |      30 |        3 |        1 |
 WCCILproxy       | always |      30 |        2 |        2 |
 WCCOActrl        | always |      30 |        3 |        1 |-f pvss_scripts.lst
 WCCILsim         | always |      30 |        3 |        1 |
-WCCOAui          |   once |      30 |        3 |        1 |-m gedi
+WCCOAui          | manual |      30 |        3 |        1 |-m gedi
 WCCOAopcua       | always |      30 |        2 |        2 |-num 6
 WCCOAopcua       | always |      30 |        2 |        2 |-num 7
 WCCOAopcua       | always |      30 |        2 |        2 |-num 8
 WCCOAopcua       | always |      30 |        2 |        2 |-num 9
 WCCOAopcua       | always |      30 |        2 |        2 |-num 10
 WCCOAui          | always |      30 |        2 |        2 |-PROJ PixelSetupDCS -p PixelSetupDCS.xml -iconBar -menuBar
+WCCOAui          | always |      30 |        2 |        2 |-PROJ PixelSetupDCS -p ModuleV2_Control/Module_v2_ControlGUI.xml -iconBar -menuBar

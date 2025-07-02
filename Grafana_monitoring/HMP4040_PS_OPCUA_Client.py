@@ -9,7 +9,7 @@ InfluxDB_ADDRESS = "http://localhost:8086"     # InfluxDB Local address
 # You can generate an API token from the "API Tokens Tab" in the UI
 token = "0xnV4c1Lfe1ZYMS41nPlJ66nb-c6XA7DUioX9iu8PeQC1Q2QoNJp2eCh8R3bx7pXlGtBpjY_Oh5TBzuAuCrP5w=="
 org = "ITK"
-bucket = "test"
+bucket = "PixelSetup"
 
 Delay = 1                                      # Device reading delay [s]
 
@@ -82,10 +82,7 @@ while True:
         # Add OptoBoard Power info in DB
         influxdbContainer.append(
             {
-                "measurement": "OptoBoard Power",
-                "tags": {
-                    "OptoBoard" : 'Power'
-                },
+                "measurement": "OptoBoard",
                 "time": CurrentTime,
                 "fields": {
                     "OptoBoard_Voltage[V]" : get_ch1_v0,
@@ -99,10 +96,7 @@ while True:
         # Add Module Cooling Power info in DB
         influxdbContainer.append(
             {
-                "measurement": "Modules Cooling Power",
-                "tags": {
-                    "Modules Cooling" : 'Power'
-                },
+                "measurement": "Modules Cooling",
                 "time": CurrentTime,
                 "fields": {
                     "Cooling_Voltage[V]" : get_ch2_v0,
@@ -116,10 +110,7 @@ while True:
         # Add Module Power info in DB
         influxdbContainer.append(
             {
-                "measurement": "Serial Modules Power",
-                "tags": {
-                    "Serial Modules" : 'Power'
-                },
+                "measurement": "Pixel_SP_Chain",
                 "time": CurrentTime,
                 "fields": {
                     "Serial_Modules_Voltage[V]" : get_ch4_v0,

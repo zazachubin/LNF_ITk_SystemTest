@@ -19,18 +19,44 @@ def ConvAdc2Temp(adc_chan):
         adc_to_degree=adc_chan
         return -999
 
+def module_NTC_10K_formula(R):
+    # NTC 10k
+    A = 1.103026059e-03
+    B = 2.203809745e-04
+    C = 2.831203056e-07
+
+    logR2 = math.log(R)
+    T = (1.0 / (A + B*logR2 + C*logR2*logR2*logR2))
+    Tc = T - 273.15
+    return Tc
+    
+def NTC_10K_formula(R):
+    # NTC 10k
+    A = 1.098012950e-03
+    B = 2.391408415e-04
+    C = 0.7500259398e-07
+
+    logR2 = math.log(R)
+    T = (1.0 / (A + B*logR2 + C*logR2*logR2*logR2))
+    Tc = T - 273.15
+    return Tc
+
+
+def ConvAdc2NTC_Res(adc_chan):
+    Vout = 2.5/32767.0 * adc_chan
+    Rntc = Vout * 10000/(2.5 - Vout)
+    return Rntc
+
+    
+
 ############################## InfluxDB ###############################
 InfluxDB_ADDRESS = "http://localhost:8086"     # InfluxDB Local address
 # You can generate an API token from the "API Tokens Tab" in the UI
 token = "0xnV4c1Lfe1ZYMS41nPlJ66nb-c6XA7DUioX9iu8PeQC1Q2QoNJp2eCh8R3bx7pXlGtBpjY_Oh5TBzuAuCrP5w=="
 org = "ITK"
-bucket = "test"
-
-logFile = False
+bucket = "PixelSetup"
 
 Delay = 1                                      # Device reading delay [s]
-
-filePath = 'data_{}.csv'.format(str(datetime.fromtimestamp(datetime.utcnow().timestamp())).replace(':','-'))
 
 try:
     print('##################### START #####################')
@@ -44,31 +70,22 @@ try:
 
     while True:
         try:
-            if logFile == True:
-                with open(filePath, 'w') as f:
-                    f.write("Time[UTC],Module1_Temperature[*C],Module2_Temperature[*C],OptoBoard_Temperature[*C],Environment_Temperature[*C]\n")
-                    f.close()
-
-            # should always be in address space such as Root or Objects
-            #root = client.get_root_node()
-            #print("Objects node is: ", root)
-
             objects = client.get_objects_node()
             #print("Objects node is: ", objects)
 
             #################### Time in miliseconds UTC ##########################
             CurrentTime = datetime.fromtimestamp(datetime.utcnow().timestamp())
             OptoBoardTemp_ADC = objects.get_child(["2:MonitorController","2:Frascati","2:T2I_S3","2:t2i_adc1_chan1"]).get_value()
-            OptoBoardTemp = float(ConvAdc2Temp(OptoBoardTemp_ADC))
+            OptoBoardTemp = round(float(module_NTC_10K_formula(ConvAdc2NTC_Res(OptoBoardTemp_ADC))),6)
 
             Module1Temp_ADC = objects.get_child(["2:MonitorController","2:Frascati","2:T2I_S3","2:t2i_adc1_chan2"]).get_value()
-            Module1Temp = float(ConvAdc2Temp(Module1Temp_ADC))
+            Module1Temp = round(float(module_NTC_10K_formula(ConvAdc2NTC_Res(Module1Temp_ADC))),6)
 
             Module2Temp_ADC = objects.get_child(["2:MonitorController","2:Frascati","2:T2I_S3","2:t2i_adc1_chan3"]).get_value()
-            Module2Temp = float(ConvAdc2Temp(Module2Temp_ADC))
+            Module2Temp = round(float(module_NTC_10K_formula(ConvAdc2NTC_Res(Module2Temp_ADC))),6)
 
             EnvTemp_ADC = objects.get_child(["2:MonitorController","2:Frascati","2:T2I_S3","2:t2i_adc1_chan4"]).get_value()
-            EnvTemp = float(ConvAdc2Temp(EnvTemp_ADC))
+            EnvTemp = round(float(NTC_10K_formula(ConvAdc2NTC_Res(EnvTemp_ADC))),6)
 
             
             out_a = objects.get_child(["2:MonitorController","2:Frascati","2:OUT_S10","2:out_a"]).get_value()
@@ -105,25 +122,13 @@ try:
             print("Environment Temperature [*C]: {}".format(EnvTemp))
             print("OUT_S10_status: {}".format(OUT_S10_state))
 
-            if logFile == True:
-                # Create data file header
-                with open(filePath, 'a') as f:
-                    f.write("{},{},{},{},{}\n".format(str(CurrentTime),
-                                                    Module1Temp,
-                                                    Module2Temp,
-                                                    OptoBoardTemp,
-                                                    EnvTemp))
-                    f.close()
             # Container for DB
             influxdbContainer = []
 
             # Add OptoBoard Temperature info in DB
             influxdbContainer.append(
                 {
-                    "measurement": "OptoBoard Temperature",
-                    "tags": {
-                        "OptoBoard" : 'NTC'
-                    },
+                    "measurement": "OptoBoard",
                     "time": CurrentTime,
                     "fields": {
                         "OptoBoard_Temperature[*C]" : OptoBoardTemp,
@@ -133,10 +138,7 @@ try:
             # Add Environment Temperature info in DB
             influxdbContainer.append(
                 {
-                    "measurement": "Environment Temperature",
-                    "tags": {
-                        "Environment" : 'NTC'
-                    },
+                    "measurement": "Environment",
                     "time": CurrentTime,
                     "fields": {
                         "Environment_Temperature[*C]" : EnvTemp,
@@ -146,10 +148,7 @@ try:
             # Add Module1 Temperature info in DB
             influxdbContainer.append(
                 {
-                    "measurement": "Module1 Temperature",
-                    "tags": {
-                        "Module1" : 'NTC'
-                    },
+                    "measurement": "Pixel_SP_Chain",
                     "time": CurrentTime,
                     "fields": {
                         "Module1_Temperature[*C]" : Module1Temp,
@@ -159,10 +158,7 @@ try:
             # Add Module2 Temperature info in DB
             influxdbContainer.append(
                 {
-                    "measurement": "Module2 Temperature",
-                    "tags": {
-                        "Module2" : 'NTC'
-                    },
+                    "measurement": "Pixel_SP_Chain",
                     "time": CurrentTime,
                     "fields": {
                         "Module2_Temperature[*C]" : Module2Temp,
@@ -172,10 +168,7 @@ try:
             # Add Interlock OUT_S10 ststus in DB
             influxdbContainer.append(
                 {
-                    "measurement": "OUT_S10",
-                    "tags": {
-                        "Interlock" : 'Status'
-                    },
+                    "measurement": "LYSSY_OUT_S10",
                     "time": CurrentTime,
                     "fields": {
                         "OUT_S10_C1" : OUT_S10_C1,

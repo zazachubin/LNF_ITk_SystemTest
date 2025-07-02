@@ -92,20 +92,24 @@ def opticalAlignmentStatus(text):
             felixInfo["OpticalLinksAlignment"]["Ch{}".format(i+1)] = False
 
 def readFelixInfo():
-    cmd = "source /home/felix/opt/LNF_ITk_SyestemTest/OPCUA_servers/Optoboard2FelixInfo/FelixInfo.sh"
-    result = subprocess.run(cmd, shell=True, capture_output=True, text=True, check=True)
+    try:
+        cmd = "source /home/felix/opt/LNF_ITk_SyestemTest/OPCUA_servers/Optoboard2FelixInfo/FelixInfo.sh"
+        result = subprocess.run(cmd, shell=True, capture_output=True, text=True, check=True)
 
-    DECODING_LINK_ALIGNED_00 = elinkSelector(result.stdout, 4, 0)
-    DECODING_LINK_ALIGNED_01 = elinkSelector(result.stdout, 5, 1)
-    DECODING_LINK_ALIGNED_02 = elinkSelector(result.stdout, 6, 2)
-    DECODING_LINK_ALIGNED_03 = elinkSelector(result.stdout, 7, 3)
+        DECODING_LINK_ALIGNED_00 = elinkSelector(result.stdout, 4, 0)
+        DECODING_LINK_ALIGNED_01 = elinkSelector(result.stdout, 5, 1)
+        DECODING_LINK_ALIGNED_02 = elinkSelector(result.stdout, 6, 2)
+        DECODING_LINK_ALIGNED_03 = elinkSelector(result.stdout, 7, 3)
 
-    elinksStatus(DECODING_LINK_ALIGNED_00, "DECODING_LINK_ALIGNED_00")
-    elinksStatus(DECODING_LINK_ALIGNED_01, "DECODING_LINK_ALIGNED_01")
-    elinksStatus(DECODING_LINK_ALIGNED_02, "DECODING_LINK_ALIGNED_02")
-    elinksStatus(DECODING_LINK_ALIGNED_03, "DECODING_LINK_ALIGNED_03")
+        elinksStatus(DECODING_LINK_ALIGNED_00, "DECODING_LINK_ALIGNED_00")
+        elinksStatus(DECODING_LINK_ALIGNED_01, "DECODING_LINK_ALIGNED_01")
+        elinksStatus(DECODING_LINK_ALIGNED_02, "DECODING_LINK_ALIGNED_02")
+        elinksStatus(DECODING_LINK_ALIGNED_03, "DECODING_LINK_ALIGNED_03")
 
-    opticalAlignmentStatus(result.stdout)
+        opticalAlignmentStatus(result.stdout)
+    except subprocess.CalledProcessError:
+        pass
+
 
 ipAddress = "opc.tcp://localhost:4840/FelixInfo_opcua/server/"
 
