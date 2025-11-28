@@ -176,7 +176,7 @@ class SubHandler(object):
             path.insert(0, node.get_browse_name().Name)
             try:
                 node = node.get_parent()
-            except:
+            except Exception:
                 break  # Stop when there's no parent
         return "/".join(path)  # Return full path as text
     

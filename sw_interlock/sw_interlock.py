@@ -1,6 +1,5 @@
 from datetime import datetime
 from opcua import Client
-import logging
 import time
 import os
 
@@ -79,6 +78,7 @@ while True:
 
         time.sleep(Delay)
 
-    except:
+    except Exception as e:
         print('##################### STOP ######################')
+        print(f'Error: {e}')
         os.kill(os.getpid(), 9)

@@ -1,8 +1,6 @@
-import os
 import subprocess
 
 from opcua import Server
-from datetime import datetime
 import time
 
 felixInfo = {"OpticalLinksAlignment" : {"Ch1":False,
@@ -93,7 +91,7 @@ def opticalAlignmentStatus(text):
 
 def readFelixInfo():
     try:
-        cmd = "source /home/felix/opt/LNF_ITk_SyestemTest/OPCUA_servers/Optoboard2FelixInfo/FelixInfo.sh"
+        cmd = "source /home/felix/opt/LNF_ITk_SystemTest/OPCUA_servers/Optoboard2FelixInfo/FelixInfo.sh"
         result = subprocess.run(cmd, shell=True, capture_output=True, text=True, check=True)
 
         DECODING_LINK_ALIGNED_00 = elinkSelector(result.stdout, 4, 0)

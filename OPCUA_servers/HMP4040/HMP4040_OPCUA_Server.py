@@ -1,8 +1,8 @@
 from opcua import Server
-from opcua import Client
 import threading
 from HMP4040 import HMP4040
 import time
+
 
 class OPCUA_HMP4040():
     def __init__(self, ipAddress, serverName, ps_list):
@@ -262,7 +262,7 @@ class SubHandler(object):
             path.insert(0, node.get_browse_name().Name)
             try:
                 node = node.get_parent()
-            except:
+            except Exception:
                 break  # Stop when there's no parent
         return "/".join(path)  # Return full path as text
     
