@@ -3,20 +3,17 @@ from influxdb_client import InfluxDBClient
 from datetime import datetime
 from opcua import Client
 import time
-import os
 
 def dewPoint_formula(DPv):
     chamber_DewPoint = ((DPv-2.016) / 0.0192) - 2.434
     return chamber_DewPoint
 
 ############################## InfluxDB ###############################
-InfluxDB_ADDRESS = os.environ.get("INFLUXDB_ADDRESS", "http://localhost:8086")
-# API token should be set via environment variable INFLUXDB_TOKEN
-token = os.environ.get("INFLUXDB_TOKEN", "")
-if not token:
-    raise ValueError("INFLUXDB_TOKEN environment variable must be set")
-org = os.environ.get("INFLUXDB_ORG", "ITK")
-bucket = os.environ.get("INFLUXDB_BUCKET", "PixelSetup")
+InfluxDB_ADDRESS = "http://localhost:8086"     # InfluxDB Local address
+# You can generate an API token from the "API Tokens Tab" in the UI
+token = "0xnV4c1Lfe1ZYMS41nPlJ66nb-c6XA7DUioX9iu8PeQC1Q2QoNJp2eCh8R3bx7pXlGtBpjY_Oh5TBzuAuCrP5w=="
+org = "ITK"
+bucket = "PixelSetup"
 
 Delay = 0.1                                      # Device reading delay [s]
 
@@ -24,7 +21,7 @@ Delay = 0.1                                      # Device reading delay [s]
 dbclient = InfluxDBClient(url=InfluxDB_ADDRESS, token=token, org=org)
 write_api = dbclient.write_api(write_options=SYNCHRONOUS)
 
-client = Client("opc.tcp://localhost:4844/DAQ970A_opcua/server/")  # Initiate
+client = Client("opc.tcp://localhost:4844/DAQ970A_opcua/server/") # Initiate
 
 while True:
     try:
